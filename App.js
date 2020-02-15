@@ -4,10 +4,14 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import AppNavigator from './navigation/AppNavigator';
 import Routes from './navigation/routes'
+import { Provider } from 'react-redux'
+import persist from './store/index';
+console.disableYellowBox = true
+const persistStore=persist()
 
 export default function App(props) {
+
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 
   if (!isLoadingComplete && !props.skipLoadingScreen) {
@@ -22,11 +26,14 @@ export default function App(props) {
     return (
       <View style={styles.container}>
         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-        <Routes />
+        <Provider store={persistStore.store}>
+          <Routes />
+        </Provider>
       </View>
     );
   }
 }
+
 
 async function loadResourcesAsync() {
   await Promise.all([
@@ -36,6 +43,12 @@ async function loadResourcesAsync() {
     ]),
     Font.loadAsync({
       // This is the font that we are using for our tab bar
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      'Roboto_bold': require('./assets/fonts/Roboto-Bold.ttf'),
+      'Roboto_medium': require('./assets/fonts/Roboto-Medium.ttf'),
+      'Roboto_medium-italic': require('./assets/fonts/Roboto-MediumItalic.ttf'),
+      'Roboto_regular': require('./assets/fonts/Roboto-Regular.ttf'),
       ...Ionicons.font,
       // We include SpaceMono because we use it in HomeScreen.js. Feel free to
       // remove this if you are not using it in your app

@@ -5,13 +5,16 @@
     "mocha": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "standard"
   ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,6 +24,7 @@
   },
   "plugins": [
     "react",
+    "@typescript-eslint",
     "fp"
   ],
   "settings": {

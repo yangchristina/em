@@ -1,11 +1,27 @@
 {
+  "main": "node_modules/expo/AppEntry.js",
   "name": "em",
   "brandVersion": "1",
-  "version": "87.0.0",
+  "version": "81.0.0",
   "author": "Raine Revere <raine@cybersemics.org>",
   "description": "A multi-hierarchical mind-mapping app for personal sensemaking.",
   "license": "NoHarm-draft",
   "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest --watchAll",
+    "build": "react-scripts build",
+    "deploy": "npm version major && npm run build && firebase deploy",
+    "lint": "eslint src",
+    "pretest": "npm run lint"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
   "dependencies": {
     "@bit/mui-org.material-ui.swipeable-drawer": "^4.5.2",
     "@expo/samples": "~36.0.0",
@@ -20,6 +36,7 @@
     "expo-constants": "~8.0.0",
     "expo-font": "~8.0.0",
     "expo-web-browser": "~8.0.0",
+    "fbjs": "^1.0.0",
     "firebase-encode": "0.0.5",
     "he": "^1.2.0",
     "htmlparser2": "^3.10.1",
@@ -32,6 +49,7 @@
     "lodash.throttle": "^4.1.1",
     "moment": "^2.22.2",
     "murmurhash3js": "^3.0.1",
+    "native-base": "^2.13.8",
     "pluralize": "^8.0.0",
     "react": "^16.12.0",
     "react-click-n-hold": "^1.0.6",
@@ -46,6 +64,8 @@
     "react-native-gesture-handler": "~1.5.0",
     "react-native-reanimated": "~1.4.0",
     "react-native-screens": "2.0.0-alpha.12",
+    "react-native-snap-carousel": "^3.8.4",
+    "react-navigation-drawer": "^2.3.3",
     "react-native-web": "^0.12.0",
     "react-navigation": "~4.0.10",
     "react-navigation-stack": "~1.10.3",
@@ -58,34 +78,32 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "static-eval": "^2.0.3",
+    "typescript": "^3.7.5",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0",
     "@sindresorhus/slugify": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "babel-eslint": "^6.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "9.0.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-loader": "git+https://github.com/raineorshine/eslint-loader.git#patch",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "1.5.3",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-standard": "^4.0.1",
     "jest-expo": "~36.0.1",
     "md5": "^2.2.1",
     "xml2json": "^0.11.2"
-  },
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "test": "jest --watchAll"
   },
   "browserslist": {
     "production": [
@@ -96,9 +114,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "main": "node_modules/expo/AppEntry.js",
-  "jest": {
-    "preset": "jest-expo"
   }
 }

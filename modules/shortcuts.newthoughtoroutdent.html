@@ -90,19 +90,19 @@
 					<a name="icon" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Icon</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Icon<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>fill<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+						<li class="tsd-signature tsd-kind-icon">Icon<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>fill<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L15">src/shortcuts/newThoughtOrOutdent.js:15</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L18">src/shortcuts/newThoughtOrOutdent.tsx:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>fill<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>fill<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>fill<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -111,7 +111,7 @@
 											<h5>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+											<h5>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -124,31 +124,43 @@
 					<a name="exec" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> exec</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol"> | </span><a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a><span class="tsd-signature-symbol">&gt;</span>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, e<span class="tsd-signature-symbol">: </span><a href="../interfaces/shortcuts.delete.event.html" class="tsd-signature-type">Event</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L22">src/shortcuts/newThoughtOrOutdent.js:22</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L25">src/shortcuts/newThoughtOrOutdent.tsx:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>dispatch: <span class="tsd-signature-type">any</span></h5>
+									<h5>dispatch: <span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol"> | </span><a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>getState: <span class="tsd-signature-type">any</span></h5>
+									<h5>getState: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 								<li>
-									<h5>e: <span class="tsd-signature-type">any</span></h5>
+									<h5>e: <a href="../interfaces/shortcuts.delete.event.html" class="tsd-signature-type">Event</a></h5>
 								</li>
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -166,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">new<wbr>Thought<wbr>Aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L55">src/shortcuts/newThoughtOrOutdent.js:55</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L58">src/shortcuts/newThoughtOrOutdent.tsx:58</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -175,7 +187,7 @@
 						<div class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">:</span> <a href="shortcuts.deleteemptythoughtoroutdent.html#exec" class="tsd-signature-type">exec</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L64">src/shortcuts/newThoughtOrOutdent.js:64</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L67">src/shortcuts/newThoughtOrOutdent.tsx:67</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -185,7 +197,7 @@
 						<div class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;rdld&#x27;, &#x27;rdldl&#x27;, &#x27;rdldld&#x27;, &#x27;rldl&#x27;, &#x27;rldld&#x27;, &#x27;rldldl&#x27;]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L59">src/shortcuts/newThoughtOrOutdent.js:59</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L62">src/shortcuts/newThoughtOrOutdent.tsx:62</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -195,7 +207,7 @@
 						<div class="tsd-signature tsd-kind-icon">hide<wbr>From<wbr>Instructions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L58">src/shortcuts/newThoughtOrOutdent.js:58</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L61">src/shortcuts/newThoughtOrOutdent.tsx:61</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -205,7 +217,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;newThoughtAliases&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L56">src/shortcuts/newThoughtOrOutdent.js:56</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L59">src/shortcuts/newThoughtOrOutdent.tsx:59</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -215,7 +227,7 @@
 						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;newThought&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L57">src/shortcuts/newThoughtOrOutdent.js:57</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L60">src/shortcuts/newThoughtOrOutdent.tsx:60</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -229,7 +241,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L63">src/shortcuts/newThoughtOrOutdent.js:63</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L66">src/shortcuts/newThoughtOrOutdent.tsx:66</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -243,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">new<wbr>Thought<wbr>OrOutdent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L43">src/shortcuts/newThoughtOrOutdent.js:43</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L46">src/shortcuts/newThoughtOrOutdent.tsx:46</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -252,7 +264,7 @@
 						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Create a new thought or outdent if focused thought is empty.&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L46">src/shortcuts/newThoughtOrOutdent.js:46</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L49">src/shortcuts/newThoughtOrOutdent.tsx:49</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -262,7 +274,7 @@
 						<div class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">:</span> <a href="shortcuts.deleteemptythoughtoroutdent.html#exec" class="tsd-signature-type">exec</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L51">src/shortcuts/newThoughtOrOutdent.js:51</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L54">src/shortcuts/newThoughtOrOutdent.tsx:54</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -272,7 +284,7 @@
 						<div class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;rd&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L48">src/shortcuts/newThoughtOrOutdent.js:48</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L51">src/shortcuts/newThoughtOrOutdent.tsx:51</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -282,7 +294,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;newThoughtOrOutdent&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L44">src/shortcuts/newThoughtOrOutdent.js:44</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L47">src/shortcuts/newThoughtOrOutdent.tsx:47</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -292,7 +304,7 @@
 						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;newThoughtOrOutdent&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L45">src/shortcuts/newThoughtOrOutdent.js:45</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L48">src/shortcuts/newThoughtOrOutdent.tsx:48</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -302,7 +314,7 @@
 						<div class="tsd-signature tsd-kind-icon">svg<span class="tsd-signature-symbol">:</span> <a href="shortcuts.bindcontext.html#icon" class="tsd-signature-type">Icon</a><span class="tsd-signature-symbol"> = Icon</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L49">src/shortcuts/newThoughtOrOutdent.js:49</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L52">src/shortcuts/newThoughtOrOutdent.tsx:52</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -316,7 +328,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L50">src/shortcuts/newThoughtOrOutdent.js:50</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L53">src/shortcuts/newThoughtOrOutdent.tsx:53</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -329,7 +341,7 @@
 						<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L47">src/shortcuts/newThoughtOrOutdent.js:47</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L50">src/shortcuts/newThoughtOrOutdent.tsx:50</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -338,7 +350,7 @@
 							<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Enter&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/45bafc6/src/shortcuts/newThoughtOrOutdent.js#L47">src/shortcuts/newThoughtOrOutdent.js:47</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/413a602/src/shortcuts/newThoughtOrOutdent.tsx#L50">src/shortcuts/newThoughtOrOutdent.tsx:50</a></li>
 								</ul>
 							</aside>
 						</section>

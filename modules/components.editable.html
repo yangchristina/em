@@ -83,7 +83,10 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#editable" class="tsd-kind-icon">Editable</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#maketoolbarpositionfixed" class="tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#resettoolbarposition" class="tsd-kind-icon">reset<wbr>Toolbar<wbr>Position</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#stoppropagation" class="tsd-kind-icon">stop<wbr>Propagation</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.editable.html#updatetoolbarpositiononscroll" class="tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,7 +100,7 @@
 					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>THOUGHT_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5 * 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/75a8ec5/src/components/Editable.tsx#L65">src/components/Editable.tsx:65</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L65">src/components/Editable.tsx:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/75a8ec5/src/components/Editable.tsx#L86">src/components/Editable.tsx:86</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L121">src/components/Editable.tsx:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,6 +169,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="maketoolbarpositionfixed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Toolbar<wbr>Position<wbr>Fixed</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L71">src/components/Editable.tsx:71</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add position:absolute to toolbar elements in order to fix Safari position:fixed browser behavior when keyboard is up.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="resettoolbarposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> reset<wbr>Toolbar<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Toolbar<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L85">src/components/Editable.tsx:85</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reset position:absolute of toolbar elements.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="stoppropagation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> stop<wbr>Propagation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -175,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/75a8ec5/src/components/Editable.tsx#L68">src/components/Editable.tsx:68</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L68">src/components/Editable.tsx:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -184,6 +231,28 @@
 									<h5>e: <span class="tsd-signature-type">MouseEvent</span></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="updatetoolbarpositiononscroll" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Toolbar<wbr>Position<wbr>OnScroll</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34316f7/src/components/Editable.tsx#L97">src/components/Editable.tsx:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update position of toolbar elements while scrolling in order to show them always on top.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -215,7 +284,16 @@
 						<a href="components.editable.html#editable" class="tsd-kind-icon">Editable</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#maketoolbarpositionfixed" class="tsd-kind-icon">make<wbr>Toolbar<wbr>Position<wbr>Fixed</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#resettoolbarposition" class="tsd-kind-icon">reset<wbr>Toolbar<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.editable.html#stoppropagation" class="tsd-kind-icon">stop<wbr>Propagation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.editable.html#updatetoolbarpositiononscroll" class="tsd-kind-icon">update<wbr>Toolbar<wbr>Position<wbr>OnScroll</a>
 					</li>
 				</ul>
 			</nav>

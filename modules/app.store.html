@@ -93,17 +93,17 @@
 					<div class="tsd-signature tsd-kind-icon">compose<wbr>Enhancers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">compose</span><span class="tsd-signature-symbol"> = composeWithDevTools({ trace: true })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/677ba8e/src/store.js#L15">src/store.js:15</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/179ee65/src/store.js#L16">src/store.js:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="store" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> store</h3>
-					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Ext1</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext2</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext3</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext4</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = createStore(appReducer,composeEnhancers(applyMiddleware(multi,thunk,syncQueue,updateUrlHistory)))</span></div>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Ext1</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext2</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext3</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Ext4</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = createStore(appReducer,composeEnhancers(applyMiddleware(multi,thunk,syncQueue,updateUrlHistory), undoRedoReducerEnhancer))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/677ba8e/src/store.js#L17">src/store.js:17</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/179ee65/src/store.js#L18">src/store.js:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,6 +164,9 @@
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="reducers.html">reducers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="redux_enhancers.html">redux-<wbr>enhancers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.html">redux-<wbr>middleware</a>

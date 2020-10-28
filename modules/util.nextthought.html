@@ -67,6 +67,12 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-kind-icon">Next<wbr>Thought<wbr>Result</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -90,13 +96,13 @@
 					<a name="contextwiththoughtrank" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> context<wbr>With<wbr>Thought<wbr>Rank</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">context<wbr>With<wbr>Thought<wbr>Rank<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">context<wbr>With<wbr>Thought<wbr>Rank<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, contextInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L37">src/util/nextThought.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L42">src/util/nextThought.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -107,19 +113,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>contextInfo: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A { context, rank } object returned from getContexts.</p>
-										</div>
-									</div>
+									<h5>contextInfo: <a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>Returns rankedContext.</p>
+							<h4 class="tsd-returns-title">Returns <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -127,13 +127,13 @@
 					<a name="firstchildofcontextview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> first<wbr>Child<wbr>OfContext<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">first<wbr>Child<wbr>OfContext<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">first<wbr>Child<wbr>OfContext<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/app.types.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L72">src/util/nextThought.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L73">src/util/nextThought.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,14 +144,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>path: <span class="tsd-signature-type">any</span></h5>
+									<h5>path: <a href="app.types.html#path" class="tsd-signature-type">Path</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>Returns rankedContext.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/app.types.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -159,13 +158,13 @@
 					<a name="getcontextfromcontextchain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Context<wbr>From<wbr>Context<wbr>Chain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<wbr>From<wbr>Context<wbr>Chain<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<wbr>From<wbr>Context<wbr>Chain<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, contextChain<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L107">src/util/nextThought.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L103">src/util/nextThought.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -176,14 +175,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>contextChain: <span class="tsd-signature-type">any</span></h5>
+									<h5>contextChain: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>Returns context.</p>
+							<h4 class="tsd-returns-title">Returns <a href="app.types.html#context" class="tsd-signature-type">Context</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -191,13 +189,13 @@
 					<a name="getmatchedcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Matched<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Matched<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Matched<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a>, contextChain<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L84">src/util/nextThought.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L83">src/util/nextThought.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -208,17 +206,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>context: <span class="tsd-signature-type">any</span></h5>
+									<h5>context: <a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a></h5>
 								</li>
 								<li>
-									<h5>contextChain: <span class="tsd-signature-type">any</span></h5>
+									<h5>contextChain: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h4>
-							<p>Returns context.</p>
 						</li>
 					</ul>
 				</section>
@@ -226,13 +223,13 @@
 					<a name="getpathfromcontextchain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Path<wbr>From<wbr>Context<wbr>Chain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Path<wbr>From<wbr>Context<wbr>Chain<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Path<wbr>From<wbr>Context<wbr>Chain<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, contextChain<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L95">src/util/nextThought.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L92">src/util/nextThought.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,14 +240,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>contextChain: <span class="tsd-signature-type">any</span></h5>
+									<h5>contextChain: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>Returns path.</p>
+							<h4 class="tsd-returns-title">Returns <a href="app.types.html#path" class="tsd-signature-type">Path</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -258,13 +254,13 @@
 					<a name="nextincontextview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> next<wbr>InContext<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">next<wbr>InContext<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rankedContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, ignoreChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<wbr>InContext<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, path<span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a>, rankedContext<span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a>, contextChain<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span>, ignoreChildren<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L129">src/util/nextThought.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L126">src/util/nextThought.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,10 +274,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The value of focused thought.</p>
@@ -289,7 +285,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>rank: <span class="tsd-signature-type">any</span></h5>
+									<h5>rank: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Rank of focused thought.</p>
@@ -297,7 +293,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>path: <span class="tsd-signature-type">any</span></h5>
+									<h5>path: <a href="app.types.html#path" class="tsd-signature-type">Path</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Path to focused thought.</p>
@@ -305,7 +301,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>rankedContext: <span class="tsd-signature-type">any</span></h5>
+									<h5>rankedContext: <a href="app.types.html#path" class="tsd-signature-type">Path</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Context with rank.</p>
@@ -313,7 +309,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>contextChain: <span class="tsd-signature-type">any</span></h5>
+									<h5>contextChain: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>ContextChain for the focused thought.</p>
@@ -321,7 +317,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>ignoreChildren: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ignoreChildren: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Used to ignore the children context if they&#39;ve been traversed already.</p>
@@ -329,7 +325,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -337,13 +333,13 @@
 					<a name="nextinthoughtview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> next<wbr>InThought<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">next<wbr>InThought<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, contextChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, ignoreChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<wbr>InThought<wbr>View<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, context<span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, path<span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a>, contextChain<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span>, ignoreChildren<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L194">src/util/nextThought.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L186">src/util/nextThought.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,10 +353,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The value of focused thought.</p>
@@ -368,7 +364,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>context: <span class="tsd-signature-type">any</span></h5>
+									<h5>context: <a href="app.types.html#context" class="tsd-signature-type">Context</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Context of focused thought.</p>
@@ -376,7 +372,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>rank: <span class="tsd-signature-type">any</span></h5>
+									<h5>rank: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Rank of focused thought.</p>
@@ -384,7 +380,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>path: <span class="tsd-signature-type">any</span></h5>
+									<h5>path: <a href="app.types.html#path" class="tsd-signature-type">Path</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Path to focsued thought.</p>
@@ -392,7 +388,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>contextChain: <span class="tsd-signature-type">any</span></h5>
+									<h5>contextChain: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>ContextChain for the focused thought.</p>
@@ -400,7 +396,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>ignoreChildren: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ignoreChildren: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Used to ignore the subthoughts if they&#39;ve been traversed already.</p>
@@ -408,7 +404,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -416,13 +412,13 @@
 					<a name="nextsiblingcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> next<wbr>Sibling<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">next<wbr>Sibling<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, thoughtIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Sibling<wbr>Context<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, context<span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/app.types.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L57">src/util/nextThought.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L60">src/util/nextThought.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,20 +429,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>rank: <span class="tsd-signature-type">any</span></h5>
+									<h5>rank: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>context: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>thoughtIndex: <span class="tsd-signature-type">any</span></h5>
+									<h5>context: <a href="app.types.html#context" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>Returns rankedContext.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/app.types.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -454,13 +446,13 @@
 					<a name="nextthought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> next<wbr>Thought</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">next<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">?: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/util/nextThought.ts#L252">src/util/nextThought.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/util/nextThought.ts#L243">src/util/nextThought.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,13 +463,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <span class="tsd-signature-type">any</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> path: <span class="tsd-signature-symbol">{ </span>rank<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = RANKED_ROOT</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> path: <a href="app.types.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> = RANKED_ROOT</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-signature-type">NextThoughtResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -498,6 +490,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/util.nextthought.nextthoughtresult.html" class="tsd-kind-icon">Next<wbr>Thought<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.nextthought.html#contextwiththoughtrank" class="tsd-kind-icon">context<wbr>With<wbr>Thought<wbr>Rank</a>
 					</li>
@@ -537,6 +532,9 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

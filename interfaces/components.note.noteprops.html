@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ThoughtDispatchProps | em</title>
+	<title>NoteProps | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../modules/components.html">components</a>
 				</li>
 				<li>
-					<a href="../modules/components.thought.html">Thought</a>
+					<a href="../modules/components.note.html">Note</a>
 				</li>
 				<li>
-					<a href="components.thought.thoughtdispatchprops.html">ThoughtDispatchProps</a>
+					<a href="components.note.noteprops.html">NoteProps</a>
 				</li>
 			</ul>
-			<h1>Interface ThoughtDispatchProps</h1>
+			<h1>Interface NoteProps</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ThoughtDispatchProps</span>
+						<span class="target">NoteProps</span>
 					</li>
 				</ul>
 			</section>
@@ -81,7 +81,8 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.thought.thoughtdispatchprops.html#toggletopcontrolsandbreadcrumbs" class="tsd-kind-icon">toggle<wbr>Top<wbr>Controls<wbr>And<wbr>Breadcrumbs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.note.noteprops.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.note.noteprops.html#onfocus" class="tsd-kind-icon">on<wbr>Focus</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,12 +91,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="toggletopcontrolsandbreadcrumbs" class="tsd-anchor"></a>
-					<h3>toggle<wbr>Top<wbr>Controls<wbr>And<wbr>Breadcrumbs</h3>
-					<div class="tsd-signature tsd-kind-icon">toggle<wbr>Top<wbr>Controls<wbr>And<wbr>Breadcrumbs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#context" class="tsd-signature-type">Context</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/components/Thought.tsx#L130">src/components/Thought.tsx:130</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/Note.tsx#L11">src/components/Note.tsx:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="onfocus" class="tsd-anchor"></a>
+					<h3>on<wbr>Focus</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Focus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FocusEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/Note.tsx#L12">src/components/Note.tsx:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -103,10 +114,16 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FocusEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>e: <span class="tsd-signature-type">FocusEvent</span></h5>
+											</li>
+										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 									</li>
 								</ul>
@@ -123,7 +140,7 @@
 						<a href="../modules/components.html">components</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/components.thought.html">Thought</a>
+								<a href="../modules/components.note.html">Note</a>
 							</li>
 						</ul>
 					</li>
@@ -131,59 +148,26 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.thought.thoughtcontainerprops.html" class="tsd-kind-icon">Thought<wbr>Container<wbr>Props</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.thought.thoughtdispatchprops.html" class="tsd-kind-icon">Thought<wbr>Dispatch<wbr>Props</a>
+						<a href="components.note.noteprops.html" class="tsd-kind-icon">Note<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="components.thought.thoughtdispatchprops.html#toggletopcontrolsandbreadcrumbs" class="tsd-kind-icon">toggle<wbr>Top<wbr>Controls<wbr>And<wbr>Breadcrumbs</a>
+								<a href="components.note.noteprops.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="components.note.noteprops.html#onfocus" class="tsd-kind-icon">on<wbr>Focus</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.thought.thoughtprops.html" class="tsd-kind-icon">Thought<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/components.thought.html#thoughtcomponent" class="tsd-kind-icon">Thought<wbr>Component</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/components.note.html#note" class="tsd-kind-icon">Note</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#thought" class="tsd-kind-icon">Thought</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#thoughtcontainer" class="tsd-kind-icon">Thought<wbr>Container</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#begindrag" class="tsd-kind-icon">begin<wbr>Drag</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#candrag" class="tsd-kind-icon">can<wbr>Drag</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#candrop" class="tsd-kind-icon">can<wbr>Drop</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#dragcollect" class="tsd-kind-icon">drag<wbr>Collect</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#drop" class="tsd-kind-icon">drop</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#dropcollect" class="tsd-kind-icon">drop<wbr>Collect</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#enddrag" class="tsd-kind-icon">end<wbr>Drag</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#mapdispatchtoprops" class="tsd-kind-icon">map<wbr>Dispatch<wbr>ToProps</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/components.thought.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a>
+						<a href="../modules/components.note.html#editableofnote" class="tsd-kind-icon">editable<wbr>OfNote</a>
 					</li>
 				</ul>
 			</nav>

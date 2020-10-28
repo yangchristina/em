@@ -72,6 +72,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.modalhelp.html#modalhelp" class="tsd-kind-icon">Modal<wbr>Help</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.modalhelp.html#shortcutrows" class="tsd-kind-icon">Shortcut<wbr>Rows</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.modalhelp.html#shortcuttable" class="tsd-kind-icon">Shortcut<wbr>Table</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.modalhelp.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a></li>
 							</ul>
 						</section>
@@ -90,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/components/ModalHelp.tsx#L44">src/components/ModalHelp.tsx:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/ModalHelp.tsx#L56">src/components/ModalHelp.tsx:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -123,21 +124,52 @@
 					<a name="shortcutrows" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Shortcut<wbr>Rows</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Shortcut<wbr>Rows<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Shortcut<wbr>Rows<span class="tsd-signature-symbol">(</span>shortcut<span class="tsd-signature-symbol">: </span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a>, i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/components/ModalHelp.tsx#L27">src/components/ModalHelp.tsx:27</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/ModalHelp.tsx#L27">src/components/ModalHelp.tsx:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Renders all of a shortcut&#39;s details into a row.</p>
+									<p>Renders all of a shortcut&#39;s details as a table row.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>shortcut: <a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a></h5>
+								</li>
+								<li>
+									<h5>i: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="shortcuttable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Shortcut<wbr>Table</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Shortcut<wbr>Table<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/ModalHelp.tsx#L42">src/components/ModalHelp.tsx:42</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Renders a table of shortcuts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3b6ec68/src/components/ModalHelp.tsx#L18">src/components/ModalHelp.tsx:18</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/24c61a4/src/components/ModalHelp.tsx#L18">src/components/ModalHelp.tsx:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -194,6 +226,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.modalhelp.html#shortcutrows" class="tsd-kind-icon">Shortcut<wbr>Rows</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.modalhelp.html#shortcuttable" class="tsd-kind-icon">Shortcut<wbr>Table</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.modalhelp.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a>

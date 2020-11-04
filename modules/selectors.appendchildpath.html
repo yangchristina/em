@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>splitSentences | em</title>
+	<title>appendChildPath | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="reducers.html">reducers</a>
+					<a href="selectors.html">selectors</a>
 				</li>
 				<li>
-					<a href="reducers.splitsentences.html">splitSentences</a>
+					<a href="selectors.appendchildpath.html">appendChildPath</a>
 				</li>
 			</ul>
-			<h1>Module splitSentences</h1>
+			<h1>Module appendChildPath</h1>
 		</div>
 	</div>
 </header>
@@ -67,42 +67,60 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.splitsentences.html#splitsentences" class="tsd-kind-icon">split<wbr>Sentences</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.appendchildpath.html#appendchildpath" class="tsd-kind-icon">append<wbr>Child<wbr>Path</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="splitsentences" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> split<wbr>Sentences</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">split<wbr>Sentences<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="appendchildpath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> append<wbr>Child<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">append<wbr>Child<wbr>Path<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, childPath<span class="tsd-signature-symbol">: </span><a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a>, parentThoughtsResolved<span class="tsd-signature-symbol">?: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.html#path" class="tsd-signature-type">Path</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/386206b/src/reducers/splitSentences.ts#L8">src/reducers/splitSentences.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/386206b/src/selectors/appendChildPath.ts#L21">src/selectors/appendChildPath.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Split thought by sentences. Create new thought for each sentence. Thought value, on which cursor is on, replace with first sentence.</p>
+									<p>Appends the head of a child SimplePath to a parent Path. In case of parent with active context view it appends head of the parent of the childPath.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>// Note: Examples use Contexts only for clarity; the function actually takes Paths.</p>
+										<p>// returns [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+										appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], [&#39;a&#39;, &#39;b&#39; , &#39;c&#39;])</p>
+										<p>// returns [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;]
+										appendChildPath(state, [&#39;a&#39;, &#39;b&#39;, &#39;p&#39;, &#39;o&#39;, &#39;q&#39;], [&#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;])</p>
+										<p>// Note: [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;] has active context view
+											// returns [i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;t&#39;]
+										appendChildPath(state, [&#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;k&#39;], [&#39;i&#39;, &#39;j&#39;, &#39;k&#39;])</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
+								<li>
+									<h5>childPath: <a href="app.types.html#simplepath" class="tsd-signature-type">SimplePath</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentThoughtsResolved: <a href="app.types.html#path" class="tsd-signature-type">Path</a></h5>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="app.types.html#path" class="tsd-signature-type">Path</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -112,10 +130,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="reducers.html">reducers</a>
+						<a href="selectors.html">selectors</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="reducers.splitsentences.html">split<wbr>Sentences</a>
+								<a href="selectors.appendchildpath.html">append<wbr>Child<wbr>Path</a>
 							</li>
 						</ul>
 					</li>
@@ -123,8 +141,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.splitsentences.html#splitsentences" class="tsd-kind-icon">split<wbr>Sentences</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="selectors.appendchildpath.html#appendchildpath" class="tsd-kind-icon">append<wbr>Child<wbr>Path</a>
 					</li>
 				</ul>
 			</nav>

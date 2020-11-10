@@ -81,6 +81,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.ref.html#child" class="tsd-kind-icon">child</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.ref.html#on" class="tsd-kind-icon">on</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.ref.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="app.types.ref.html#update" class="tsd-kind-icon">update</a></li>
@@ -92,12 +93,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="on" class="tsd-anchor"></a>
-					<h3>on</h3>
-					<div class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<a name="child" class="tsd-anchor"></a>
+					<h3>child</h3>
+					<div class="tsd-signature tsd-kind-icon">child<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="app.types.ref.html" class="tsd-signature-type">Ref</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/types.ts#L32">src/types.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/types.ts#L51">src/types.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -105,28 +106,59 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.ref.html" class="tsd-signature-type">Ref</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>s: <span class="tsd-signature-type">string</span></h5>
+												<h5>name: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="app.types.ref.html" class="tsd-signature-type">Ref</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<div class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/types.ts#L53">src/types.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>eventName: <span class="tsd-signature-type">string</span></h5>
 											</li>
 											<li>
-												<h5>f: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+												<h5>callback: <span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
 												<ul class="tsd-parameters">
 													<li class="tsd-parameter-signature">
 														<ul class="tsd-signatures tsd-kind-type-literal">
-															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 														</ul>
 														<ul class="tsd-descriptions">
 															<li class="tsd-description">
 																<h4 class="tsd-parameters-title">Parameters</h4>
 																<ul class="tsd-parameters">
 																	<li>
-																		<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span></h5>
+																		<h5>snapshot: <a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a></h5>
 																	</li>
 																</ul>
 																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -146,10 +178,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
-					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/types.ts#L33">src/types.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/types.ts#L52">src/types.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -157,38 +189,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>s: <span class="tsd-signature-type">string</span></h5>
+												<h5>eventName: <span class="tsd-signature-type">string</span></h5>
 											</li>
 											<li>
-												<h5>f: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter-signature">
-														<ul class="tsd-signatures tsd-kind-type-literal">
-															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-														</ul>
-														<ul class="tsd-descriptions">
-															<li class="tsd-description">
-																<h4 class="tsd-parameters-title">Parameters</h4>
-																<ul class="tsd-parameters">
-																	<li>
-																		<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span></h5>
-																	</li>
-																</ul>
-																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-															</li>
-														</ul>
-													</li>
-												</ul>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snapshot<span class="tsd-signature-symbol">: </span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="app.types.snapshot.html" class="tsd-signature-type">Snapshot</a><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -198,10 +212,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<div class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>updates<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<div class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>updates<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="shortcuts.deleteemptythoughtoroutdent.error.html" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/types.ts#L34">src/types.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/types.ts#L54">src/types.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -209,41 +223,20 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>updates<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>updates<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="shortcuts.deleteemptythoughtoroutdent.error.html" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>updates: <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+												<h5>updates: <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a></h5>
 											</li>
 											<li>
-												<h5>callback: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter-signature">
-														<ul class="tsd-signatures tsd-kind-type-literal">
-															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-														</ul>
-														<ul class="tsd-descriptions">
-															<li class="tsd-description">
-																<h4 class="tsd-parameters-title">Parameters</h4>
-																<ul class="tsd-parameters">
-																	<li>
-																		<h5>err: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-																	</li>
-																	<li>
-																		<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-																	</li>
-																</ul>
-																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-															</li>
-														</ul>
-													</li>
-												</ul>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="shortcuts.deleteemptythoughtoroutdent.error.html" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -256,7 +249,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reflection-6183.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+						<a href="../modules/reflection-7094.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/action_creators.html">action-<wbr>creators</a>
@@ -269,12 +262,6 @@
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/app.constants.html">constants</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/app.db.html">db</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/app.dbtest.html">dbtest</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="../modules/app.globals.html">globals</a>
@@ -298,6 +285,9 @@
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/components.html">components</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/data_providers.html">data-<wbr>providers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="../modules/hooks.html">hooks</a>
@@ -330,47 +320,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="app.types.brand.html" class="tsd-kind-icon">Brand</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.child.html" class="tsd-kind-icon">Child</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.exportoption.html" class="tsd-kind-icon">Export<wbr>Option</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="app.types.extendedoperation.html" class="tsd-kind-icon">Extended<wbr>Operation</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="app.types.firebase.html" class="tsd-kind-icon">Firebase</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="app.types.flavoring.html" class="tsd-kind-icon">Flavoring</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.icon.html" class="tsd-kind-icon">Icon</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.key.html" class="tsd-kind-icon">Key</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.lexeme.html" class="tsd-kind-icon">Lexeme</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.log.html" class="tsd-kind-icon">Log</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.navigator.html" class="tsd-kind-icon">Navigator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.parent.html" class="tsd-kind-icon">Parent</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="app.types.ref.html" class="tsd-kind-icon">Ref</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="app.types.ref.html#child" class="tsd-kind-icon">child</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="app.types.ref.html#on" class="tsd-kind-icon">on</a>
 							</li>
@@ -384,81 +341,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.shortcut.html" class="tsd-kind-icon">Shortcut</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="app.types.snapshot.html" class="tsd-kind-icon">Snapshot</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.user.html" class="tsd-kind-icon">User</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="app.types.window.html" class="tsd-kind-icon">Window</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#actioncreator" class="tsd-kind-icon">Action<wbr>Creator</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#alert" class="tsd-kind-icon">Alert</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/app.types.html#comparatorfunction" class="tsd-kind-icon">Comparator<wbr>Function</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#comparatorvalue" class="tsd-kind-icon">Comparator<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/app.types.html#connected" class="tsd-kind-icon">Connected</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#context" class="tsd-kind-icon">Context</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#contexthash" class="tsd-kind-icon">Context<wbr>Hash</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#direction" class="tsd-kind-icon">Direction</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/app.types.html#directionmap" class="tsd-kind-icon">Direction<wbr>Map</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/app.types.html#flavor" class="tsd-kind-icon">Flavor</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#gesturepath" class="tsd-kind-icon">Gesture<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../modules/app.types.html#index" class="tsd-kind-icon">Index</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#mimetype" class="tsd-kind-icon">Mime<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#patch" class="tsd-kind-icon">Patch</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#path" class="tsd-kind-icon">Path</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#simplepath" class="tsd-kind-icon">Simple<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#thoughthash" class="tsd-kind-icon">Thought<wbr>Hash</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#timestamp" class="tsd-kind-icon">Timestamp</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/app.types.html#tutorialchoice" class="tsd-kind-icon">Tutorial<wbr>Choice</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/app.types.html#brandsymbol" class="tsd-kind-icon">Brand<wbr>Symbol</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

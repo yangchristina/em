@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>clearQueue | em</title>
+	<title>restoreCursorBeforeSearch | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="reducers.html">reducers</a>
+					<a href="action_creators.html">action-creators</a>
 				</li>
 				<li>
-					<a href="reducers.clearqueue.html">clearQueue</a>
+					<a href="action_creators.restorecursorbeforesearch.html">restoreCursorBeforeSearch</a>
 				</li>
 			</ul>
-			<h1>Module clearQueue</h1>
+			<h1>Module restoreCursorBeforeSearch</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="reducers.clearqueue.html#clearqueue" class="tsd-kind-icon">clear<wbr>Queue</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="action_creators.restorecursorbeforesearch.html#restorecursorbeforesearch" class="tsd-kind-icon">restore<wbr>Cursor<wbr>Before<wbr>Search</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,53 +79,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="clearqueue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> clear<wbr>Queue</h3>
+					<a name="restorecursorbeforesearch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> restore<wbr>Cursor<wbr>Before<wbr>Search</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">clear<wbr>Queue<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>syncQueue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Cursor<wbr>Before<wbr>Search<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/clearQueue.ts#L4">src/reducers/clearQueue.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/restoreCursorBeforeSearch.ts#L4">src/action-creators/restoreCursorBeforeSearch.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Clears the sync queue. This should only be done after the queued updates are persisted (See redux-middleware/syncQueue and action-creators/flushQueue).</p>
+									<p>Restores cursor to its position before search.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>syncQueue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>sync<wbr>Queue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>context<wbr>Index<wbr>Updates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
-											<ul class="tsd-parameters">
-											</ul>
-										</li>
-										<li class="tsd-parameter">
-											<h5>recently<wbr>Edited<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>thought<wbr>Index<wbr>Updates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
-											<ul class="tsd-parameters">
-											</ul>
-										</li>
-										<li class="tsd-parameter">
-											<h5>updates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></h5>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,10 +106,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="reducers.html">reducers</a>
+						<a href="action_creators.html">action-<wbr>creators</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="reducers.clearqueue.html">clear<wbr>Queue</a>
+								<a href="action_creators.restorecursorbeforesearch.html">restore<wbr>Cursor<wbr>Before<wbr>Search</a>
 							</li>
 						</ul>
 					</li>
@@ -147,7 +118,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="reducers.clearqueue.html#clearqueue" class="tsd-kind-icon">clear<wbr>Queue</a>
+						<a href="action_creators.restorecursorbeforesearch.html#restorecursorbeforesearch" class="tsd-kind-icon">restore<wbr>Cursor<wbr>Before<wbr>Search</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ImportHtmlOptions | em</title>
+	<title>MapStateToProps | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,16 +51,16 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/util.html">util</a>
+					<a href="../modules/components.html">components</a>
 				</li>
 				<li>
-					<a href="../modules/util.importjson.html">importJSON</a>
+					<a href="../modules/components.bullet.html">Bullet</a>
 				</li>
 				<li>
-					<a href="util.importjson.importhtmloptions.html">ImportHtmlOptions</a>
+					<a href="components.bullet.mapstatetoprops.html">MapStateToProps</a>
 				</li>
 			</ul>
-			<h1>Interface ImportHtmlOptions</h1>
+			<h1>Interface MapStateToProps</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ImportHtmlOptions</span>
+						<span class="target">MapStateToProps</span>
 					</li>
 				</ul>
 			</section>
@@ -81,7 +81,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="util.importjson.importhtmloptions.html#skiproot" class="tsd-kind-icon">skip<wbr>Root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.bullet.mapstatetoprops.html#invalidoption" class="tsd-kind-icon">invalid<wbr>Option</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.bullet.mapstatetoprops.html#isleaf" class="tsd-kind-icon">is<wbr>Leaf</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.bullet.mapstatetoprops.html#pending" class="tsd-kind-icon">pending</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="components.bullet.mapstatetoprops.html#showcontexts" class="tsd-kind-icon">show<wbr>Contexts</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,12 +93,42 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="skiproot" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> skip<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">skip<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<a name="invalidoption" class="tsd-anchor"></a>
+					<h3>invalid<wbr>Option</h3>
+					<div class="tsd-signature tsd-kind-icon">invalid<wbr>Option<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/util/importJSON.ts#L26">src/util/importJSON.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/components/Bullet.tsx#L21">src/components/Bullet.tsx:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="isleaf" class="tsd-anchor"></a>
+					<h3>is<wbr>Leaf</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Leaf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/components/Bullet.tsx#L22">src/components/Bullet.tsx:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="pending" class="tsd-anchor"></a>
+					<h3>pending</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/components/Bullet.tsx#L23">src/components/Bullet.tsx:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="showcontexts" class="tsd-anchor"></a>
+					<h3>show<wbr>Contexts</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Contexts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/components/Bullet.tsx#L24">src/components/Bullet.tsx:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -105,10 +138,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/util.html">util</a>
+						<a href="../modules/components.html">components</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/util.importjson.html">importJSON</a>
+								<a href="../modules/components.bullet.html">Bullet</a>
 							</li>
 						</ul>
 					</li>
@@ -116,41 +149,35 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.bullet.bulletprops.html" class="tsd-kind-icon">Bullet<wbr>Props</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.importjson.importhtmloptions.html" class="tsd-kind-icon">Import<wbr>Html<wbr>Options</a>
+						<a href="components.bullet.mapstatetoprops.html" class="tsd-kind-icon">Map<wbr>State<wbr>ToProps</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="util.importjson.importhtmloptions.html#skiproot" class="tsd-kind-icon">skip<wbr>Root</a>
+								<a href="components.bullet.mapstatetoprops.html#invalidoption" class="tsd-kind-icon">invalid<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="components.bullet.mapstatetoprops.html#isleaf" class="tsd-kind-icon">is<wbr>Leaf</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="components.bullet.mapstatetoprops.html#pending" class="tsd-kind-icon">pending</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="components.bullet.mapstatetoprops.html#showcontexts" class="tsd-kind-icon">show<wbr>Contexts</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#insertthought" class="tsd-kind-icon">insert<wbr>Thought</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/components.bullet.html#bullet" class="tsd-kind-icon">Bullet</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#calculatelastthoughtfirstlevel" class="tsd-kind-icon">calculate<wbr>Last<wbr>Thought<wbr>First<wbr>Level</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#getcontextsnum" class="tsd-kind-icon">get<wbr>Contexts<wbr>Num</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#getrankincrement" class="tsd-kind-icon">get<wbr>Rank<wbr>Increment</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#getstartcontext" class="tsd-kind-icon">get<wbr>Start<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/util.importjson.html#importjson" class="tsd-kind-icon">importJSON</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#savethoughts" class="tsd-kind-icon">save<wbr>Thoughts</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/util.importjson.html#skiprootthought" class="tsd-kind-icon">skip<wbr>Root<wbr>Thought</a>
+						<a href="../modules/components.bullet.html#mapstatetoprops-1" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a>
 					</li>
 				</ul>
 			</nav>

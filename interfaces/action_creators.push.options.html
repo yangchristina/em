@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Payload | em</title>
+	<title>Options | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,27 +51,34 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/reducers.html">reducers</a>
+					<a href="../modules/action_creators.html">action-creators</a>
 				</li>
 				<li>
-					<a href="../modules/reducers.updatethoughts.html">updateThoughts</a>
+					<a href="../modules/action_creators.push.html">push</a>
 				</li>
 				<li>
-					<a href="reducers.updatethoughts.payload.html">Payload</a>
+					<a href="action_creators.push.options.html">Options</a>
 				</li>
 			</ul>
-			<h1>Interface Payload</h1>
+			<h1>Interface Options</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Options object for push.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Payload</span>
+						<span class="target">Options</span>
 					</li>
 				</ul>
 			</section>
@@ -81,13 +88,11 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#contextchain" class="tsd-kind-icon">context<wbr>Chain</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#contextindexupdates" class="tsd-kind-icon">context<wbr>Index<wbr>Updates</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#local" class="tsd-kind-icon">local</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#recentlyedited" class="tsd-kind-icon">recently<wbr>Edited</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#remote" class="tsd-kind-icon">remote</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#thoughtindexupdates" class="tsd-kind-icon">thought<wbr>Index<wbr>Updates</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.updatethoughts.payload.html#updates" class="tsd-kind-icon">updates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="action_creators.push.options.html#callback" class="tsd-kind-icon">callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="action_creators.push.options.html#local" class="tsd-kind-icon">local</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="action_creators.push.options.html#recentlyedited" class="tsd-kind-icon">recently<wbr>Edited</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="action_creators.push.options.html#remote" class="tsd-kind-icon">remote</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="action_creators.push.options.html#updates" class="tsd-kind-icon">updates</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,22 +101,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="contextchain" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Chain</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Chain<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#simplepath" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="callback" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<span class="tsd-signature-symbol">:</span> <a href="../modules/action_creators.push.html#callback" class="tsd-signature-type">Callback</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L12">src/reducers/updateThoughts.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="contextindexupdates" class="tsd-anchor"></a>
-					<h3>context<wbr>Index<wbr>Updates</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Index<wbr>Updates<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="app.types.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L10">src/reducers/updateThoughts.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/push.ts#L18">src/action-creators/push.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +116,7 @@
 					<div class="tsd-signature tsd-kind-icon">local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L14">src/reducers/updateThoughts.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/push.ts#L15">src/action-creators/push.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">recently<wbr>Edited<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L11">src/reducers/updateThoughts.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/push.ts#L19">src/action-creators/push.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,27 +136,17 @@
 					<div class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L15">src/reducers/updateThoughts.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="thoughtindexupdates" class="tsd-anchor"></a>
-					<h3>thought<wbr>Index<wbr>Updates</h3>
-					<div class="tsd-signature tsd-kind-icon">thought<wbr>Index<wbr>Updates<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="app.types.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L9">src/reducers/updateThoughts.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/push.ts#L16">src/action-creators/push.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="updates" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> updates</h3>
-					<div class="tsd-signature tsd-kind-icon">updates<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">updates<span class="tsd-signature-symbol">:</span> <a href="../modules/app.types.html#index" class="tsd-signature-type">Index</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fbbc869/src/reducers/updateThoughts.ts#L13">src/reducers/updateThoughts.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7ef14b2/src/action-creators/push.ts#L17">src/action-creators/push.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,10 +156,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.html">reducers</a>
+						<a href="../modules/action_creators.html">action-<wbr>creators</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/reducers.updatethoughts.html">update<wbr>Thoughts</a>
+								<a href="../modules/action_creators.push.html">push</a>
 							</li>
 						</ul>
 					</li>
@@ -185,35 +170,41 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.updatethoughts.payload.html" class="tsd-kind-icon">Payload</a>
+						<a href="action_creators.push.options.html" class="tsd-kind-icon">Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#contextchain" class="tsd-kind-icon">context<wbr>Chain</a>
+								<a href="action_creators.push.options.html#callback" class="tsd-kind-icon">callback</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#contextindexupdates" class="tsd-kind-icon">context<wbr>Index<wbr>Updates</a>
+								<a href="action_creators.push.options.html#local" class="tsd-kind-icon">local</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#local" class="tsd-kind-icon">local</a>
+								<a href="action_creators.push.options.html#recentlyedited" class="tsd-kind-icon">recently<wbr>Edited</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#recentlyedited" class="tsd-kind-icon">recently<wbr>Edited</a>
+								<a href="action_creators.push.options.html#remote" class="tsd-kind-icon">remote</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#remote" class="tsd-kind-icon">remote</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#thoughtindexupdates" class="tsd-kind-icon">thought<wbr>Index<wbr>Updates</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.updatethoughts.payload.html#updates" class="tsd-kind-icon">updates</a>
+								<a href="action_creators.push.options.html#updates" class="tsd-kind-icon">updates</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/action_creators.push.html#callback" class="tsd-kind-icon">Callback</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/action_creators.push.html#localstoragesettingscontexts" class="tsd-kind-icon">local<wbr>Storage<wbr>Settings<wbr>Contexts</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/action_creators.push.html#push" class="tsd-kind-icon">push</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.updatethoughts.html#updatethoughts" class="tsd-kind-icon">update<wbr>Thoughts</a>
+						<a href="../modules/action_creators.push.html#pushlocal" class="tsd-kind-icon">push<wbr>Local</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/action_creators.push.html#pushremote" class="tsd-kind-icon">push<wbr>Remote</a>
 					</li>
 				</ul>
 			</nav>

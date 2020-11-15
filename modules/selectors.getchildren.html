@@ -93,6 +93,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getchildrenranked" class="tsd-kind-icon">get<wbr>Children<wbr>Ranked</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#getchildrensortedalphabetical" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>Alphabetical</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#getchildrensortedby" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>By</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getparent" class="tsd-kind-icon">get<wbr>Parent</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#haschildren" class="tsd-kind-icon">has<wbr>Children</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#ischildincursor" class="tsd-kind-icon">is<wbr>Child<wbr>InCursor</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#iscontextvisible" class="tsd-kind-icon">is<wbr>Context<wbr>Visible</a></li>
@@ -110,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">Get<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L9">src/selectors/getChildren.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L8">src/selectors/getChildren.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -152,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildren)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L48">src/selectors/getChildren.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L51">src/selectors/getChildren.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildrenSorted)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L62">src/selectors/getChildren.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L65">src/selectors/getChildren.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((getThoughtsFunction: GetThoughts, state: State, context: Context) &#x3D;&gt; {const children &#x3D; getThoughtsFunction(state, context)return state.showHiddenThoughts? children: children.filter(isChildVisible(state, context))})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L32">src/selectors/getChildren.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L35">src/selectors/getChildren.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, context: Context, child: Child) &#x3D;&gt;!isFunction(child.value) &amp;&amp;!hasChild(state, unroot([...context, child.value]), &#x27;&#x3D;hidden&#x27;))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L19">src/selectors/getChildren.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L18">src/selectors/getChildren.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction4</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/app.types.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/app.types.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/app.types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, path: Path, simplePath: SimplePath, child: Child | ThoughtContext) &#x3D;&gt; {return state.showHiddenThoughts ||isChildVisible(state, pathToContext(simplePath), { value: pathHeadValue(state, path, child), rank: child.rank }) ||isChildInCursor(state, path, simplePath, child)})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L97">src/selectors/getChildren.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L100">src/selectors/getChildren.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -235,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L77">src/selectors/getChildren.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L80">src/selectors/getChildren.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -266,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L28">src/selectors/getChildren.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L31">src/selectors/getChildren.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L24">src/selectors/getChildren.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L27">src/selectors/getChildren.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -343,7 +344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L51">src/selectors/getChildren.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L54">src/selectors/getChildren.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L73">src/selectors/getChildren.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L76">src/selectors/getChildren.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -405,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L69">src/selectors/getChildren.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L72">src/selectors/getChildren.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L65">src/selectors/getChildren.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L68">src/selectors/getChildren.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -461,6 +462,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getparent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span>, context<span class="tsd-signature-symbol">: </span><a href="app.types.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/app.types.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L23">src/selectors/getChildren.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a Parent from the contextIndex.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span></h5>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter">
+													<h5>context<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
+													<ul class="tsd-parameters">
+														<li class="tsd-parameter-index-signature">
+															<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>context: <a href="app.types.html#context" class="tsd-signature-type">Context</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/app.types.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="haschildren" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> has<wbr>Children</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -470,7 +517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L40">src/selectors/getChildren.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L43">src/selectors/getChildren.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -501,7 +548,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L81">src/selectors/getChildren.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L84">src/selectors/getChildren.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L12">src/selectors/getChildren.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L11">src/selectors/getChildren.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,7 +616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8b2f259/src/selectors/getChildren.ts#L89">src/selectors/getChildren.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/bcc8ec9/src/selectors/getChildren.ts#L92">src/selectors/getChildren.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,6 +695,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.getchildren.html#getchildrensortedby" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>By</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="selectors.getchildren.html#getparent" class="tsd-kind-icon">get<wbr>Parent</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="selectors.getchildren.html#haschildren" class="tsd-kind-icon">has<wbr>Children</a>

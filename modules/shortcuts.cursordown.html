@@ -68,9 +68,16 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/shortcuts.cursordown.selectionattributes.html" class="tsd-kind-icon">Selection<wbr>Attributes</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="shortcuts.cursordown.html#icon" class="tsd-kind-icon">Icon</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="shortcuts.cursordown.html#getselectionattributes" class="tsd-kind-icon">get<wbr>Selection<wbr>Attributes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="shortcuts.cursordown.html#isselectiononlastline" class="tsd-kind-icon">is<wbr>Selection<wbr>OnLast<wbr>Line</a></li>
 							</ul>
 						</section>
@@ -95,7 +102,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L8">src/shortcuts/cursorDown.tsx:8</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L17">src/shortcuts/cursorDown.tsx:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -120,23 +127,71 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="isselectiononlastline" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Selection<wbr>OnLast<wbr>Line</h3>
+					<a name="getselectionattributes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Selection<wbr>Attributes</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Selection<wbr>OnLast<wbr>Line<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Attributes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/shortcuts.cursordown.selectionattributes.html" class="tsd-signature-type">SelectionAttributes</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L15">src/shortcuts/cursorDown.tsx:15</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L26">src/shortcuts/cursorDown.tsx:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns true if the selection is on the last line of a multi-line editable.</p>
+									<p>Returns selection configuration if exists, null otherwise.</p>
 								</div>
 							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/shortcuts.cursordown.selectionattributes.html" class="tsd-signature-type">SelectionAttributes</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="isselectiononlastline" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Selection<wbr>OnLast<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Selection<wbr>OnLast<wbr>Line<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>baseNodeHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>baseNodeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>paddingBottom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>paddingTop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rangeHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rangeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L51">src/shortcuts/cursorDown.tsx:51</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if the selection is on the last line of an editable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>baseNodeHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>baseNodeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>paddingBottom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>paddingTop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rangeHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rangeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>base<wbr>Node<wbr>Height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>base<wbr>NodeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>padding<wbr>Bottom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>padding<wbr>Top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>range<wbr>Height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>rangeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -150,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Down<wbr>Shortcut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L38">src/shortcuts/cursorDown.tsx:38</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L55">src/shortcuts/cursorDown.tsx:55</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -159,7 +214,7 @@
 						<div class="tsd-signature tsd-kind-icon">hide<wbr>From<wbr>Instructions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L42">src/shortcuts/cursorDown.tsx:42</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L59">src/shortcuts/cursorDown.tsx:59</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -169,7 +224,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;cursorDown&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L39">src/shortcuts/cursorDown.tsx:39</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L56">src/shortcuts/cursorDown.tsx:56</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -179,7 +234,7 @@
 						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Cursor Down&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L40">src/shortcuts/cursorDown.tsx:40</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L57">src/shortcuts/cursorDown.tsx:57</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -189,7 +244,7 @@
 						<div class="tsd-signature tsd-kind-icon">svg<span class="tsd-signature-symbol">:</span> <a href="shortcuts.bindcontext.html#icon" class="tsd-signature-type">Icon</a><span class="tsd-signature-symbol"> = Icon</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L43">src/shortcuts/cursorDown.tsx:43</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L60">src/shortcuts/cursorDown.tsx:60</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -203,7 +258,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L44">src/shortcuts/cursorDown.tsx:44</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L61">src/shortcuts/cursorDown.tsx:61</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -238,7 +293,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L62">src/shortcuts/cursorDown.tsx:62</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L77">src/shortcuts/cursorDown.tsx:77</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,7 +330,7 @@
 						<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L41">src/shortcuts/cursorDown.tsx:41</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L58">src/shortcuts/cursorDown.tsx:58</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -284,7 +339,7 @@
 							<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;ArrowDown&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3da1637/src/shortcuts/cursorDown.tsx#L41">src/shortcuts/cursorDown.tsx:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/39a9899/src/shortcuts/cursorDown.tsx#L58">src/shortcuts/cursorDown.tsx:58</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -307,8 +362,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/shortcuts.cursordown.selectionattributes.html" class="tsd-kind-icon">Selection<wbr>Attributes</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="shortcuts.cursordown.html#icon" class="tsd-kind-icon">Icon</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="shortcuts.cursordown.html#getselectionattributes" class="tsd-kind-icon">get<wbr>Selection<wbr>Attributes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="shortcuts.cursordown.html#isselectiononlastline" class="tsd-kind-icon">is<wbr>Selection<wbr>OnLast<wbr>Line</a>
@@ -329,6 +390,9 @@
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

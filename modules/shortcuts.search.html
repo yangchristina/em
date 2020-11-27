@@ -91,7 +91,7 @@
 					<div class="tsd-signature tsd-kind-icon">search<wbr>Shortcut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L16">src/shortcuts/search.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L15">src/shortcuts/search.ts:15</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -100,7 +100,7 @@
 						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Open the Search input. Use the same shortcut to close.&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L19">src/shortcuts/search.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L18">src/shortcuts/search.ts:18</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -110,7 +110,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;search&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L17">src/shortcuts/search.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L16">src/shortcuts/search.ts:16</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -120,7 +120,7 @@
 						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Search&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L18">src/shortcuts/search.ts:18</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L17">src/shortcuts/search.ts:17</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -130,7 +130,7 @@
 						<div class="tsd-signature tsd-kind-icon">svg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>WrappedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = SearchIcon</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L20">src/shortcuts/search.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L19">src/shortcuts/search.ts:19</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -138,19 +138,37 @@
 						<a name="searchshortcut.exec" class="tsd-anchor"></a>
 						<h3>exec</h3>
 						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
-							<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><a href="../interfaces/redux_middleware.multi.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/shortcuts.search.search.html" class="tsd-signature-type">Search</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/shortcuts.search.cursorbeforesearch.html" class="tsd-signature-type">CursorBeforeSearch</a><span class="tsd-signature-symbol"> | </span><a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a><span class="tsd-signature-symbol">&gt;</span>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						</ul>
 						<ul class="tsd-descriptions">
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L22">src/shortcuts/search.ts:22</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L21">src/shortcuts/search.ts:21</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
 								<ul class="tsd-parameters">
 									<li>
-										<h5>dispatch: <a href="../interfaces/redux_middleware.multi.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/shortcuts.search.search.html" class="tsd-signature-type">Search</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/shortcuts.search.cursorbeforesearch.html" class="tsd-signature-type">CursorBeforeSearch</a><span class="tsd-signature-symbol"> | </span><a href="app.types.html#actioncreator" class="tsd-signature-type">ActionCreator</a><span class="tsd-signature-symbol">&gt;</span></h5>
+										<h5>dispatch: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-signature">
+												<ul class="tsd-signatures tsd-kind-type-literal">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-parameters-title">Parameters</h4>
+														<ul class="tsd-parameters">
+															<li>
+																<h5>value: <span class="tsd-signature-type">A</span></h5>
+															</li>
+														</ul>
+														<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<h5>getState: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
@@ -178,7 +196,7 @@
 						<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L21">src/shortcuts/search.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L20">src/shortcuts/search.ts:20</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -187,7 +205,7 @@
 							<div class="tsd-signature tsd-kind-icon">alt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L21">src/shortcuts/search.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L20">src/shortcuts/search.ts:20</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -197,7 +215,7 @@
 							<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;f&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5baf45d/src/shortcuts/search.ts#L21">src/shortcuts/search.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/52b1375/src/shortcuts/search.ts#L20">src/shortcuts/search.ts:20</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -242,6 +260,8 @@
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

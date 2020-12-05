@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Matchers | em</title>
+	<title>sinonFakeTimer | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,75 +51,63 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/test_helpers.html">test-helpers</a>
+					<a href="test_helpers.html">test-helpers</a>
 				</li>
 				<li>
-					<a href="../modules/test_helpers.dataprovidertest.html">dataProviderTest</a>
-				</li>
-				<li>
-					<a href="test_helpers.dataprovidertest.matchers.html">Matchers</a>
+					<a href="test_helpers.sinonfaketimer.html">sinonFakeTimer</a>
 				</li>
 			</ul>
-			<h1>Interface Matchers&lt;R&gt;</h1>
+			<h1>Module sinonFakeTimer</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>R</h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Matchers</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="test_helpers.dataprovidertest.matchers.html#tohaveorderedcontexts" class="tsd-kind-icon">to<wbr>Have<wbr>Ordered<wbr>Contexts</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.sinonfaketimer.html#sinonfaketimer" class="tsd-kind-icon">sinon<wbr>Fake<wbr>Timer</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="tohaveorderedcontexts" class="tsd-anchor"></a>
-					<h3>to<wbr>Have<wbr>Ordered<wbr>Contexts</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Have<wbr>Ordered<wbr>Contexts<span class="tsd-signature-symbol">(</span>context1<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#context" class="tsd-signature-type">Context</a>, context2<span class="tsd-signature-symbol">: </span><a href="../modules/app.types.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CustomMatcherResult</span></li>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="sinonfaketimer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> sinon<wbr>Fake<wbr>Timer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">sinon<wbr>Fake<wbr>Timer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>runAllAsync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">runAllAsync</span><span class="tsd-signature-symbol">; </span>useFakeTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useFakeTimer</span><span class="tsd-signature-symbol">; </span>useRealTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useRealTimer</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/86484a6/src/test-helpers/dataProviderTest.ts#L18">src/test-helpers/dataProviderTest.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/ff8bfda/src/test-helpers/sinonFakeTimer.ts#L6">src/test-helpers/sinonFakeTimer.ts:6</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Wraps sinon fake clock to reuse in a test file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>runAllAsync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">runAllAsync</span><span class="tsd-signature-symbol">; </span>useFakeTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useFakeTimer</span><span class="tsd-signature-symbol">; </span>useRealTimer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useRealTimer</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
-								<li>
-									<h5>context1: <a href="../modules/app.types.html#context" class="tsd-signature-type">Context</a></h5>
+								<li class="tsd-parameter">
+									<h5>run<wbr>All<wbr>Async<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">runAllAsync</span></h5>
 								</li>
-								<li>
-									<h5>context2: <a href="../modules/app.types.html#context" class="tsd-signature-type">Context</a></h5>
+								<li class="tsd-parameter">
+									<h5>use<wbr>Fake<wbr>Timer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useFakeTimer</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>use<wbr>Real<wbr>Timer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useRealTimer</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CustomMatcherResult</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -129,97 +117,85 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reflection-7280.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+						<a href="reflection-7224.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/action_creators.html">action-<wbr>creators</a>
+						<a href="action_creators.html">action-<wbr>creators</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/app.html">app</a>
+						<a href="app.html">app</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/components.html">components</a>
+						<a href="components.html">components</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/data_providers.html">data-<wbr>providers</a>
+						<a href="data_providers.html">data-<wbr>providers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/hooks.html">hooks</a>
+						<a href="hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/migrations.html">migrations</a>
+						<a href="migrations.html">migrations</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.html">reducers</a>
+						<a href="reducers.html">reducers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/redux_enhancers.html">redux-<wbr>enhancers</a>
+						<a href="redux_enhancers.html">redux-<wbr>enhancers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/redux_middleware.html">redux-<wbr>middleware</a>
+						<a href="redux_middleware.html">redux-<wbr>middleware</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/selectors.html">selectors</a>
+						<a href="selectors.html">selectors</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/shortcuts.html">shortcuts</a>
+						<a href="shortcuts.html">shortcuts</a>
 					</li>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/test_helpers.html">test-<wbr>helpers</a>
+						<a href="test_helpers.html">test-<wbr>helpers</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.createmockstore.html">create<wbr>Mock<wbr>Store</a>
+								<a href="test_helpers.createmockstore.html">create<wbr>Mock<wbr>Store</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.createtestapp.html">create<wbr>Test<wbr>App</a>
+								<a href="test_helpers.createtestapp.html">create<wbr>Test<wbr>App</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.createteststore.html">create<wbr>Test<wbr>Store</a>
+								<a href="test_helpers.createteststore.html">create<wbr>Test<wbr>Store</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.dataprovidertest.html">data<wbr>Provider<wbr>Test</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="test_helpers.dataprovidertest-1.html">data<wbr>Provider<wbr>Test</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.executeshortcut.html">execute<wbr>Shortcut</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.mock_debounce_throttle.html">mock-<wbr>debounce-<wbr>throttle</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.setcursorfirstmatch.html">set<wbr>Cursor<wbr>First<wbr>Match</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.dataprovidertest.html">data<wbr>Provider<wbr>Test</a>
+								<a href="test_helpers.sinonfaketimer.html">sinon<wbr>Fake<wbr>Timer</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.executeshortcut.html">execute<wbr>Shortcut</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.mock_debounce_throttle.html">mock-<wbr>debounce-<wbr>throttle</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.setcursorfirstmatch.html">set<wbr>Cursor<wbr>First<wbr>Match</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/test_helpers.windowevent.html">window<wbr>Event</a>
+								<a href="test_helpers.windowevent.html">window<wbr>Event</a>
 							</li>
 						</ul>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/util.html">util</a>
+						<a href="util.html">util</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="test_helpers.dataprovidertest.matchers.html" class="tsd-kind-icon">Matchers</a>
-						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="test_helpers.dataprovidertest.matchers.html#tohaveorderedcontexts" class="tsd-kind-icon">to<wbr>Have<wbr>Ordered<wbr>Contexts</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/test_helpers.dataprovidertest.html#dataprovidertest" class="tsd-kind-icon">data<wbr>Provider<wbr>Test</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/test_helpers.dataprovidertest.html#importthoughts" class="tsd-kind-icon">import<wbr>Thoughts</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../modules/test_helpers.dataprovidertest.html#stringifyvertical" class="tsd-kind-icon">stringify<wbr>Vertical</a>
+						<a href="test_helpers.sinonfaketimer.html#sinonfaketimer" class="tsd-kind-icon">sinon<wbr>Fake<wbr>Timer</a>
 					</li>
 				</ul>
 			</nav>
@@ -231,13 +207,10 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 		</div>
 	</div>

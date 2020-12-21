@@ -86,6 +86,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="app.shortcuts.html#formatkeyboardshortcut" class="tsd-kind-icon">format<wbr>Keyboard<wbr>Shortcut</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="app.shortcuts.html#hashkeydown" class="tsd-kind-icon">hash<wbr>Key<wbr>Down</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="app.shortcuts.html#hashshortcut" class="tsd-kind-icon">hash<wbr>Shortcut</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="app.shortcuts.html#index" class="tsd-kind-icon">index</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="app.shortcuts.html#inputhandlers" class="tsd-kind-icon">input<wbr>Handlers</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="app.shortcuts.html#isgesturehint" class="tsd-kind-icon">is<wbr>Gesture<wbr>Hint</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="app.shortcuts.html#shortcutbyid" class="tsd-kind-icon">shortcut<wbr>ById</a></li>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Shortcuts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = Object.values(shortcutObject) as Shortcut[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L15">src/shortcuts.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L15">src/shortcuts.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L78">src/shortcuts.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L106">src/shortcuts.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +123,7 @@
 					<div class="tsd-signature tsd-kind-icon">letters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = keyValueBy(Array(26).fill(0), (n, i) &#x3D;&gt; ({[65 + i]: String.fromCharCode(65 + i).toUpperCase()}))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L27">src/shortcuts.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L27">src/shortcuts.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -140,39 +141,63 @@
 					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol"> = new Emitter()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L17">src/shortcuts.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L17">src/shortcuts.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="shortcutgestureindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> shortcut<wbr>Gesture<wbr>Index</h3>
-					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Gesture<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = keyValueBy(globalShortcuts, shortcut &#x3D;&gt; shortcut.gesture? {// shortcut.gesture may be a string or array of strings// normalize intro array of strings...keyValueBy(Array.prototype.concat([], shortcut.gesture), gesture &#x3D;&gt; ({[gesture]: shortcut}))}: null)</span></div>
+					<h3>shortcut<wbr>Gesture<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Gesture<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L63">src/shortcuts.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L240">src/shortcuts.ts:240</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="shortcutidindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> shortcut<wbr>IdIndex</h3>
-					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>IdIndex<span class="tsd-signature-symbol">:</span> <a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = keyValueBy(globalShortcuts, shortcut &#x3D;&gt;shortcut.id ? { [shortcut.id]: shortcut } : null)</span></div>
+					<h3>shortcut<wbr>IdIndex</h3>
+					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>IdIndex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L58">src/shortcuts.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L240">src/shortcuts.ts:240</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="shortcutkeyindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> shortcut<wbr>Key<wbr>Index</h3>
-					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Key<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = keyValueBy(globalShortcuts, shortcut &#x3D;&gt;shortcut.keyboard ? { [hashShortcut(shortcut)]: shortcut } : null)</span></div>
+					<h3>shortcut<wbr>Key<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Key<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L53">src/shortcuts.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L240">src/shortcuts.ts:240</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -187,7 +212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L190">src/shortcuts.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L218">src/shortcuts.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L198">src/shortcuts.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L226">src/shortcuts.ts:226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L43">src/shortcuts.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L43">src/shortcuts.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L32">src/shortcuts.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L32">src/shortcuts.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,6 +314,39 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="index" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> index</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>shortcutGestureIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutKeyIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L53">src/shortcuts.ts:53</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes shortcut indices and stores conflicts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>shortcutGestureIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutKeyIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>shortcut<wbr>Gesture<wbr>Index<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>shortcut<wbr>IdIndex<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>shortcut<wbr>Key<wbr>Index<span class="tsd-signature-symbol">: </span><a href="app.types.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/app.types.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="inputhandlers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> input<wbr>Handlers</h3>
@@ -299,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L83">src/shortcuts.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L111">src/shortcuts.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +382,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L113">src/shortcuts.ts:113</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L141">src/shortcuts.ts:141</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -354,7 +412,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L86">src/shortcuts.ts:86</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L114">src/shortcuts.ts:114</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -384,7 +442,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L151">src/shortcuts.ts:151</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L179">src/shortcuts.ts:179</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -411,7 +469,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L141">src/shortcuts.ts:141</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L169">src/shortcuts.ts:169</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -443,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L75">src/shortcuts.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L103">src/shortcuts.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -476,7 +534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/26f84ea/src/shortcuts.ts#L211">src/shortcuts.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d479bdd/src/shortcuts.ts#L238">src/shortcuts.ts:238</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +558,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" tsd-kind-module tsd-is-not-exported">
-						<a href="reflection-7228.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+						<a href="reflection-7255.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="action_creators.html">action-<wbr>creators</a>
@@ -606,6 +664,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="app.shortcuts.html#hashshortcut" class="tsd-kind-icon">hash<wbr>Shortcut</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="app.shortcuts.html#index" class="tsd-kind-icon">index</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="app.shortcuts.html#inputhandlers" class="tsd-kind-icon">input<wbr>Handlers</a>

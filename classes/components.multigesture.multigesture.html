@@ -120,6 +120,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.multigesture.multigesture.html#panresponder" class="tsd-kind-icon">pan<wbr>Responder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components.multigesture.multigesture.html#props" class="tsd-kind-icon">props</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components.multigesture.multigesture.html#refs" class="tsd-kind-icon">refs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.multigesture.multigesture.html#scrollystart" class="tsd-kind-icon">scrollYStart</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.multigesture.multigesture.html#scrolling" class="tsd-kind-icon">scrolling</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.multigesture.multigesture.html#sequence" class="tsd-kind-icon">sequence</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components.multigesture.multigesture.html#state" class="tsd-kind-icon">state</a></li>
@@ -169,7 +170,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Component.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L56">src/components/MultiGesture.tsx:56</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L57">src/components/MultiGesture.tsx:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">abandon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L51">src/components/MultiGesture.tsx:51</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L51">src/components/MultiGesture.tsx:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +230,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Start<span class="tsd-signature-symbol">:</span> <a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L52">src/components/MultiGesture.tsx:52</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L52">src/components/MultiGesture.tsx:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +240,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">disable<wbr>Scroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L53">src/components/MultiGesture.tsx:53</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L54">src/components/MultiGesture.tsx:54</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +250,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">pan<wbr>Responder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>panHandlers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L54">src/components/MultiGesture.tsx:54</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L55">src/components/MultiGesture.tsx:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -299,12 +300,22 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scrollystart" class="tsd-anchor"></a>
+					<h3>scrollYStart</h3>
+					<div class="tsd-signature tsd-kind-icon">scrollYStart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L53">src/components/MultiGesture.tsx:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="scrolling" class="tsd-anchor"></a>
 					<h3>scrolling</h3>
 					<div class="tsd-signature tsd-kind-icon">scrolling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L55">src/components/MultiGesture.tsx:55</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L56">src/components/MultiGesture.tsx:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -314,7 +325,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">sequence<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L56">src/components/MultiGesture.tsx:56</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L57">src/components/MultiGesture.tsx:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -822,7 +833,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							<aside class="tsd-sources">
 								<p>Overrides Component.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L167">src/components/MultiGesture.tsx:167</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L163">src/components/MultiGesture.tsx:163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -839,7 +850,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L159">src/components/MultiGesture.tsx:159</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L154">src/components/MultiGesture.tsx:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -928,7 +939,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L171">src/components/MultiGesture.tsx:171</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L167">src/components/MultiGesture.tsx:167</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -937,7 +948,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<div class="tsd-signature tsd-kind-icon">on<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol"> = noop</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L187">src/components/MultiGesture.tsx:187</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L183">src/components/MultiGesture.tsx:183</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -947,7 +958,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<div class="tsd-signature tsd-kind-icon">on<wbr>Gesture<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol"> = noop</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L184">src/components/MultiGesture.tsx:184</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L180">src/components/MultiGesture.tsx:180</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -957,7 +968,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<div class="tsd-signature tsd-kind-icon">on<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol"> = noop</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L181">src/components/MultiGesture.tsx:181</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L177">src/components/MultiGesture.tsx:177</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -967,7 +978,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<div class="tsd-signature tsd-kind-icon">scroll<wbr>Threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 12</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L177">src/components/MultiGesture.tsx:177</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L173">src/components/MultiGesture.tsx:173</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -977,7 +988,7 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 						<div class="tsd-signature tsd-kind-icon">threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 12</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/315b518/src/components/MultiGesture.tsx#L174">src/components/MultiGesture.tsx:174</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/13e296c/src/components/MultiGesture.tsx#L170">src/components/MultiGesture.tsx:170</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1027,6 +1038,9 @@ context!: React.ContextType&lt;<span class="hljs-keyword">typeof</span> MyContex
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="components.multigesture.multigesture.html#refs" class="tsd-kind-icon">refs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="components.multigesture.multigesture.html#scrollystart" class="tsd-kind-icon">scrollYStart</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="components.multigesture.multigesture.html#scrolling" class="tsd-kind-icon">scrolling</a>

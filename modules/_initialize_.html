@@ -67,7 +67,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_initialize_.html#importtextfirstmatch" class="tsd-kind-icon">import<wbr>Text<wbr>First<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_initialize_.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_initialize_.html#setcursorfirstmatch" class="tsd-kind-icon">set<wbr>Cursor<wbr>First<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="_initialize_.html#withstate" class="tsd-kind-icon">with<wbr>State</a></li>
 							</ul>
 						</section>
@@ -76,6 +78,37 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="importtextfirstmatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> import<wbr>Text<wbr>First<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Text<wbr>First<wbr>Match<span class="tsd-signature-symbol">(</span>unrankedPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a67b242/src/initialize.ts#L51">src/initialize.ts:51</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Imports text on given unranked path. Used in puppeteer testing.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>unrankedPath: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="initialize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> initialize</h3>
@@ -86,7 +119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3c89489/src/initialize.ts#L10">src/initialize.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a67b242/src/initialize.ts#L11">src/initialize.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -95,6 +128,34 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>thoughtsLocalPromise<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="setcursorfirstmatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Cursor<wbr>First<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Cursor<wbr>First<wbr>Match<span class="tsd-signature-symbol">(</span>unrankedPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a67b242/src/initialize.ts#L48">src/initialize.ts:48</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set cursor function that is exposed to window for puppeteer testing.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>unrankedPath: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -108,7 +169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3c89489/src/initialize.ts#L43">src/initialize.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a67b242/src/initialize.ts#L44">src/initialize.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,6 +256,9 @@
 						<a href="data_providers.html">data-<wbr>providers</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="e2e.html">e2e</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-not-exported">
@@ -231,8 +295,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_initialize_.html#importtextfirstmatch" class="tsd-kind-icon">import<wbr>Text<wbr>First<wbr>Match</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_initialize_.html#initialize" class="tsd-kind-icon">initialize</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_initialize_.html#setcursorfirstmatch" class="tsd-kind-icon">set<wbr>Cursor<wbr>First<wbr>Match</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="_initialize_.html#withstate" class="tsd-kind-icon">with<wbr>State</a>

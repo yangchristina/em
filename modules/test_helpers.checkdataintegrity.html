@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>addEmojiSpace | em</title>
+	<title>checkDataIntegrity | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="util.html">util</a>
+					<a href="test_helpers.html">test-helpers</a>
 				</li>
 				<li>
-					<a href="util.addemojispace.html">addEmojiSpace</a>
+					<a href="test_helpers.checkdataintegrity.html">checkDataIntegrity</a>
 				</li>
 			</ul>
-			<h1>Module addEmojiSpace</h1>
+			<h1>Module checkDataIntegrity</h1>
 		</div>
 	</div>
 </header>
@@ -67,62 +67,50 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.addemojispace.html#emojiwithoutspaceregex" class="tsd-kind-icon">emoji<wbr>Without<wbr>Space<wbr>Regex</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.addemojispace.html#addemojispace" class="tsd-kind-icon">add<wbr>Emoji<wbr>Space</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.checkdataintegrity.html#checkdataintegrity" class="tsd-kind-icon">check<wbr>Data<wbr>Integrity</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="emojiwithoutspaceregex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> emoji<wbr>Without<wbr>Space<wbr>Regex</h3>
-					<div class="tsd-signature tsd-kind-icon">emoji<wbr>Without<wbr>Space<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^((\p{Emoji_Presentation}|\p{Extended_Pictographic})\ufe0f?){1,}(?!(\s|\ufe0f|\p{Emoji_Presentation}|\p{Extended_Pictographic})|$)/gu</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/4198047/src/util/addEmojiSpace.ts#L2">src/util/addEmojiSpace.ts:2</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="addemojispace" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Emoji<wbr>Space</h3>
+					<a name="checkdataintegrity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Data<wbr>Integrity</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Emoji<wbr>Space<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Data<wbr>Integrity<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a>, max<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/4198047/src/util/addEmojiSpace.ts#L13">src/util/addEmojiSpace.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/4198047/src/test-helpers/checkDataIntegrity.ts#L6">src/test-helpers/checkDataIntegrity.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>If a string starts with an emoji followed by a non-whitespace, non-emoji character,
-									then insert a space between the emoji and the character.</p>
+									<p>Iterates through each lexeme in thoughtIndex, identifies lexeme.contexts that are not replicated in contextIndex, and generates contextIndexUpdates that are dispatched to restore them.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<h5>state: <a href="../interfaces/util.initialstate.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> max: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100000</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -132,10 +120,49 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="util.html">util</a>
+						<a href="test_helpers.html">test-<wbr>helpers</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="util.addemojispace.html">add<wbr>Emoji<wbr>Space</a>
+								<a href="test_helpers.checkdataintegrity.html">check<wbr>Data<wbr>Integrity</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.createmockstore.html">create<wbr>Mock<wbr>Store</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.creatertltestapp.html">create<wbr>Rtl<wbr>Test<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.createtestapp.html">create<wbr>Test<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.createteststore.html">create<wbr>Test<wbr>Store</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.dataprovidertest.html">data<wbr>Provider<wbr>Test</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="test_helpers.dataprovidertest-1.html">data<wbr>Provider<wbr>Test</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.delay.html">delay</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.executeshortcut.html">execute<wbr>Shortcut</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.importonfirstmatchpath.html">import<wbr>OnFirst<wbr>Match<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.mock_debounce_throttle.html">mock-<wbr>debounce-<wbr>throttle</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.setcursorfirstmatch.html">set<wbr>Cursor<wbr>First<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.testtimer.html">test<wbr>Timer</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.windowevent.html">window<wbr>Event</a>
 							</li>
 						</ul>
 					</li>
@@ -143,11 +170,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.addemojispace.html#emojiwithoutspaceregex" class="tsd-kind-icon">emoji<wbr>Without<wbr>Space<wbr>Regex</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="util.addemojispace.html#addemojispace" class="tsd-kind-icon">add<wbr>Emoji<wbr>Space</a>
+						<a href="test_helpers.checkdataintegrity.html#checkdataintegrity" class="tsd-kind-icon">check<wbr>Data<wbr>Integrity</a>
 					</li>
 				</ul>
 			</nav>

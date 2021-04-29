@@ -67,6 +67,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Puppeteer Environment for jest.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -95,9 +102,10 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="e2e.puppeteer_environment.puppeteerenvironment.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="e2e.puppeteer_environment.puppeteerenvironment.html#browser" class="tsd-kind-icon">browser</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.puppeteer_environment.puppeteerenvironment.html#dom" class="tsd-kind-icon">dom</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.puppeteer_environment.puppeteerenvironment.html#erroreventlistener" class="tsd-kind-icon">error<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.puppeteer_environment.puppeteerenvironment.html#faketimers" class="tsd-kind-icon">fake<wbr>Timers</a></li>
@@ -131,7 +139,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5474052/src/e2e/puppeteer-environment.js#L17">src/e2e/puppeteer-environment.js:17</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5dd662f/src/e2e/puppeteer-environment.js#L14">src/e2e/puppeteer-environment.js:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -145,8 +153,18 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="browser" class="tsd-anchor"></a>
+					<h3>browser</h3>
+					<div class="tsd-signature tsd-kind-icon">browser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/5dd662f/src/e2e/puppeteer-environment.js#L14">src/e2e/puppeteer-environment.js:14</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="dom" class="tsd-anchor"></a>
 					<h3>dom</h3>
@@ -275,7 +293,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.setup</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5474052/src/e2e/puppeteer-environment.js#L22">src/e2e/puppeteer-environment.js:22</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5dd662f/src/e2e/puppeteer-environment.js#L19">src/e2e/puppeteer-environment.js:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -293,7 +311,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.teardown</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5474052/src/e2e/puppeteer-environment.js#L61">src/e2e/puppeteer-environment.js:61</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5dd662f/src/e2e/puppeteer-environment.js#L45">src/e2e/puppeteer-environment.js:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -391,6 +409,9 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="e2e.puppeteer_environment.puppeteerenvironment.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="e2e.puppeteer_environment.puppeteerenvironment.html#browser" class="tsd-kind-icon">browser</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="e2e.puppeteer_environment.puppeteerenvironment.html#dom" class="tsd-kind-icon">dom</a>
 							</li>
@@ -446,9 +467,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/e2e.puppeteer_environment.html#teardowndevserver" class="tsd-kind-icon">teardown<wbr>Dev<wbr>Server</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/e2e.puppeteer_environment.html#delay" class="tsd-kind-icon">delay</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -468,12 +486,13 @@
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>hashThought | em</title>
+	<title>&quot;initialSettings&quot; | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="util.html">util</a>
-				</li>
-				<li>
-					<a href="util.hashthought.html">hashThought</a>
+					<a href="_initialsettings_.html">&quot;initialSettings&quot;</a>
 				</li>
 			</ul>
-			<h1>Module hashThought</h1>
+			<h1>Module &quot;initialSettings&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +67,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.hashthought.html#hashthought" class="tsd-kind-icon">hash<wbr>Thought</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_initialsettings_.html#initialsettings" class="tsd-kind-icon">initial<wbr>Settings</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,69 +76,98 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="hashthought" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> hash<wbr>Thought</h3>
-					<div class="tsd-signature tsd-kind-icon">hash<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_.html#thoughthash" class="tsd-signature-type">ThoughtHash</a><span class="tsd-signature-symbol"> = _.memoize((value: string) &#x3D;&gt; _.flow([normalizeThought,...globals.disableThoughtHashing ? [] : [murmurHash3.x64.hash128],])(value))</span></div>
+					<a name="initialsettings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> initial<wbr>Settings</h3>
+					<div class="tsd-signature tsd-kind-icon">initial<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"- Settings- &#x3D;readonly- Theme- &#x3D;readonly- &#x3D;options- Dark- Light- Dark- Global Sort- &#x3D;readonly- &#x3D;options- None- Alphabetical- None- &#x3D;options- Desc- Asc- Data Integrity Check- &#x3D;readonly- &#x3D;hidden- &#x3D;options- On- Off- Off- Tutorial- &#x3D;readonly- &#x3D;hidden- &#x3D;options- On- Off- On- Tutorial Choice- &#x3D;readonly- &#x3D;hidden- &#x3D;type- Number- 0- Tutorial Step- &#x3D;readonly- &#x3D;hidden- &#x3D;type- Number- 1"</span><span class="tsd-signature-symbol"> = &#x60;- Settings- &#x3D;readonly- Theme- &#x3D;readonly- &#x3D;options- Dark- Light- Dark- Global Sort- &#x3D;readonly- &#x3D;options- None- Alphabetical- None- &#x3D;options- Desc- Asc- Data Integrity Check- &#x3D;readonly- &#x3D;hidden- &#x3D;options- On- Off- Off- Tutorial- &#x3D;readonly- &#x3D;hidden- &#x3D;options- On- Off- On- Tutorial Choice- &#x3D;readonly- &#x3D;hidden- &#x3D;type- Number- 0- Tutorial Step- &#x3D;readonly- &#x3D;hidden- &#x3D;type- Number- 1&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/3eed2a5/src/util/hashThought.ts#L20">src/util/hashThought.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/3eed2a5/src/initialSettings.ts#L1">src/initialSettings.ts:1</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Generate a hash of a thought with the following transformations:</p>
-						</div>
-						<ul>
-							<li>case-insensitive</li>
-							<li>ignore punctuation &amp; whitespace (when there is other text)</li>
-							<li>ignore emojis (when there is other text)</li>
-							<li>singularize</li>
-							<li>murmurhash to prevent large keys (Firebase limitation)</li>
-						</ul>
-						<p>Stored keys MUST match the current hashing algorithm.
-						Use schemaVersion to manage migrations.</p>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#thoughthash" class="tsd-signature-type">ThoughtHash</a></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>s: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_types_.html#thoughthash" class="tsd-signature-type">ThoughtHash</a></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="current tsd-kind-module tsd-is-not-exported">
+					<li class=" tsd-kind-module">
+						<a href="_browser_.html">&quot;browser&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_constants_.html">&quot;constants&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_globals_.html">&quot;globals&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="_initialsettings_.html">&quot;initial<wbr>Settings&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_initialize_.html">&quot;initialize&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_setuptests_.html">&quot;setup<wbr>Tests&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_shortcuts_.html">&quot;shortcuts&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_store_.html">&quot;store&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="_types_.html">&quot;types&quot;</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="action_creators.html">action-<wbr>creators</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="components.html">components</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="data_providers.html">data-<wbr>providers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="e2e.html">e2e</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="migrations.html">migrations</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="reducers.html">reducers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="redux_enhancers.html">redux-<wbr>enhancers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.html">redux-<wbr>middleware</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="root.html">root</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="search.html">search</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="selectors.html">selectors</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="shortcuts.html">shortcuts</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="test_helpers.html">test-<wbr>helpers</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
 						<a href="util.html">util</a>
-						<ul>
-							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="util.hashthought.html">hash<wbr>Thought</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="util.hashthought.html#hashthought" class="tsd-kind-icon">hash<wbr>Thought</a>
+						<a href="_initialsettings_.html#initialsettings" class="tsd-kind-icon">initial<wbr>Settings</a>
 					</li>
 				</ul>
 			</nav>

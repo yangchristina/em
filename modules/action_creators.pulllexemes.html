@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Options | em</title>
+	<title>pullLexemes | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,53 +51,60 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/reducers.html">reducers</a>
+					<a href="action_creators.html">action-creators</a>
 				</li>
 				<li>
-					<a href="../modules/reducers.expandhovertop.html">expandHoverTop</a>
-				</li>
-				<li>
-					<a href="reducers.expandhovertop.options.html">Options</a>
+					<a href="action_creators.pulllexemes.html">pullLexemes</a>
 				</li>
 			</ul>
-			<h1>Interface Options</h1>
+			<h1>Module pullLexemes</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Options</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Properties</h3>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.expandhovertop.options.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="action_creators.pulllexemes.html#pulllexemes" class="tsd-kind-icon">pull<wbr>Lexemes</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="path" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dd68687/src/reducers/expandHoverTop.ts#L5">src/reducers/expandHoverTop.ts:5</a></li>
-						</ul>
-					</aside>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="pulllexemes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> pull<wbr>Lexemes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">pull<wbr>Lexemes<span class="tsd-signature-symbol">(</span>hashThoughtIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_.html#thunk" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/dd68687/src/action-creators/pullLexemes.ts#L9">src/action-creators/pullLexemes.ts:9</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches lexemes from the local and remote source and reconciles.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hashThoughtIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_.html#thunk" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -105,10 +112,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.html">reducers</a>
+						<a href="action_creators.html">action-<wbr>creators</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/reducers.expandhovertop.html">expand<wbr>Hover<wbr>Top</a>
+								<a href="action_creators.pulllexemes.html">pull<wbr>Lexemes</a>
 							</li>
 						</ul>
 					</li>
@@ -116,20 +123,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.expandhovertop.options.html" class="tsd-kind-icon">Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.expandhovertop.options.html#path" class="tsd-kind-icon">path</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/reducers.expandhovertop.html#expandhovertop" class="tsd-kind-icon">expand<wbr>Hover<wbr>Top</a>
+						<a href="action_creators.pulllexemes.html#pulllexemes" class="tsd-kind-icon">pull<wbr>Lexemes</a>
 					</li>
 				</ul>
 			</nav>
@@ -152,7 +147,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

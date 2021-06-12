@@ -109,6 +109,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#dom" class="tsd-kind-icon">dom</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#erroreventlistener" class="tsd-kind-icon">error<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#faketimers" class="tsd-kind-icon">fake<wbr>Timers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#faketimersmodern" class="tsd-kind-icon">fake<wbr>Timers<wbr>Modern</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#global" class="tsd-kind-icon">global</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#modulemocker" class="tsd-kind-icon">module<wbr>Mocker</a></li>
 							</ul>
@@ -116,7 +117,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#runscript" class="tsd-kind-icon">run<wbr>Script</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#getvmcontext" class="tsd-kind-icon">get<wbr>VmContext</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#runscript" class="tsd-kind-icon">run<wbr>Script</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#setup" class="tsd-kind-icon">setup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#startbrowserstacklocal" class="tsd-kind-icon">start<wbr>Browser<wbr>Stack<wbr>Local</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="e2e.webdriverio_environment.webdriverioenvironment.html#stopbrowserstacklocal" class="tsd-kind-icon">stop<wbr>Browser<wbr>Stack<wbr>Local</a></li>
@@ -139,7 +141,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L18">src/e2e/webdriverio-environment.js:18</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L18">src/e2e/webdriverio-environment.js:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -161,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">bs<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L18">src/e2e/webdriverio-environment.js:18</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L18">src/e2e/webdriverio-environment.js:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,18 +185,29 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#erroreventlistener">errorEventListener</a></p>
 						<ul>
-							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:23</li>
+							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:24</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="faketimers" class="tsd-anchor"></a>
 					<h3>fake<wbr>Timers</h3>
-					<div class="tsd-signature tsd-kind-icon">fake<wbr>Timers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FakeTimers</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>Timers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LegacyFakeTimers</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#faketimers">fakeTimers</a></p>
 						<ul>
 							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:21</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="faketimersmodern" class="tsd-anchor"></a>
+					<h3>fake<wbr>Timers<wbr>Modern</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>Timers<wbr>Modern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ModernFakeTimers</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#faketimersmodern">fakeTimersModern</a></p>
+						<ul>
+							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +218,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#global">global</a></p>
 						<ul>
-							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:22</li>
+							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#modulemocker">moduleMocker</a></p>
 						<ul>
-							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:26</li>
+							<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -224,26 +237,50 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getvmcontext" class="tsd-anchor"></a>
+					<h3>get<wbr>VmContext</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>VmContext<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#getvmcontext">getVmContext</a></p>
+								<ul>
+									<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:32</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 					<a name="runscript" class="tsd-anchor"></a>
 					<h3>run<wbr>Script</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Script<span class="tsd-signature-symbol">(</span>script<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Script</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Script&lt;T&gt;<span class="tsd-signature-symbol">(</span>script<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Script</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="e2e.puppeteer_environment.puppeteerenvironment.html">PuppeteerEnvironment</a>.<a href="e2e.puppeteer_environment.puppeteerenvironment.html#runscript">runScript</a></p>
 								<ul>
-									<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:30</li>
+									<li>Defined in node_modules/jest-environment-jsdom/build/index.d.ts:31</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>script: <span class="tsd-signature-type">Script</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -258,7 +295,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.setup</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L24">src/e2e/webdriverio-environment.js:24</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L24">src/e2e/webdriverio-environment.js:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -275,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L68">src/e2e/webdriverio-environment.js:68</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L68">src/e2e/webdriverio-environment.js:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -292,7 +329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L77">src/e2e/webdriverio-environment.js:77</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L77">src/e2e/webdriverio-environment.js:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -310,7 +347,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides JSDOMEnvironment.teardown</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/375b461/src/e2e/webdriverio-environment.js#L60">src/e2e/webdriverio-environment.js:60</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/000f3d1/src/e2e/webdriverio-environment.js#L60">src/e2e/webdriverio-environment.js:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -364,12 +401,18 @@
 								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#faketimers" class="tsd-kind-icon">fake<wbr>Timers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#faketimersmodern" class="tsd-kind-icon">fake<wbr>Timers<wbr>Modern</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#global" class="tsd-kind-icon">global</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#modulemocker" class="tsd-kind-icon">module<wbr>Mocker</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#getvmcontext" class="tsd-kind-icon">get<wbr>VmContext</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="e2e.webdriverio_environment.webdriverioenvironment.html#runscript" class="tsd-kind-icon">run<wbr>Script</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>gestures | em</title>
+	<title>editThought | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -60,10 +60,10 @@
 					<a href="e2e.helpers.mobile.html">mobile</a>
 				</li>
 				<li>
-					<a href="e2e.helpers.mobile.gestures.html">gestures</a>
+					<a href="e2e.helpers.mobile.editthought.html">editThought</a>
 				</li>
 			</ul>
-			<h1>Module gestures</h1>
+			<h1>Module editThought</h1>
 		</div>
 	</div>
 </header>
@@ -74,12 +74,49 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Modules</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-module tsd-parent-kind-module"><a href="e2e.helpers.mobile.gestures.gesture.html" class="tsd-kind-icon">gesture</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="e2e.helpers.mobile.editthought.html#editthought" class="tsd-kind-icon">edit<wbr>Thought</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="editthought" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> edit<wbr>Thought</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Thought<span class="tsd-signature-symbol">(</span>browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/374427a/src/e2e/helpers/mobile/editThought.ts#L9">src/e2e/helpers/mobile/editThought.ts:9</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send keys and wait for editable exists for the given values.
+										As you know some of the operations in tests happen truly quickly. Before you even complete writing something, another action may happen.
+										We need to be sure that the current action affects our app before running the next action.
+									In this case, we want to be sure that there is a thought with the given value after sending keys.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>browser: <span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -101,16 +138,11 @@
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.helpers.mobile.clickthought.html">click<wbr>Thought</a>
 											</li>
-											<li class=" tsd-kind-module tsd-parent-kind-module">
+											<li class="current tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.helpers.mobile.editthought.html">edit<wbr>Thought</a>
 											</li>
-											<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
+											<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
 												<a href="e2e.helpers.mobile.gestures.html">gestures</a>
-												<ul>
-													<li class=" tsd-kind-module tsd-parent-kind-module">
-														<a href="e2e.helpers.mobile.gestures.gesture.html">gesture</a>
-													</li>
-												</ul>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.helpers.mobile.geteditable.html">get<wbr>Editable</a>
@@ -158,6 +190,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="e2e.helpers.mobile.editthought.html#editthought" class="tsd-kind-icon">edit<wbr>Thought</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

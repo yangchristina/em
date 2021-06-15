@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Payload | em</title>
+	<title>RecursiveUpdateResult | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../modules/reducers.html">reducers</a>
 				</li>
 				<li>
-					<a href="../modules/reducers.existingthoughtdelete.html">existingThoughtDelete</a>
+					<a href="../modules/reducers.editthought.html">editThought</a>
 				</li>
 				<li>
-					<a href="reducers.existingthoughtdelete.payload.html">Payload</a>
+					<a href="reducers.editthought.recursiveupdateresult.html">RecursiveUpdateResult</a>
 				</li>
 			</ul>
-			<h1>Interface Payload</h1>
+			<h1>Interface RecursiveUpdateResult</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Payload</span>
+						<span class="target">RecursiveUpdateResult</span>
 					</li>
 				</ul>
 			</section>
@@ -81,9 +81,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.existingthoughtdelete.payload.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.existingthoughtdelete.payload.html#showcontexts" class="tsd-kind-icon">show<wbr>Contexts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.existingthoughtdelete.payload.html#thoughtranked" class="tsd-kind-icon">thought<wbr>Ranked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.editthought.recursiveupdateresult.html#contextsnew" class="tsd-kind-icon">contexts<wbr>New</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.editthought.recursiveupdateresult.html#contextsold" class="tsd-kind-icon">contexts<wbr>Old</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.editthought.recursiveupdateresult.html#lexemenew" class="tsd-kind-icon">lexeme<wbr>New</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="reducers.editthought.recursiveupdateresult.html#pending" class="tsd-kind-icon">pending</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,32 +93,42 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#context" class="tsd-signature-type">Context</a></div>
+					<a name="contextsnew" class="tsd-anchor"></a>
+					<h3>contexts<wbr>New</h3>
+					<div class="tsd-signature tsd-kind-icon">contexts<wbr>New<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/830478b/src/reducers/existingThoughtDelete.ts#L21">src/reducers/existingThoughtDelete.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e806b47/src/reducers/editThought.ts#L40">src/reducers/editThought.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="showcontexts" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Contexts</h3>
-					<div class="tsd-signature tsd-kind-icon">show<wbr>Contexts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<a name="contextsold" class="tsd-anchor"></a>
+					<h3>contexts<wbr>Old</h3>
+					<div class="tsd-signature tsd-kind-icon">contexts<wbr>Old<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_.html#context" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/830478b/src/reducers/existingThoughtDelete.ts#L23">src/reducers/existingThoughtDelete.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e806b47/src/reducers/editThought.ts#L39">src/reducers/editThought.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="thoughtranked" class="tsd-anchor"></a>
-					<h3>thought<wbr>Ranked</h3>
-					<div class="tsd-signature tsd-kind-icon">thought<wbr>Ranked<span class="tsd-signature-symbol">:</span> <a href="_types_.child.html" class="tsd-signature-type">Child</a></div>
+					<a name="lexemenew" class="tsd-anchor"></a>
+					<h3>lexeme<wbr>New</h3>
+					<div class="tsd-signature tsd-kind-icon">lexeme<wbr>New<span class="tsd-signature-symbol">:</span> <a href="_types_.lexeme.html" class="tsd-signature-type">Lexeme</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/830478b/src/reducers/existingThoughtDelete.ts#L22">src/reducers/existingThoughtDelete.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e806b47/src/reducers/editThought.ts#L38">src/reducers/editThought.ts:38</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="pending" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pending</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e806b47/src/reducers/editThought.ts#L41">src/reducers/editThought.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +141,7 @@
 						<a href="../modules/reducers.html">reducers</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/reducers.existingthoughtdelete.html">existing<wbr>Thought<wbr>Delete</a>
+								<a href="../modules/reducers.editthought.html">edit<wbr>Thought</a>
 							</li>
 						</ul>
 					</li>
@@ -141,26 +152,29 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.existingthoughtdelete.payload.html" class="tsd-kind-icon">Payload</a>
+						<a href="reducers.editthought.recursiveupdateresult.html" class="tsd-kind-icon">Recursive<wbr>Update<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.existingthoughtdelete.payload.html#context" class="tsd-kind-icon">context</a>
+								<a href="reducers.editthought.recursiveupdateresult.html#contextsnew" class="tsd-kind-icon">contexts<wbr>New</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.existingthoughtdelete.payload.html#showcontexts" class="tsd-kind-icon">show<wbr>Contexts</a>
+								<a href="reducers.editthought.recursiveupdateresult.html#contextsold" class="tsd-kind-icon">contexts<wbr>Old</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="reducers.existingthoughtdelete.payload.html#thoughtranked" class="tsd-kind-icon">thought<wbr>Ranked</a>
+								<a href="reducers.editthought.recursiveupdateresult.html#lexemenew" class="tsd-kind-icon">lexeme<wbr>New</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="reducers.editthought.recursiveupdateresult.html#pending" class="tsd-kind-icon">pending</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.existingthoughtdelete.thoughtupdates.html" class="tsd-kind-icon">Thought<wbr>Updates</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="reducers.editthought.editthoughtpayload.html" class="tsd-kind-icon">edit<wbr>Thought<wbr>Payload</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.existingthoughtdelete.html#existingthoughtdelete" class="tsd-kind-icon">existing<wbr>Thought<wbr>Delete</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reducers.editthought.html#editthought" class="tsd-kind-icon">edit<wbr>Thought</a>
 					</li>
 				</ul>
 			</nav>

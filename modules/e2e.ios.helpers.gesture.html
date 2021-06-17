@@ -79,12 +79,6 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/e2e.ios.helpers.gesture.gestureoptions.html" class="tsd-kind-icon">Gesture<wbr>Options</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.ios.helpers.gesture.html#wait_action" class="tsd-kind-icon">WAIT_<wbr>ACTION</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -94,32 +88,19 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="wait_action" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> WAIT_<wbr>ACTION</h3>
-					<div class="tsd-signature tsd-kind-icon">WAIT_<wbr>ACTION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TouchAction</span><span class="tsd-signature-symbol"> = { action: &#x27;wait&#x27;, ms: 50 } as TouchAction</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6b31053/src/e2e/iOS/helpers/gesture.ts#L11">src/e2e/iOS/helpers/gesture.ts:11</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="gesture" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> gesture</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6b31053/src/e2e/iOS/helpers/gesture.ts#L14">src/e2e/iOS/helpers/gesture.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/282b96e/src/e2e/iOS/helpers/gesture.ts#L12">src/e2e/iOS/helpers/gesture.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -136,10 +117,13 @@
 									<h5>path: <a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>segment<wbr>Length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>wait<wbr>Ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>x<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -185,6 +169,9 @@
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.ios.helpers.geteditingtext.html">get<wbr>Editing<wbr>Text</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.ios.helpers.getelementrectbyscreen.html">get<wbr>Element<wbr>Rect<wbr>ByScreen</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.ios.helpers.getnativeelementrect.html">get<wbr>Native<wbr>Element<wbr>Rect</a>
@@ -234,9 +221,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/e2e.ios.helpers.gesture.gestureoptions.html" class="tsd-kind-icon">Gesture<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="e2e.ios.helpers.gesture.html#wait_action" class="tsd-kind-icon">WAIT_<wbr>ACTION</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="e2e.ios.helpers.gesture.html#gesture" class="tsd-kind-icon">gesture</a>

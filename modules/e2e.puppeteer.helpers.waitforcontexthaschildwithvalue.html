@@ -88,13 +88,13 @@
 					<a name="waitforcontexthaschildwithvalue" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> wait<wbr>For<wbr>Context<wbr>Has<wbr>Child<wbr>With<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Context<wbr>Has<wbr>Child<wbr>With<wbr>Value<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Page</span>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a>, childValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JSHandle</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Context<wbr>Has<wbr>Child<wbr>With<wbr>Value<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Page</span>, context<span class="tsd-signature-symbol">: </span><a href="_types_.html#context" class="tsd-signature-type">Context</a>, childValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JSHandle</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/40b641b/src/e2e/puppeteer/helpers/waitForContextHasChildWithValue.ts#L7">src/e2e/puppeteer/helpers/waitForContextHasChildWithValue.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a70444f/src/e2e/puppeteer/helpers/waitForContextHasChildWithValue.ts#L8">src/e2e/puppeteer/helpers/waitForContextHasChildWithValue.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -111,7 +111,7 @@
 									<h5>context: <a href="_types_.html#context" class="tsd-signature-type">Context</a></h5>
 								</li>
 								<li>
-									<h5>childValue: <span class="tsd-signature-type">any</span></h5>
+									<h5>childValue: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">JSHandle</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -126,9 +126,6 @@
 					<li class="current tsd-kind-module tsd-is-not-exported">
 						<a href="e2e.html">e2e</a>
 						<ul>
-							<li class=" tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
-								<a href="e2e.ios.html">iOS</a>
-							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module tsd-is-not-exported">
 								<a href="e2e.puppeteer.html">puppeteer</a>
 								<ul>
@@ -139,13 +136,19 @@
 										<a href="e2e.puppeteer.helpers.html">helpers</a>
 										<ul>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers._.html">$</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.asbrowserenvironment.html">as<wbr>Browser<wbr>Environment</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.click.html">click</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.clickbullet.html">click<wbr>Bullet</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.clickthought.html">click<wbr>Thought</a>
-											</li>
-											<li class=" tsd-kind-module tsd-parent-kind-module">
-												<a href="e2e.puppeteer.helpers.clickwithoffset.html">click<wbr>With<wbr>Offset</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.geteditable.html">get<wbr>Editable</a>
@@ -154,7 +157,7 @@
 												<a href="e2e.puppeteer.helpers.geteditingtext.html">get<wbr>Editing<wbr>Text</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
-												<a href="e2e.puppeteer.helpers.initpage.html">init<wbr>Page</a>
+												<a href="e2e.puppeteer.helpers.getselection.html">get<wbr>Selection</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.newthought.html">new<wbr>Thought</a>
@@ -163,7 +166,16 @@
 												<a href="e2e.puppeteer.helpers.paste.html">paste</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
-												<a href="e2e.puppeteer.helpers.skiptutorialscreen.html">skip<wbr>Tutorial<wbr>Screen</a>
+												<a href="e2e.puppeteer.helpers.press.html">press</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.refresh.html">refresh</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.setup.html">setup</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.type.html">type</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.waitforalert.html">wait<wbr>For<wbr>Alert</a>
@@ -183,15 +195,12 @@
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.waitforthoughtexistindb.html">wait<wbr>For<wbr>Thought<wbr>Exist<wbr>InDb</a>
 											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.puppeteer.helpers.waituntil.html">wait<wbr>Until</a>
+											</li>
 										</ul>
 									</li>
 								</ul>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="e2e.puppeteer_environment.html">puppeteer-<wbr>environment</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="e2e.webdriverio_environment.html">webdriverio-<wbr>environment</a>
 							</li>
 						</ul>
 					</li>

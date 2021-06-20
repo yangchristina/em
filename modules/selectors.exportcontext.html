@@ -78,6 +78,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.exportcontext.html#exportcontext" class="tsd-kind-icon">export<wbr>Context</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.exportcontext.html#replacetitle" class="tsd-kind-icon">replace<wbr>Title</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.exportcontext.html#striphtmltag" class="tsd-kind-icon">stripHTMLTag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7e4c952/src/selectors/exportContext.ts#L30">src/selectors/exportContext.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b709968/src/selectors/exportContext.ts#L37">src/selectors/exportContext.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7e4c952/src/selectors/exportContext.ts#L8">src/selectors/exportContext.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b709968/src/selectors/exportContext.ts#L8">src/selectors/exportContext.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -170,6 +171,34 @@
 								</li>
 								<li>
 									<h5>format: <a href="_types_.html#mimetype" class="tsd-signature-type">MimeType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="striphtmltag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> stripHTMLTag</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">stripHTMLTag<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b709968/src/selectors/exportContext.ts#L16">src/selectors/exportContext.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Strips out HTML tage when exporting as plain text.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -201,6 +230,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.exportcontext.html#replacetitle" class="tsd-kind-icon">replace<wbr>Title</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.exportcontext.html#striphtmltag" class="tsd-kind-icon">stripHTMLTag</a>
 					</li>
 				</ul>
 			</nav>

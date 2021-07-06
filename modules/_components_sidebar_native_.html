@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Search | em</title>
+	<title>&quot;components/Sidebar.native&quot; | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="components.html">components</a>
-				</li>
-				<li>
-					<a href="components.search.html">Search</a>
+					<a href="_components_sidebar_native_.html">&quot;components/Sidebar.native&quot;</a>
 				</li>
 			</ul>
-			<h1>Module Search</h1>
+			<h1>Module &quot;components/Sidebar.native&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,15 +67,14 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.search.html#search_debounce_wait" class="tsd-kind-icon">SEARCH_<wbr>DEBOUNCE_<wbr>WAIT</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.search.html#debouncedsearch" class="tsd-kind-icon">debounced<wbr>Search</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_components_sidebar_native_.html#styles" class="tsd-kind-icon">styles</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.search.html#search" class="tsd-kind-icon">Search</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.search.html#onkeydown" class="tsd-kind-icon">on<wbr>Key<wbr>Down</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_components_sidebar_native_.html#recentedited" class="tsd-kind-icon">Recent<wbr>Edited</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_components_sidebar_native_.html#sidebar" class="tsd-kind-icon">Sidebar</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,86 +83,108 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="search_debounce_wait" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> SEARCH_<wbr>DEBOUNCE_<wbr>WAIT</h3>
-					<div class="tsd-signature tsd-kind-icon">SEARCH_<wbr>DEBOUNCE_<wbr>WAIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">180</span><span class="tsd-signature-symbol"> = 180</span></div>
+					<a name="styles" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> styles</h3>
+					<div class="tsd-signature tsd-kind-icon">styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">; </span>headerText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">; </span>padding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = StyleSheet.create({container: { backgroundColor: &#x27;#292a2b&#x27;, height: &#x27;100%&#x27;, padding: 15 },headerText: { color: &#x27;#666&#x27;, fontWeight: &#x27;300&#x27;, fontSize: 20 },padding: { padding: 15 },text: { color: &#x27;#fff&#x27; },})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Search.tsx#L15">src/components/Search.tsx:15</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Sidebar.native.tsx#L39">src/components/Sidebar.native.tsx:39</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="debouncedsearch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> debounced<wbr>Search</h3>
-					<div class="tsd-signature tsd-kind-icon">debounced<wbr>Search<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.debounce((newValue, archived, dispatch) &#x3D;&gt; dispatch(search({ value: newValue, archived })),SEARCH_DEBOUNCE_WAIT,)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Search.tsx#L17">src/components/Search.tsx:17</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>background<wbr>Color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>padding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>header<wbr>Text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>font<wbr>Size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>font<wbr>Weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"300"</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>padding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>padding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="search" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Search</h3>
+					<a name="recentedited" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Recent<wbr>Edited</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Search<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+						<li class="tsd-signature tsd-kind-icon">Recent<wbr>Edited<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Search.tsx#L31">src/components/Search.tsx:31</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Sidebar.native.tsx#L12">src/components/Sidebar.native.tsx:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Searches all thoughts.</p>
+									<p>Displays recently edited thoughts with a header.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>dispatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
-									</ul>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="onkeydown" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> on<wbr>Key<wbr>Down</h3>
+					<a name="sidebar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Sidebar</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Key<wbr>Down<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Sidebar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Search.tsx#L23">src/components/Search.tsx:23</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/components/Sidebar.native.tsx#L35">src/components/Sidebar.native.tsx:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Select next editable and prevent default keydown.</p>
+									<p>The Recently Edited sidebar component.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>e: <span class="tsd-signature-type">KeyboardEvent</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -175,29 +193,21 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="components.html">components</a>
-						<ul>
-							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="components.search.html">Search</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-module">
+						<a href="_components_sidebar_native_.html">&quot;components/<wbr>Sidebar.native&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.search.html#search_debounce_wait" class="tsd-kind-icon">SEARCH_<wbr>DEBOUNCE_<wbr>WAIT</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.search.html#debouncedsearch" class="tsd-kind-icon">debounced<wbr>Search</a>
+						<a href="_components_sidebar_native_.html#styles" class="tsd-kind-icon">styles</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.search.html#search" class="tsd-kind-icon">Search</a>
+						<a href="_components_sidebar_native_.html#recentedited" class="tsd-kind-icon">Recent<wbr>Edited</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="components.search.html#onkeydown" class="tsd-kind-icon">on<wbr>Key<wbr>Down</a>
+						<a href="_components_sidebar_native_.html#sidebar" class="tsd-kind-icon">Sidebar</a>
 					</li>
 				</ul>
 			</nav>

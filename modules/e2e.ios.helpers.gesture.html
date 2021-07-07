@@ -94,13 +94,13 @@
 					<a name="gesture" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> gesture</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>browser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"async"</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c4b8d6b/src/e2e/iOS/helpers/gesture.ts#L12">src/e2e/iOS/helpers/gesture.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d90835d/src/e2e/iOS/helpers/gesture.ts#L12">src/e2e/iOS/helpers/gesture.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -117,7 +117,7 @@
 									<h5>path: <a href="_types_.html#gesturepath" class="tsd-signature-type">GesturePath</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>segmentLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>waitMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>segment<wbr>Length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -126,10 +126,10 @@
 											<h5>wait<wbr>Ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>x<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<h5>x<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>y<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<h5>y<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -195,7 +195,13 @@
 												<a href="e2e.ios.helpers.iskeyboardshown.html">is<wbr>Keyboard<wbr>Shown</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.ios.helpers.newthought.html">new<wbr>Thought</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.ios.helpers.paste.html">paste</a>
+											</li>
+											<li class=" tsd-kind-module tsd-parent-kind-module">
+												<a href="e2e.ios.helpers.resetsafariformatsettings.html">reset<wbr>Safari<wbr>Format<wbr>Settings</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.ios.helpers.tap.html">tap</a>

@@ -68,7 +68,9 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_shortcuts_native_.html#globalshortcuts" class="tsd-kind-icon">global<wbr>Shortcuts</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_shortcuts_native_.html#handlegesturesegmenttimeout" class="tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<wbr>Timeout</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_shortcuts_native_.html#shortcutemitter" class="tsd-kind-icon">shortcut<wbr>Emitter</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_shortcuts_native_.html#shortcutgestureindex" class="tsd-kind-icon">shortcut<wbr>Gesture<wbr>Index</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_shortcuts_native_.html#shortcutidindex" class="tsd-kind-icon">shortcut<wbr>IdIndex</a></li>
 							</ul>
 						</section>
@@ -76,6 +78,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_shortcuts_native_.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_shortcuts_native_.html#inputhandlers" class="tsd-kind-icon">input<wbr>Handlers</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_shortcuts_native_.html#isgesturehint" class="tsd-kind-icon">is<wbr>Gesture<wbr>Hint</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_shortcuts_native_.html#shortcutbyid" class="tsd-kind-icon">shortcut<wbr>ById</a></li>
 							</ul>
 						</section>
@@ -90,7 +94,17 @@
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Shortcuts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = Object.values(shortcutObject) as Shortcut[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9af867e/src/shortcuts.native.ts#L8">src/shortcuts.native.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L12">src/shortcuts.native.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="handlegesturesegmenttimeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> handle<wbr>Gesture<wbr>Segment<wbr>Timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L16">src/shortcuts.native.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -100,9 +114,27 @@
 					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol"> = new Emitter()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9af867e/src/shortcuts.native.ts#L10">src/shortcuts.native.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L14">src/shortcuts.native.ts:14</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="shortcutgestureindex" class="tsd-anchor"></a>
+					<h3>shortcut<wbr>Gesture<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>Gesture<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L114">src/shortcuts.native.ts:114</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="shortcutidindex" class="tsd-anchor"></a>
@@ -110,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">shortcut<wbr>IdIndex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9af867e/src/shortcuts.native.ts#L24">src/shortcuts.native.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L114">src/shortcuts.native.ts:114</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -129,13 +161,13 @@
 					<a name="index" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>shortcutGestureIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9af867e/src/shortcuts.native.ts#L13">src/shortcuts.native.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L19">src/shortcuts.native.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -143,12 +175,138 @@
 									<p>Initializes shortcut indices and stores conflicts.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>shortcutGestureIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>shortcutIdIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>shortcut<wbr>Gesture<wbr>Index<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
 								<li class="tsd-parameter">
 									<h5>shortcut<wbr>IdIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.shortcut.shortcut.html" class="tsd-signature-type">Shortcut</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="inputhandlers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> input<wbr>Handlers</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">input<wbr>Handlers<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>handleGestureEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>handleGestureSegment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L50">src/shortcuts.native.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Keyboard handlers factory function.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>store: <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>handleGestureEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>handleGestureSegment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>handle<wbr>Gesture<wbr>End<span class="tsd-signature-symbol">: </span>function</h5>
+									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>End<span class="tsd-signature-symbol">(</span>gesture<span class="tsd-signature-symbol">: </span><a href="_types.gesturepath.html" class="tsd-signature-type">GesturePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GestureResponderEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<aside class="tsd-sources">
+												<ul>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L83">src/shortcuts.native.ts:83</a></li>
+												</ul>
+											</aside>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Executes a valid gesture and closes the gesture hint.</p>
+												</div>
+											</div>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>gesture: <a href="_types.gesturepath.html" class="tsd-signature-type">GesturePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+												</li>
+												<li>
+													<h5>e: <span class="tsd-signature-type">GestureResponderEvent</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>handle<wbr>Gesture<wbr>Segment<span class="tsd-signature-symbol">: </span>function</h5>
+									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<span class="tsd-signature-symbol">(</span>g<span class="tsd-signature-symbol">: </span><a href="_types.direction.html" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, path<span class="tsd-signature-symbol">: </span><a href="_types.gesturepath.html" class="tsd-signature-type">GesturePath</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<aside class="tsd-sources">
+												<ul>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L52">src/shortcuts.native.ts:52</a></li>
+												</ul>
+											</aside>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Handles gesture hints when a valid segment is entered.</p>
+												</div>
+											</div>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>g: <a href="_types.direction.html" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+												</li>
+												<li>
+													<h5>path: <a href="_types.gesturepath.html" class="tsd-signature-type">GesturePath</a></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isgesturehint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Gesture<wbr>Hint</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Gesture<wbr>Hint<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>alert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>alertType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>showCloseLink<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L45">src/shortcuts.native.ts:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if the current alert is a gestureHint.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>alert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>alertType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>showCloseLink<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>alert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>alertType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>showCloseLink<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -162,7 +320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9af867e/src/shortcuts.native.ts#L27">src/shortcuts.native.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b80e122/src/shortcuts.native.ts#L117">src/shortcuts.native.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,14 +353,26 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_shortcuts_native_.html#globalshortcuts" class="tsd-kind-icon">global<wbr>Shortcuts</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_shortcuts_native_.html#handlegesturesegmenttimeout" class="tsd-kind-icon">handle<wbr>Gesture<wbr>Segment<wbr>Timeout</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_shortcuts_native_.html#shortcutemitter" class="tsd-kind-icon">shortcut<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_shortcuts_native_.html#shortcutgestureindex" class="tsd-kind-icon">shortcut<wbr>Gesture<wbr>Index</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_shortcuts_native_.html#shortcutidindex" class="tsd-kind-icon">shortcut<wbr>IdIndex</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_shortcuts_native_.html#index" class="tsd-kind-icon">index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_shortcuts_native_.html#inputhandlers" class="tsd-kind-icon">input<wbr>Handlers</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_shortcuts_native_.html#isgesturehint" class="tsd-kind-icon">is<wbr>Gesture<wbr>Hint</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_shortcuts_native_.html#shortcutbyid" class="tsd-kind-icon">shortcut<wbr>ById</a>
@@ -230,6 +400,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 		</div>
 	</div>

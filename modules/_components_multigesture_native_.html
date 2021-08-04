@@ -79,6 +79,12 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_components_multigesture_native_.html#gesture" class="tsd-kind-icon">gesture</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported"><a href="_components_multigesture_native_.html#dirtorad" class="tsd-kind-icon">dir<wbr>ToRad</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -88,13 +94,13 @@
 					<a name="multigesture" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Multi<wbr>Gesture</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Multi<wbr>Gesture<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>onEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onGesture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">props</a><span class="tsd-signature-symbol">; </span>scrollThreshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+						<li class="tsd-signature tsd-kind-icon">Multi<wbr>Gesture<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minDistance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onGesture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">props</a><span class="tsd-signature-symbol">; </span>scrollThreshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3a62b4/src/components/MultiGesture.native.tsx#L43">src/components/MultiGesture.native.tsx:43</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L60">src/components/MultiGesture.native.tsx:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -105,8 +111,11 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>onEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onGesture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">props</a><span class="tsd-signature-symbol">; </span>scrollThreshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>minDistance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onGesture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>onStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>props<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">props</a><span class="tsd-signature-symbol">; </span>scrollThreshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>min<wbr>Distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
 										<li class="tsd-parameter">
 											<h5>on<wbr>End<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span></h5>
 										</li>
@@ -122,9 +131,6 @@
 										<li class="tsd-parameter">
 											<h5>scroll<wbr>Threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
-										<li class="tsd-parameter">
-											<h5>threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
 									</ul>
 								</li>
 							</ul>
@@ -136,18 +142,18 @@
 					<a name="gesture" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> gesture</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a>, p2<span class="tsd-signature-symbol">: </span><a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span></li>
+						<li class="tsd-signature tsd-kind-icon">gesture<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a>, p2<span class="tsd-signature-symbol">: </span><a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a>, minDistanceSquared<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.direction.html" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3a62b4/src/components/MultiGesture.native.tsx#L31">src/components/MultiGesture.native.tsx:31</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L42">src/components/MultiGesture.native.tsx:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns u, d, l, r, or null.</p>
+									<p>Return the closest gesture based on the angle between two points. See: <a href="https://github.com/cybersemics/em/issues/1379">https://github.com/cybersemics/em/issues/1379</a>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,12 +165,70 @@
 									<h5>p2: <a href="../interfaces/components.multigesture.point.html" class="tsd-signature-type">Point</a></h5>
 								</li>
 								<li>
-									<h5>threshold: <span class="tsd-signature-type">number</span></h5>
+									<h5>minDistanceSquared: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"u"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"d"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"l"</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.direction.html" class="tsd-signature-type">Direction</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+					<a name="dirtorad" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dir<wbr>ToRad</h3>
+					<div class="tsd-signature tsd-kind-icon">dir<wbr>ToRad<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L34">src/components/MultiGesture.native.tsx:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Static mapping of intercardinal directions to radians. Used to determine the closest gesture to an angle. Range: -π to π.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="dirtorad.ne" class="tsd-anchor"></a>
+						<h3>NE</h3>
+						<div class="tsd-signature tsd-kind-icon">NE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -Math.PI / 4</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L36">src/components/MultiGesture.native.tsx:36</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="dirtorad.nw" class="tsd-anchor"></a>
+						<h3>NW</h3>
+						<div class="tsd-signature tsd-kind-icon">NW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -Math.PI * (3 / 4)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L35">src/components/MultiGesture.native.tsx:35</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="dirtorad.se" class="tsd-anchor"></a>
+						<h3>SE</h3>
+						<div class="tsd-signature tsd-kind-icon">SE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Math.PI / 4</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L37">src/components/MultiGesture.native.tsx:37</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="dirtorad.sw" class="tsd-anchor"></a>
+						<h3>SW</h3>
+						<div class="tsd-signature tsd-kind-icon">SW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Math.PI * (3 / 4)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/0601220/src/components/MultiGesture.native.tsx#L38">src/components/MultiGesture.native.tsx:38</a></li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -192,6 +256,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_components_multigesture_native_.html#gesture" class="tsd-kind-icon">gesture</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_components_multigesture_native_.html#dirtorad" class="tsd-kind-icon">dir<wbr>ToRad</a>
 					</li>
 				</ul>
 			</nav>

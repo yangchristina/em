@@ -76,7 +76,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#throttledelay" class="tsd-kind-icon">throttle<wbr>Delay</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#throttle_db_write" class="tsd-kind-icon">THROTTLE_<wbr>DB_<wbr>WRITE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#throttle_middleware" class="tsd-kind-icon">THROTTLE_<wbr>MIDDLEWARE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#pathprev" class="tsd-kind-icon">path<wbr>Prev</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#updatecursorthrottled" class="tsd-kind-icon">update<wbr>Cursor<wbr>Throttled</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.updateurlhistory.html#updateurlhistorythrottled" class="tsd-kind-icon">update<wbr>Url<wbr>History<wbr>Throttled</a></li>
 							</ul>
 						</section>
@@ -93,27 +96,62 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="throttledelay" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> throttle<wbr>Delay</h3>
-					<div class="tsd-signature tsd-kind-icon">throttle<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">400</span><span class="tsd-signature-symbol"> = 400</span></div>
+					<a name="throttle_db_write" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> THROTTLE_<wbr>DB_<wbr>WRITE</h3>
+					<div class="tsd-signature tsd-kind-icon">THROTTLE_<wbr>DB_<wbr>WRITE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">400</span><span class="tsd-signature-symbol"> = 400</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/41eab81/src/redux-middleware/updateUrlHistory.ts#L11">src/redux-middleware/updateUrlHistory.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L21">src/redux-middleware/updateUrlHistory.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Delay with which to throttle browser history update.</p>
+							<p>Time delay (ms) to throttle writing the cursor to the database which is slow and not done in a separate worker yet.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="updateurlhistorythrottled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Url<wbr>History<wbr>Throttled</h3>
-					<div class="tsd-signature tsd-kind-icon">update<wbr>Url<wbr>History<wbr>Throttled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.throttle(getState &#x3D;&gt; {const state &#x3D; getState()updateUrlHistory(state, state.cursor)}, throttleDelay)</span></div>
+					<a name="throttle_middleware" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> THROTTLE_<wbr>MIDDLEWARE</h3>
+					<div class="tsd-signature tsd-kind-icon">THROTTLE_<wbr>MIDDLEWARE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">50</span><span class="tsd-signature-symbol"> = 50</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/41eab81/src/redux-middleware/updateUrlHistory.ts#L70">src/redux-middleware/updateUrlHistory.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L18">src/redux-middleware/updateUrlHistory.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Time delay (ms) to throttle the updateUrlHistory middleware so it is not executed on every action.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="pathprev" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> path<wbr>Prev</h3>
+					<div class="tsd-signature tsd-kind-icon">path<wbr>Prev<span class="tsd-signature-symbol">:</span> <a href="_types.path.html" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L24">src/redux-middleware/updateUrlHistory.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="updatecursorthrottled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Cursor<wbr>Throttled</h3>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Cursor<wbr>Throttled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.throttle((state: State, context: Context) &#x3D;&gt; {// persist the cursor so it can be restored after em is closed and reopened on the home page (see initialState)// ensure the location does not change through refreshes in standalone PWA modeconst updateCursorPromise &#x3D; state.cursor ? updateCursor(hashContextUrl(state, context)) : deleteCursor()updateCursorPromise.catch(err &#x3D;&gt; {throw new Error(err)})}, THROTTLE_DB_WRITE)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L26">src/redux-middleware/updateUrlHistory.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="updateurlhistorythrottled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Url<wbr>History<wbr>Throttled</h3>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Url<wbr>History<wbr>Throttled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.throttle(getState &#x3D;&gt; {const state &#x3D; getState()updateUrlHistory(state, state.cursor)}, THROTTLE_MIDDLEWARE)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L86">src/redux-middleware/updateUrlHistory.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,12 +168,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/41eab81/src/redux-middleware/updateUrlHistory.ts#L23">src/redux-middleware/updateUrlHistory.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L39">src/redux-middleware/updateUrlHistory.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the url and history to the given thoughts.
+									<p>Sets the url to the given Path.
 									SIDE EFFECTS: window.history.</p>
 								</div>
 							</div>
@@ -173,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/41eab81/src/redux-middleware/updateUrlHistory.ts#L76">src/redux-middleware/updateUrlHistory.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/a3915fb/src/redux-middleware/updateUrlHistory.ts#L92">src/redux-middleware/updateUrlHistory.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +264,16 @@
 						<a href="../interfaces/redux_middleware.updateurlhistory.options.html" class="tsd-kind-icon">Options</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="redux_middleware.updateurlhistory.html#throttledelay" class="tsd-kind-icon">throttle<wbr>Delay</a>
+						<a href="redux_middleware.updateurlhistory.html#throttle_db_write" class="tsd-kind-icon">THROTTLE_<wbr>DB_<wbr>WRITE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.updateurlhistory.html#throttle_middleware" class="tsd-kind-icon">THROTTLE_<wbr>MIDDLEWARE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.updateurlhistory.html#pathprev" class="tsd-kind-icon">path<wbr>Prev</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.updateurlhistory.html#updatecursorthrottled" class="tsd-kind-icon">update<wbr>Cursor<wbr>Throttled</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.updateurlhistory.html#updateurlhistorythrottled" class="tsd-kind-icon">update<wbr>Url<wbr>History<wbr>Throttled</a>

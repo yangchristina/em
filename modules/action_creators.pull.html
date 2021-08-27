@@ -83,6 +83,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="action_creators.pull.html#getpendingormissingcontexts" class="tsd-kind-icon">get<wbr>Pending<wbr>OrMissing<wbr>Contexts</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="action_creators.pull.html#itforeach" class="tsd-kind-icon">it<wbr>For<wbr>Each</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="action_creators.pull.html#pull" class="tsd-kind-icon">pull</a></li>
 							</ul>
@@ -98,7 +99,7 @@
 					<div class="tsd-signature tsd-kind-icon">BUFFER_<wbr>DEPTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/action-creators/pull.ts#L11">src/action-creators/pull.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/action-creators/pull.ts#L11">src/action-creators/pull.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -108,13 +109,44 @@
 					<div class="tsd-signature tsd-kind-icon">ROOT_<wbr>ENCODED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ContextHash"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = hashContext([HOME_TOKEN])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/action-creators/pull.ts#L12">src/action-creators/pull.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/action-creators/pull.ts#L12">src/action-creators/pull.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getpendingormissingcontexts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Pending<wbr>OrMissing<wbr>Contexts</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pending<wbr>OrMissing<wbr>Contexts<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, contextMap<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/action-creators/pull.ts#L32">src/action-creators/pull.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of pending contexts or missing parents from all contextMap contexts and their descendants.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>contextMap: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 					<a name="itforeach" class="tsd-anchor"></a>
 					<h3>it<wbr>For<wbr>Each</h3>
@@ -125,7 +157,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/action-creators/pull.ts#L21">src/action-creators/pull.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/action-creators/pull.ts#L24">src/action-creators/pull.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -174,13 +206,13 @@
 					<a name="pull" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> pull</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">pull<span class="tsd-signature-symbol">(</span>contextMap<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>maxDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onLocalThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>onRemoteThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pull<span class="tsd-signature-symbol">(</span>contextMap<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>maxDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onLocalThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>onRemoteThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/action-creators/pull.ts#L32">src/action-creators/pull.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/action-creators/pull.ts#L54">src/action-creators/pull.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,8 +227,11 @@
 									<h5>contextMap: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>maxDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onLocalThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>onRemoteThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>maxDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onLocalThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>onRemoteThoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.thoughtsinterface.html" class="tsd-signature-type">ThoughtsInterface</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
 										<li class="tsd-parameter">
 											<h5>max<wbr>Depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 										</li>
@@ -238,6 +273,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="action_creators.pull.html#root_encoded" class="tsd-kind-icon">ROOT_<wbr>ENCODED</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="action_creators.pull.html#getpendingormissingcontexts" class="tsd-kind-icon">get<wbr>Pending<wbr>OrMissing<wbr>Contexts</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="action_creators.pull.html#itforeach" class="tsd-kind-icon">it<wbr>For<wbr>Each</a>

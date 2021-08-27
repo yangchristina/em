@@ -81,6 +81,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#flushmoves" class="tsd-kind-icon">flush<wbr>Moves</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#flushpushqueue" class="tsd-kind-icon">flush<wbr>Push<wbr>Queue</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#mergebatch" class="tsd-kind-icon">merge<wbr>Batch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#mergeconflictingthoughtindexupdates" class="tsd-kind-icon">merge<wbr>Conflicting<wbr>Thought<wbr>Index<wbr>Updates</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#pullpendinglexemes" class="tsd-kind-icon">pull<wbr>Pending<wbr>Lexemes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#pushbatch" class="tsd-kind-icon">push<wbr>Batch</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="redux_middleware.pushqueue.html#pushqueuemiddleware" class="tsd-kind-icon">push<wbr>Queue<wbr>Middleware</a></li>
 							</ul>
@@ -96,7 +98,7 @@
 					<div class="tsd-signature tsd-kind-icon">debounce<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L284">src/redux-middleware/pushQueue.ts:284</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L276">src/redux-middleware/pushQueue.ts:276</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -113,7 +115,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L60">src/redux-middleware/pushQueue.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L140">src/redux-middleware/pushQueue.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -141,7 +143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L84">src/redux-middleware/pushQueue.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L164">src/redux-middleware/pushQueue.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,7 +171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L104">src/redux-middleware/pushQueue.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L184">src/redux-middleware/pushQueue.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,12 +199,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L148">src/redux-middleware/pushQueue.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L228">src/redux-middleware/pushQueue.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sync queued updates with the local and remote. Make sure to clear the queue immediately to prevent redundant syncs.</p>
+									<p>Push queued updates to the local and remote. Make sure to clear the queue synchronously after calling this to prevent redundant pushes.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -213,18 +215,18 @@
 					<a name="mergebatch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> merge<wbr>Batch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Batch<span class="tsd-signature-symbol">(</span>accum<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a>, batch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></li>
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Batch<span class="tsd-signature-symbol">(</span>accum<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a>, batch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L18">src/redux-middleware/pushQueue.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L19">src/redux-middleware/pushQueue.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Merges multiple push batches into a single batch. Uses last value of local/remote.</p>
+									<p>Merges multiple push batches into a single batch. Uses the last value of local/remote. You may also pass partial batches, such as an object that contains only thoughtIndexUpdates.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -233,10 +235,69 @@
 									<h5>accum: <a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></h5>
 								</li>
 								<li>
-									<h5>batch: <a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></h5>
+									<h5>batch: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="mergeconflictingthoughtindexupdates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> merge<wbr>Conflicting<wbr>Thought<wbr>Index<wbr>Updates</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Conflicting<wbr>Thought<wbr>Index<wbr>Updates<span class="tsd-signature-symbol">(</span>thoughtIndexUpdatesA<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span>, thoughtIndexUpdatesB<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L51">src/redux-middleware/pushQueue.ts:51</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Merges conflicting Lexemes from two different ThoughtIndexUpdates. Only returns Lexemes with actual conflicts. Used to merge pulled Lexemes into a PushBatch.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>thoughtIndexUpdatesA: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>thoughtIndexUpdatesB: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="pullpendinglexemes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> pull<wbr>Pending<wbr>Lexemes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">pull<wbr>Pending<wbr>Lexemes<span class="tsd-signature-symbol">(</span>batch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L85">src/redux-middleware/pushQueue.ts:85</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fetches lexemes from local and remote and merges them into a PushBatch. When there is a synchronous edit in state, the Lexeme may already exist in the local or remote. This function ensures that the local/remote Lexeme gets merged with the edited Lexeme in Redux state. It updates Redux state only (like pull) and returns ThoughtIndexUpdates so that they can be merged into the existing batch and sent in one push.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>batch: <a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -250,12 +311,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L51">src/redux-middleware/pushQueue.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L131">src/redux-middleware/pushQueue.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Push a batch to the local/remote.</p>
+									<p>Push a batch to the local and/or remote.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -311,7 +372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/redux-middleware/pushQueue.ts#L287">src/redux-middleware/pushQueue.ts:287</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/pushQueue.ts#L279">src/redux-middleware/pushQueue.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,6 +416,9 @@
 								<a href="redux_middleware.pushqueue.html">push<wbr>Queue</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="redux_middleware.sessionmanager.html">session<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="redux_middleware.updateurlhistory.html">update<wbr>Url<wbr>History</a>
 							</li>
 						</ul>
@@ -380,6 +444,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pushqueue.html#mergebatch" class="tsd-kind-icon">merge<wbr>Batch</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.pushqueue.html#mergeconflictingthoughtindexupdates" class="tsd-kind-icon">merge<wbr>Conflicting<wbr>Thought<wbr>Index<wbr>Updates</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.pushqueue.html#pullpendinglexemes" class="tsd-kind-icon">pull<wbr>Pending<wbr>Lexemes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pushqueue.html#pushbatch" class="tsd-kind-icon">push<wbr>Batch</a>

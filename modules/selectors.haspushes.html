@@ -88,12 +88,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/selectors/hasPushes.ts#L4">src/selectors/hasPushes.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/selectors/hasPushes.ts#L4">src/selectors/hasPushes.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A selector that returns true if there are any local or remote pushes queued or in-progress. Does not include state-only updates, i.e. from pull.</p>
+									<p>A selector that returns true if there are any local or remote pushes queued or in-progress. Used by pullQueue to avoid pulling during a push. Does not include updates for Redux state only.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>

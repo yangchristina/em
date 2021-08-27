@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>pullLexemes | em</title>
+	<title>sessionManager | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="action_creators.html">action-creators</a>
+					<a href="redux_middleware.html">redux-middleware</a>
 				</li>
 				<li>
-					<a href="action_creators.pulllexemes.html">pullLexemes</a>
+					<a href="redux_middleware.sessionmanager.html">sessionManager</a>
 				</li>
 			</ul>
-			<h1>Module pullLexemes</h1>
+			<h1>Module sessionManager</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="action_creators.pulllexemes.html#pulllexemes" class="tsd-kind-icon">pull<wbr>Lexemes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="redux_middleware.sessionmanager.html#sessionmanagermiddleware" class="tsd-kind-icon">session<wbr>Manager<wbr>Middleware</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,30 +79,35 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="pulllexemes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> pull<wbr>Lexemes</h3>
+					<a name="sessionmanagermiddleware" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> session<wbr>Manager<wbr>Middleware</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">pull<wbr>Lexemes<span class="tsd-signature-symbol">(</span>hashThoughtIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">session<wbr>Manager<wbr>Middleware<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7b45045/src/action-creators/pullLexemes.ts#L9">src/action-creators/pullLexemes.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/21a733e/src/redux-middleware/sessionManager.ts#L6">src/redux-middleware/sessionManager.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Fetches lexemes from the local and remote source and reconciles.</p>
+									<p>Runs a throttled session keepalive on every action.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>hashThoughtIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>get<wbr>State<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -112,10 +117,22 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="action_creators.html">action-<wbr>creators</a>
+						<a href="redux_middleware.html">redux-<wbr>middleware</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="redux_middleware.multi.html">multi</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="redux_middleware.pullqueue.html">pull<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="redux_middleware.pushqueue.html">push<wbr>Queue</a>
+							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="action_creators.pulllexemes.html">pull<wbr>Lexemes</a>
+								<a href="redux_middleware.sessionmanager.html">session<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="redux_middleware.updateurlhistory.html">update<wbr>Url<wbr>History</a>
 							</li>
 						</ul>
 					</li>
@@ -124,7 +141,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="action_creators.pulllexemes.html#pulllexemes" class="tsd-kind-icon">pull<wbr>Lexemes</a>
+						<a href="redux_middleware.sessionmanager.html#sessionmanagermiddleware" class="tsd-kind-icon">session<wbr>Manager<wbr>Middleware</a>
 					</li>
 				</ul>
 			</nav>

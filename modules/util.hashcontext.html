@@ -67,22 +67,25 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.hashcontext.html#separator_token" class="tsd-kind-icon">SEPARATOR_<wbr>TOKEN</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.hashcontext.html#hashcontext" class="tsd-kind-icon">hash<wbr>Context</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.hashcontext.html#hashcontextfunction" class="tsd-kind-icon">hash<wbr>Context<wbr>Function</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.hashcontext.html#hashcontext" class="tsd-kind-icon">hash<wbr>Context</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.hashcontext.html#encodehashedcontext" class="tsd-kind-icon">encode<wbr>Hashed<wbr>Context</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.hashcontext.html#encodeplaincontext" class="tsd-kind-icon">encode<wbr>Plain<wbr>Context</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="separator_token" class="tsd-anchor"></a>
@@ -90,35 +93,91 @@
 					<div class="tsd-signature tsd-kind-icon">SEPARATOR_<wbr>TOKEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"__SEP__"</span><span class="tsd-signature-symbol"> = &quot;__SEP__&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/57b326e/src/util/hashContext.ts#L10">src/util/hashContext.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/61896e4/src/util/hashContext.ts#L9">src/util/hashContext.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="hashcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> hash<wbr>Context</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">hash<wbr>Context<span class="tsd-signature-symbol">(</span>thoughts<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a>, rank<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a></li>
+					<div class="tsd-signature tsd-kind-icon">hash<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="util.hashcontext.html#encodeplaincontext" class="tsd-signature-type">encodePlainContext</a><span class="tsd-signature-symbol"> = hashContextFunction</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/61896e4/src/util/hashContext.ts#L34">src/util/hashContext.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="hashcontextfunction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> hash<wbr>Context<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">hash<wbr>Context<wbr>Function<span class="tsd-signature-symbol">:</span> <a href="util.hashcontext.html#encodeplaincontext" class="tsd-signature-type">encodePlainContext</a><span class="tsd-signature-symbol"> = globals.disableThoughtHashing ? encodePlainContext : encodeHashedContext</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/61896e4/src/util/hashContext.ts#L25">src/util/hashContext.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns a hashContext function with or without hashing at compile-time for performance.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="encodehashedcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> encode<wbr>Hashed<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">encode<wbr>Hashed<wbr>Context<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a>, rank<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/57b326e/src/util/hashContext.ts#L13">src/util/hashContext.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/61896e4/src/util/hashContext.ts#L17">src/util/hashContext.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Encode the thoughts (and optionally rank) as a string.</p>
+									<p>Encodes the context (and optionally rank) as a string using MurmurHash.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>thoughts: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
+									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> rank: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="encodeplaincontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> encode<wbr>Plain<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">encode<wbr>Plain<wbr>Context<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a>, rank<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/61896e4/src/util/hashContext.ts#L12">src/util/hashContext.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Encodes the context as a string with no hashing. Useful for debugging purposes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> rank: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
@@ -148,8 +207,17 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.hashcontext.html#separator_token" class="tsd-kind-icon">SEPARATOR_<wbr>TOKEN</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="util.hashcontext.html#hashcontext" class="tsd-kind-icon">hash<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.hashcontext.html#hashcontextfunction" class="tsd-kind-icon">hash<wbr>Context<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.hashcontext.html#encodehashedcontext" class="tsd-kind-icon">encode<wbr>Hashed<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.hashcontext.html#encodeplaincontext" class="tsd-kind-icon">encode<wbr>Plain<wbr>Context</a>
 					</li>
 				</ul>
 			</nav>

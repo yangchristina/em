@@ -71,8 +71,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.dataprovidertest.html#dataprovidertest" class="tsd-kind-icon">data<wbr>Provider<wbr>Test</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.dataprovidertest.html#getmanydescendantsbycontext" class="tsd-kind-icon">get<wbr>Many<wbr>Descendants<wbr>ByContext</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.dataprovidertest.html#getthoughtidsforcontexts" class="tsd-kind-icon">get<wbr>Thought<wbr>Ids<wbr>For<wbr>Contexts</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="test_helpers.dataprovidertest.html#importthoughts" class="tsd-kind-icon">import<wbr>Thoughts</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="test_helpers.dataprovidertest.html#stringifyvertical" class="tsd-kind-icon">stringify<wbr>Vertical</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/test-helpers/dataProviderTest.ts#L88">src/test-helpers/dataProviderTest.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/test-helpers/dataProviderTest.ts#L104">src/test-helpers/dataProviderTest.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -109,6 +110,71 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getmanydescendantsbycontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Many<wbr>Descendants<wbr>ByContext</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Many<wbr>Descendants<wbr>ByContext<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/data_providers.dataprovider.dataprovider.html" class="tsd-signature-type">DataProvider</a>, contextArray<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thoughtindices.thoughtindices.html" class="tsd-signature-type">ThoughtIndices</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/test-helpers/dataProviderTest.ts#L36">src/test-helpers/dataProviderTest.ts:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns many descandants fot the given contexts,.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>provider: <a href="../interfaces/data_providers.dataprovider.dataprovider.html" class="tsd-signature-type">DataProvider</a></h5>
+								</li>
+								<li>
+									<h5>contextArray: <a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thoughtindices.thoughtindices.html" class="tsd-signature-type">ThoughtIndices</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getthoughtidsforcontexts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Thought<wbr>Ids<wbr>For<wbr>Contexts</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Thought<wbr>Ids<wbr>For<wbr>Contexts<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/data_providers.dataprovider.dataprovider.html" class="tsd-signature-type">DataProvider</a>, contexts<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/test-helpers/dataProviderTest.ts#L30">src/test-helpers/dataProviderTest.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get thought ids for given array of contexts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>provider: <a href="../interfaces/data_providers.dataprovider.dataprovider.html" class="tsd-signature-type">DataProvider</a></h5>
+								</li>
+								<li>
+									<h5>contexts: <a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="importthoughts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> import<wbr>Thoughts</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -118,7 +184,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/test-helpers/dataProviderTest.ts#L79">src/test-helpers/dataProviderTest.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/test-helpers/dataProviderTest.ts#L95">src/test-helpers/dataProviderTest.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -151,40 +217,6 @@
 									</ul>
 								</li>
 							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-					<a name="stringifyvertical" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> stringify<wbr>Vertical</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">stringify<wbr>Vertical&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/test-helpers/dataProviderTest.ts#L36">src/test-helpers/dataProviderTest.ts:36</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Formats an array of stringified objects vertically.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>arr: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -224,6 +256,12 @@
 								<a href="test_helpers.delay.html">delay</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.deletethoughtatfirstmatch.html">delete<wbr>Thought<wbr>AtFirst<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.editthoughtatfirstmatch.html">edit<wbr>Thought<wbr>AtFirst<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.executeshortcut.html">execute<wbr>Shortcut</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -233,7 +271,16 @@
 								<a href="test_helpers.importtocontext.html">import<wbr>ToContext</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.matchpathwiththoughts.html">match<wbr>Path<wbr>With<wbr>Thoughts</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.mock_debounce_throttle.html">mock-<wbr>debounce-<wbr>throttle</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.movethoughtatfirstmatch.html">move<wbr>Thought<wbr>AtFirst<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="test_helpers.newthoughtatfirstmatch.html">new<wbr>Thought<wbr>AtFirst<wbr>Match</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="test_helpers.partialwithref.html">partial<wbr>With<wbr>Ref</a>
@@ -260,10 +307,13 @@
 						<a href="test_helpers.dataprovidertest.html#dataprovidertest" class="tsd-kind-icon">data<wbr>Provider<wbr>Test</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="test_helpers.dataprovidertest.html#importthoughts" class="tsd-kind-icon">import<wbr>Thoughts</a>
+						<a href="test_helpers.dataprovidertest.html#getmanydescendantsbycontext" class="tsd-kind-icon">get<wbr>Many<wbr>Descendants<wbr>ByContext</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="test_helpers.dataprovidertest.html#stringifyvertical" class="tsd-kind-icon">stringify<wbr>Vertical</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="test_helpers.dataprovidertest.html#getthoughtidsforcontexts" class="tsd-kind-icon">get<wbr>Thought<wbr>Ids<wbr>For<wbr>Contexts</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="test_helpers.dataprovidertest.html#importthoughts" class="tsd-kind-icon">import<wbr>Thoughts</a>
 					</li>
 				</ul>
 			</nav>

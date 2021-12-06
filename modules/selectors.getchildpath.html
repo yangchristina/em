@@ -87,10 +87,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="getchildpath" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Child<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((state: State, child: Child | ThoughtContext, simplePath: SimplePath, showContexts?: boolean): SimplePath &#x3D;&gt; {const otherSubthought &#x3D;(showContexts &amp;&amp; (child as ThoughtContext).context? getAllChildren(state, (child as ThoughtContext).context): []).find(child &#x3D;&gt; hashThought(child.value) &#x3D;&#x3D;&#x3D; hashThought(headValue(simplePath))) || head(simplePath)const childPath &#x3D; (showContexts? // rankThoughtsFirstMatch not accounted for by memoize resolverrankThoughtsFirstMatch(state, (child as ThoughtContext).context).concat(otherSubthought): unroot(simplePath).concat(child as Child)) as SimplePathreturn childPath},resolve,)</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((state: State, child: ThoughtId | ThoughtContext, simplePath: SimplePath, showContexts?: boolean): SimplePath &#x3D;&gt; {const simplePathHeadThought &#x3D; getThoughtById(state, head(simplePath))const otherSubthought &#x3D; (showContexts &amp;&amp; getParentThought(state, child)!.id? getAllChildrenAsThoughts(state, getContextForThought(state, child)!): []).find(child &#x3D;&gt; hashThought(child.value) &#x3D;&#x3D;&#x3D; hashThought(simplePathHeadThought.value))?.idconst path &#x3D; showContexts &amp;&amp; rankThoughtsFirstMatch(state, getContextForThought(state, child)!)const childPath &#x3D; (showContexts &amp;&amp; path? // rankThoughtsFirstMatch not accounted for by memoize resolverpath.concat(otherSubthought!): unroot(simplePath).concat(child as ThoughtId)) as SimplePathreturn childPath},resolve,)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildPath.ts#L20">src/selectors/getChildPath.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildPath.ts#L24">src/selectors/getChildPath.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -106,13 +106,13 @@
 					<a name="resolve" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> resolve</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, child<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a>, simplePath<span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a>, showContexts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, child<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><a href="_types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a>, simplePath<span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a>, showContexts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildPath.ts#L8">src/selectors/getChildPath.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildPath.ts#L12">src/selectors/getChildPath.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -126,7 +126,7 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>child: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h5>
+									<h5>child: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><a href="_types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h5>
 								</li>
 								<li>
 									<h5>simplePath: <a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a></h5>

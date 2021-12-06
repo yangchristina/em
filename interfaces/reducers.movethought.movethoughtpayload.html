@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ThoughtContext | em</title>
+	<title>MoveThoughtPayload | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,34 +51,27 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/_types.html">@types</a>
+					<a href="../modules/reducers.html">reducers</a>
 				</li>
 				<li>
-					<a href="../modules/_types.thoughtcontext.html">ThoughtContext</a>
+					<a href="../modules/reducers.movethought.html">moveThought</a>
 				</li>
 				<li>
-					<a href="_types.thoughtcontext.thoughtcontext.html">ThoughtContext</a>
+					<a href="reducers.movethought.movethoughtpayload.html">MoveThoughtPayload</a>
 				</li>
 			</ul>
-			<h1>Interface ThoughtContext</h1>
+			<h1>Interface MoveThoughtPayload</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An entry in thoughtIndex[].contexts.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ThoughtContext</span>
+						<span class="target">MoveThoughtPayload</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +81,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types.thoughtcontext.thoughtcontext.html#archived" class="tsd-kind-icon">archived</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types.thoughtcontext.thoughtcontext.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types.thoughtcontext.thoughtcontext.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types.thoughtcontext.thoughtcontext.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types.thoughtcontext.thoughtcontext.html#rank" class="tsd-kind-icon">rank</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.movethought.movethoughtpayload.html#newpath" class="tsd-kind-icon">new<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.movethought.movethoughtpayload.html#newrank" class="tsd-kind-icon">new<wbr>Rank</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.movethought.movethoughtpayload.html#offset" class="tsd-kind-icon">offset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.movethought.movethoughtpayload.html#oldpath" class="tsd-kind-icon">old<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.movethought.movethoughtpayload.html#skiprerank" class="tsd-kind-icon">skip<wbr>Rerank</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,52 +94,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="archived" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> archived</h3>
-					<div class="tsd-signature tsd-kind-icon">archived<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.timestamp.html" class="tsd-signature-type">Timestamp</a></div>
+					<a name="newpath" class="tsd-anchor"></a>
+					<h3>new<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">new<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.path.html" class="tsd-signature-type">Path</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/@types/ThoughtContext.ts#L10">src/@types/ThoughtContext.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/reducers/moveThought.ts#L21">src/reducers/moveThought.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.context.html" class="tsd-signature-type">Context</a></div>
+					<a name="newrank" class="tsd-anchor"></a>
+					<h3>new<wbr>Rank</h3>
+					<div class="tsd-signature tsd-kind-icon">new<wbr>Rank<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/@types/ThoughtContext.ts#L6">src/@types/ThoughtContext.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/reducers/moveThought.ts#L25">src/reducers/moveThought.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="offset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> offset</h3>
+					<div class="tsd-signature tsd-kind-icon">offset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/@types/ThoughtContext.ts#L9">src/@types/ThoughtContext.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/reducers/moveThought.ts#L22">src/reducers/moveThought.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lastupdated" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> last<wbr>Updated</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Updated<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.timestamp.html" class="tsd-signature-type">Timestamp</a></div>
+					<a name="oldpath" class="tsd-anchor"></a>
+					<h3>old<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">old<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.path.html" class="tsd-signature-type">Path</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/@types/ThoughtContext.ts#L8">src/@types/ThoughtContext.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/reducers/moveThought.ts#L20">src/reducers/moveThought.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rank" class="tsd-anchor"></a>
-					<h3>rank</h3>
-					<div class="tsd-signature tsd-kind-icon">rank<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="skiprerank" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> skip<wbr>Rerank</h3>
+					<div class="tsd-signature tsd-kind-icon">skip<wbr>Rerank<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/@types/ThoughtContext.ts#L7">src/@types/ThoughtContext.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/reducers/moveThought.ts#L24">src/reducers/moveThought.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,10 +149,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/_types.html">@types</a>
+						<a href="../modules/reducers.html">reducers</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/_types.thoughtcontext.html">Thought<wbr>Context</a>
+								<a href="../modules/reducers.movethought.html">move<wbr>Thought</a>
 							</li>
 						</ul>
 					</li>
@@ -170,27 +163,30 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types.thoughtcontext.thoughtcontext.html" class="tsd-kind-icon">Thought<wbr>Context</a>
+						<a href="reducers.movethought.movethoughtpayload.html" class="tsd-kind-icon">Move<wbr>Thought<wbr>Payload</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types.thoughtcontext.thoughtcontext.html#archived" class="tsd-kind-icon">archived</a>
+								<a href="reducers.movethought.movethoughtpayload.html#newpath" class="tsd-kind-icon">new<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types.thoughtcontext.thoughtcontext.html#context" class="tsd-kind-icon">context</a>
+								<a href="reducers.movethought.movethoughtpayload.html#newrank" class="tsd-kind-icon">new<wbr>Rank</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types.thoughtcontext.thoughtcontext.html#id" class="tsd-kind-icon">id</a>
+								<a href="reducers.movethought.movethoughtpayload.html#offset" class="tsd-kind-icon">offset</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types.thoughtcontext.thoughtcontext.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a>
+								<a href="reducers.movethought.movethoughtpayload.html#oldpath" class="tsd-kind-icon">old<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types.thoughtcontext.thoughtcontext.html#rank" class="tsd-kind-icon">rank</a>
+								<a href="reducers.movethought.movethoughtpayload.html#skiprerank" class="tsd-kind-icon">skip<wbr>Rerank</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/reducers.movethought.html#movethought" class="tsd-kind-icon">move<wbr>Thought</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

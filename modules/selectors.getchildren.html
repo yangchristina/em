@@ -94,16 +94,17 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#firstvisiblechild" class="tsd-kind-icon">first<wbr>Visible<wbr>Child</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#firstvisiblechildwithcursorcheck" class="tsd-kind-icon">first<wbr>Visible<wbr>Child<wbr>With<wbr>Cursor<wbr>Check</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getallchildren" class="tsd-kind-icon">get<wbr>All<wbr>Children</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getallchildrenasthoughts" class="tsd-kind-icon">get<wbr>All<wbr>Children<wbr>AsThoughts</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getallchildrenbycontexthash" class="tsd-kind-icon">get<wbr>All<wbr>Children<wbr>ByContext<wbr>Hash</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getallchildrensorted" class="tsd-kind-icon">get<wbr>All<wbr>Children<wbr>Sorted</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getchildrenranked" class="tsd-kind-icon">get<wbr>Children<wbr>Ranked</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getchildrenrankedbyid" class="tsd-kind-icon">get<wbr>Children<wbr>Ranked<wbr>ById</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#getchildrensortedalphabetical" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>Alphabetical</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#getchildrensortedby" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#getparent" class="tsd-kind-icon">get<wbr>Parent</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.getchildren.html#haschildren" class="tsd-kind-icon">has<wbr>Children</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#ischildincursor" class="tsd-kind-icon">is<wbr>Child<wbr>InCursor</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#isdescendantofmetacursor" class="tsd-kind-icon">is<wbr>Descendant<wbr>OfMeta<wbr>Cursor</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#pathheadvalue" class="tsd-kind-icon">path<wbr>Head<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#rankdiff" class="tsd-kind-icon">rank<wbr>Diff</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.getchildren.html#resortemptyinplace" class="tsd-kind-icon">resort<wbr>Empty<wbr>InPlace</a></li>
 							</ul>
@@ -116,10 +117,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 					<a name="getthoughts" class="tsd-anchor"></a>
 					<h3>Get<wbr>Thoughts</h3>
-					<div class="tsd-signature tsd-kind-icon">Get<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Get<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L25">src/selectors/getChildren.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L25">src/selectors/getChildren.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +133,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -145,7 +146,7 @@
 												<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+										<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -158,10 +159,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="childrenfilterpredicate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> children<wbr>Filter<wbr>Predicate</h3>
-					<div class="tsd-signature tsd-kind-icon">children<wbr>Filter<wbr>Predicate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction5</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, path: Path, context: Context, showContexts &#x3D; false, child: Child | ThoughtContext) &#x3D;&gt; {return (isChildVisibleWithCursorCheck(state, path, context, showContexts, child) &amp;&amp;(!isAbsolute(state.rootContext) || isCreatedAfterAbsoluteToggle(state, child)))},5,)</span></div>
+					<div class="tsd-signature tsd-kind-icon">children<wbr>Filter<wbr>Predicate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, parentPath: SimplePath, child: Parent) &#x3D;&gt; {return (isChildVisibleWithCursorCheck(state, parentPath, child) &amp;&amp;(!isAbsolute(state.rootContext) || isCreatedAfterAbsoluteToggle(state, child.id)))}, 3)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L218">src/selectors/getChildren.ts:218</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L211">src/selectors/getChildren.ts:211</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,10 +179,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="getchildren" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildren)</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildrenAsThoughts)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L70">src/selectors/getChildren.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L74">src/selectors/getChildren.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,10 +194,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="getchildrensorted" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Sorted</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildrenSorted)</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughts(getAllChildrenSorted)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L82">src/selectors/getChildren.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L86">src/selectors/getChildren.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,10 +210,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="getchildrensortedwithcursorcheck" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Sorted<wbr>With<wbr>Cursor<wbr>Check</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughtsWithCursorCheck(getAllChildrenSorted)</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = getVisibleThoughtsWithCursorCheck(getAllChildrenSorted)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L87">src/selectors/getChildren.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L91">src/selectors/getChildren.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,10 +226,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="getvisiblethoughts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Visible<wbr>Thoughts</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((getThoughtsFunction: GetThoughts, state: State, context: Context) &#x3D;&gt; {const children &#x3D; getThoughtsFunction(state, context)return state.showHiddenThoughts ? children : children.filter(isChildVisible(state, context))})</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Thoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((getThoughtsFunction: GetThoughts, state: State, context: Context) &#x3D;&gt; {const children &#x3D; getThoughtsFunction(state, context)return state.showHiddenThoughts ? children : children.filter(isChildVisible(state, context))})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L48">src/selectors/getChildren.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L53">src/selectors/getChildren.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -240,10 +241,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="getvisiblethoughtswithcursorcheck" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Visible<wbr>Thoughts<wbr>With<wbr>Cursor<wbr>Check</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Thoughts<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction4</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((getThoughtsFunction: GetThoughts, state: State, path: Path, context: Context) &#x3D;&gt; {const children &#x3D; getThoughtsFunction(state, context)return state.showHiddenThoughts? children: children.filter(isChildVisibleWithCursorCheck(state, path, context, false))},)</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Thoughts<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction4</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((getThoughtsFunction: GetThoughts, state: State, path: SimplePath, context: Context) &#x3D;&gt; {const children &#x3D; getThoughtsFunction(state, context)// TODO: Curried function type check is not working prropely. Predicate function can have type as value.return state.showHiddenThoughts ? children : children.filter(isChildVisibleWithCursorCheck(state, path))},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L54">src/selectors/getChildren.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L59">src/selectors/getChildren.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,10 +256,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="ischildvisible" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Child<wbr>Visible</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, context: Context, child: Child) &#x3D;&gt;!isFunction(child.value) &amp;&amp; !hasChild(state, unroot([...context, child.value]), &#x27;&#x3D;hidden&#x27;),)</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, context: Context, child: Parent) &#x3D;&gt; {return !isFunction(child.value) &amp;&amp; !hasChild(state, unroot([...context, child.value]), &#x27;&#x3D;hidden&#x27;)})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L28">src/selectors/getChildren.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L28">src/selectors/getChildren.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -270,10 +271,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="ischildvisiblewithcursorcheck" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Child<wbr>Visible<wbr>With<wbr>Cursor<wbr>Check</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction5</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, path: Path, context: Context, showContexts &#x3D; false, child: Child | ThoughtContext) &#x3D;&gt; {showContexts &#x3D; showContexts || isContextViewActive(state, pathToContext(path))const value &#x3D; pathHeadValue(state, path, child, showContexts)const childContext &#x3D; [...pathToContext(path), value]return (state.showHiddenThoughts ||isChildVisible(state, context, { value, rank: child.rank }) ||isChildInCursor(state, path, showContexts, child) ||isDescendantOfMetaCursor(state, childContext))},5,)</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>Visible<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction3</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"SimplePath"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, path: SimplePath, thought: Parent) &#x3D;&gt; {const context &#x3D; pathToContext(state, path)const childContext &#x3D; unroot([...context, thought.value])return (state.showHiddenThoughts ||isChildVisible(state, context, thought) ||isChildInCursor(state, path, thought) ||isDescendantOfMetaCursor(state, childContext))}, 3)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L188">src/selectors/getChildren.ts:188</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L186">src/selectors/getChildren.ts:186</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -285,10 +286,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="iscreatedafterabsolutetoggle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Created<wbr>After<wbr>Absolute<wbr>Toggle</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Created<wbr>After<wbr>Absolute<wbr>Toggle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, child: Child | ThoughtContext) &#x3D;&gt;child.lastUpdated &amp;&amp; state.absoluteContextTime &amp;&amp; child.lastUpdated &gt; state.absoluteContextTime,)</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Created<wbr>After<wbr>Absolute<wbr>Toggle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curry((state: State, child: ThoughtId | ThoughtContext) &#x3D;&gt; {const thought &#x3D; getThoughtById(state, child)return thought.lastUpdated &amp;&amp; state.absoluteContextTime &amp;&amp; thought.lastUpdated &gt; state.absoluteContextTime})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L206">src/selectors/getChildren.ts:206</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L199">src/selectors/getChildren.ts:199</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -300,10 +301,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="nochildren" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> no<wbr>Children</h3>
-					<div class="tsd-signature tsd-kind-icon">no<wbr>Children<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Children<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L22">src/selectors/getChildren.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L22">src/selectors/getChildren.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -314,13 +315,13 @@
 					<a name="firstvisiblechild" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> first<wbr>Visible<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">first<wbr>Visible<wbr>Child<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></li>
+						<li class="tsd-signature tsd-kind-icon">first<wbr>Visible<wbr>Child<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L153">src/selectors/getChildren.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L164">src/selectors/getChildren.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,7 +338,7 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -345,13 +346,13 @@
 					<a name="firstvisiblechildwithcursorcheck" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> first<wbr>Visible<wbr>Child<wbr>With<wbr>Cursor<wbr>Check</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">first<wbr>Visible<wbr>Child<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types.path.html" class="tsd-signature-type">Path</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></li>
+						<li class="tsd-signature tsd-kind-icon">first<wbr>Visible<wbr>Child<wbr>With<wbr>Cursor<wbr>Check<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L156">src/selectors/getChildren.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L167">src/selectors/getChildren.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,13 +366,13 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>path: <a href="_types.path.html" class="tsd-signature-type">Path</a></h5>
+									<h5>path: <a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a></h5>
 								</li>
 								<li>
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -379,13 +380,13 @@
 					<a name="getallchildren" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>All<wbr>Children</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L44">src/selectors/getChildren.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L47">src/selectors/getChildren.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,7 +403,38 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getallchildrenasthoughts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>All<wbr>Children<wbr>AsThoughts</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>AsThoughts<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L43">src/selectors/getChildren.ts:43</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the subthoughts (as Parent) of the given context unordered. .</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -410,13 +442,13 @@
 					<a name="getallchildrenbycontexthash" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>All<wbr>Children<wbr>ByContext<wbr>Hash</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>ByContext<wbr>Hash<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span>, contextEncoded<span class="tsd-signature-symbol">: </span><a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>ByContext<wbr>Hash<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, thoughtId<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L38">src/selectors/getChildren.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L39">src/selectors/getChildren.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,28 +459,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span></h5>
-											<ul class="tsd-parameters">
-												<li class="tsd-parameter">
-													<h5>context<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
-													<ul class="tsd-parameters">
-														<li class="tsd-parameter-index-signature">
-															<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>contextEncoded: <a href="_types.contexthash.html" class="tsd-signature-type">ContextHash</a></h5>
+									<h5>thoughtId: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -456,13 +473,13 @@
 					<a name="getallchildrensorted" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>All<wbr>Children<wbr>Sorted</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>Sorted<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>Sorted<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L73">src/selectors/getChildren.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L77">src/selectors/getChildren.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,7 +496,7 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -487,13 +504,13 @@
 					<a name="getchildrenranked" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Ranked</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Ranked<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Ranked<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L149">src/selectors/getChildren.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L153">src/selectors/getChildren.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,7 +527,38 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getchildrenrankedbyid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Ranked<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Ranked<wbr>ById<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, thoughtId<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L158">src/selectors/getChildren.ts:158</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all children of a context sorted by their ranking using thought id. Returns a new object reference even if the children have not changed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>thoughtId: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -518,13 +566,13 @@
 					<a name="getchildrensortedalphabetical" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Sorted<wbr>Alphabetical</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>Alphabetical<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>Alphabetical<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L97">src/selectors/getChildren.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L101">src/selectors/getChildren.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -541,7 +589,7 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -549,13 +597,13 @@
 					<a name="getchildrensortedby" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Children<wbr>Sorted<wbr>By</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>By<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a>, compare<span class="tsd-signature-symbol">: </span><a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>By<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a>, compare<span class="tsd-signature-symbol">: </span><a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L90">src/selectors/getChildren.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L94">src/selectors/getChildren.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -572,10 +620,10 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 								<li>
-									<h5>compare: <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>compare: <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -583,13 +631,13 @@
 					<a name="getparent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Parent</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L34">src/selectors/getChildren.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L33">src/selectors/getChildren.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -600,22 +648,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>thoughts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>contextIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span></h5>
-											<ul class="tsd-parameters">
-												<li class="tsd-parameter">
-													<h5>context<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h5>
-													<ul class="tsd-parameters">
-														<li class="tsd-parameter-index-signature">
-															<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
@@ -635,7 +668,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L64">src/selectors/getChildren.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L68">src/selectors/getChildren.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -660,13 +693,13 @@
 					<a name="ischildincursor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Child<wbr>InCursor</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>InCursor<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types.path.html" class="tsd-signature-type">Path</a>, showContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, child<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Child<wbr>InCursor<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types.path.html" class="tsd-signature-type">Path</a>, child<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L160">src/selectors/getChildren.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L171">src/selectors/getChildren.ts:171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,10 +716,7 @@
 									<h5>path: <a href="_types.path.html" class="tsd-signature-type">Path</a></h5>
 								</li>
 								<li>
-									<h5>showContexts: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5>child: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h5>
+									<h5>child: <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h4>
@@ -703,7 +733,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L181">src/selectors/getChildren.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L177">src/selectors/getChildren.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -725,53 +755,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="pathheadvalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> path<wbr>Head<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">path<wbr>Head<wbr>Value<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, path<span class="tsd-signature-symbol">: </span><a href="_types.path.html" class="tsd-signature-type">Path</a>, child<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a>, showContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L176">src/selectors/getChildren.ts:176</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns head of context if parent has active context view.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
-								</li>
-								<li>
-									<h5>path: <a href="_types.path.html" class="tsd-signature-type">Path</a></h5>
-								</li>
-								<li>
-									<h5>child: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thoughtcontext.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h5>
-								</li>
-								<li>
-									<h5>showContexts: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="rankdiff" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> rank<wbr>Diff</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">rank<wbr>Diff<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">rank<wbr>Diff<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L94">src/selectors/getChildren.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L98">src/selectors/getChildren.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -782,10 +775,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h5>
+									<h5>a: <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></h5>
 								</li>
 								<li>
-									<h5>b: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a></h5>
+									<h5>b: <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -796,13 +789,13 @@
 					<a name="resortemptyinplace" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> resort<wbr>Empty<wbr>InPlace</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">resort<wbr>Empty<wbr>InPlace<span class="tsd-signature-symbol">(</span>sorted<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">resort<wbr>Empty<wbr>InPlace<span class="tsd-signature-symbol">(</span>sorted<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d6faa31/src/selectors/getChildren.ts#L106">src/selectors/getChildren.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/34fb174/src/selectors/getChildren.ts#L110">src/selectors/getChildren.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,10 +806,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sorted: <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>sorted: <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.child.child.html" class="tsd-signature-type">Child</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.parent.parent.html" class="tsd-signature-type">Parent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -880,6 +873,9 @@
 						<a href="selectors.getchildren.html#getallchildren" class="tsd-kind-icon">get<wbr>All<wbr>Children</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="selectors.getchildren.html#getallchildrenasthoughts" class="tsd-kind-icon">get<wbr>All<wbr>Children<wbr>AsThoughts</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="selectors.getchildren.html#getallchildrenbycontexthash" class="tsd-kind-icon">get<wbr>All<wbr>Children<wbr>ByContext<wbr>Hash</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -887,6 +883,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="selectors.getchildren.html#getchildrenranked" class="tsd-kind-icon">get<wbr>Children<wbr>Ranked</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="selectors.getchildren.html#getchildrenrankedbyid" class="tsd-kind-icon">get<wbr>Children<wbr>Ranked<wbr>ById</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.getchildren.html#getchildrensortedalphabetical" class="tsd-kind-icon">get<wbr>Children<wbr>Sorted<wbr>Alphabetical</a>
@@ -905,9 +904,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.getchildren.html#isdescendantofmetacursor" class="tsd-kind-icon">is<wbr>Descendant<wbr>OfMeta<wbr>Cursor</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="selectors.getchildren.html#pathheadvalue" class="tsd-kind-icon">path<wbr>Head<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.getchildren.html#rankdiff" class="tsd-kind-icon">rank<wbr>Diff</a>

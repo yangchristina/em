@@ -90,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RightCurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curryRight((state: State, payload: Omit&lt;editThoughtPayload, &#x27;context&#x27; | &#x27;path&#x27;&gt; &amp; { at: string[] }) &#x3D;&gt; {const path &#x3D; rankThoughtsFirstMatch(state, payload.at)if (!path) throw new Error(&#x60;Ranked thoughts not found for context: ${payload.at}&#x60;)const context &#x3D; payload.at.length &gt; 1 ? parentOf(payload.at) : [HOME_TOKEN]return editThought(state, {...payload,context,path,})},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/3dc1a9c/src/test-helpers/editThoughtAtFirstMatch.ts#L16">src/test-helpers/editThoughtAtFirstMatch.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/cc99cfb/src/test-helpers/editThoughtAtFirstMatch.ts#L16">src/test-helpers/editThoughtAtFirstMatch.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/3dc1a9c/src/test-helpers/editThoughtAtFirstMatch.ts#L36">src/test-helpers/editThoughtAtFirstMatch.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/cc99cfb/src/test-helpers/editThoughtAtFirstMatch.ts#L36">src/test-helpers/editThoughtAtFirstMatch.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

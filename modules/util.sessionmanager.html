@@ -107,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">LOCALSTORAGE_<wbr>SESSIONIDS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"EM_SESSION_IDS"</span><span class="tsd-signature-symbol"> = &quot;EM_SESSION_IDS&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L19">src/util/sessionManager.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L19">src/util/sessionManager.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">SESSION_<wbr>ID_<wbr>KEY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"EM_SESSION_ID"</span><span class="tsd-signature-symbol"> = &quot;EM_SESSION_ID&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L18">src/util/sessionManager.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L18">src/util/sessionManager.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Local<wbr>Session<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.throttle(() &#x3D;&gt; {const localSessionsRaw &#x3D; storage.getItem(LOCALSTORAGE_SESSIONIDS) || &#x27;{}&#x27;try {localSessionsCache &#x3D; JSON.parse(localSessionsRaw)} catch (err) {console.error(&#x60;Invalid localStorage.${LOCALSTORAGE_SESSIONIDS}: ${localSessionsRaw}&#x60;)console.error(err)}return localSessionsCache}, throttleGet)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L29">src/util/sessionManager.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L29">src/util/sessionManager.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">keepalive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.throttle(() &#x3D;&gt; {const localSessions &#x3D; getLocalSessionIds() || {}const sessionsNew &#x3D; {// filter out expired..._.pickBy(localSessions, (updated, key) &#x3D;&gt; Date.now() - +updated &lt; sessionInvalidationTimeout),// add current session[sessionId || getSessionId()]: Date.now().toString(),}// write sessionssetLocalSessionIds(sessionsNew)}, throttleKeepalive)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L74">src/util/sessionManager.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L74">src/util/sessionManager.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">local<wbr>Sessions<wbr>Cache<span class="tsd-signature-symbol">:</span> <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L16">src/util/sessionManager.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L16">src/util/sessionManager.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L13">src/util/sessionManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L13">src/util/sessionManager.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">session<wbr>Invalidation<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">360000</span><span class="tsd-signature-symbol"> = 360000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L22">src/util/sessionManager.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L22">src/util/sessionManager.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -197,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">throttle<wbr>Get<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1000</span><span class="tsd-signature-symbol"> = 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L20">src/util/sessionManager.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L20">src/util/sessionManager.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">throttle<wbr>Keepalive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5000</span><span class="tsd-signature-symbol"> = 5000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L21">src/util/sessionManager.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L21">src/util/sessionManager.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L56">src/util/sessionManager.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L56">src/util/sessionManager.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,7 +246,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L67">src/util/sessionManager.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L67">src/util/sessionManager.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L51">src/util/sessionManager.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L51">src/util/sessionManager.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/11bd31f/src/util/sessionManager.ts#L41">src/util/sessionManager.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6f7db31/src/util/sessionManager.ts#L41">src/util/sessionManager.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

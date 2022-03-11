@@ -71,12 +71,15 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#allowedformattingtags" class="tsd-kind-icon">allowed<wbr>Formatting<wbr>Tags</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#tagsthatarenottobestripped" class="tsd-kind-icon">tags<wbr>That<wbr>Are<wbr>Not<wbr>ToBe<wbr>Stripped</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#finduniquetags" class="tsd-kind-icon">find<wbr>Unique<wbr>Tags</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.htmltojson.html#formattingnodetohtml" class="tsd-kind-icon">formatting<wbr>Node<wbr>ToHtml</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#generateregextomatchtags" class="tsd-kind-icon">generate<wbr>Regex<wbr>ToMatch<wbr>Tags</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#handlebr" class="tsd-kind-icon">handle<wbr>Br</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="util.htmltojson.html#handleformattingtags" class="tsd-kind-icon">handle<wbr>Formatting<wbr>Tags</a></li>
@@ -105,13 +108,51 @@
 					<div class="tsd-signature tsd-kind-icon">allowed<wbr>Formatting<wbr>Tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;i&#x27;, &#x27;b&#x27;, &#x27;em&#x27;, &#x27;strong&#x27;, &#x27;u&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L13">src/util/htmlToJson.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L13">src/util/htmlToJson.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="tagsthatarenottobestripped" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> tags<wbr>That<wbr>Are<wbr>Not<wbr>ToBe<wbr>Stripped</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<wbr>That<wbr>Are<wbr>Not<wbr>ToBe<wbr>Stripped<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [...allowedFormattingTags, &#x27;span&#x27;, &#x27;li&#x27;, &#x27;ul&#x27;]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L215">src/util/htmlToJson.ts:215</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="finduniquetags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> find<wbr>Unique<wbr>Tags</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Unique<wbr>Tags<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L204">src/util/htmlToJson.ts:204</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all unique tag lists that is included in the text that we import.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodes: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="formattingnodetohtml" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> formatting<wbr>Node<wbr>ToHtml</h3>
@@ -122,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L21">src/util/htmlToJson.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L21">src/util/htmlToJson.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -141,6 +182,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="generateregextomatchtags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>Regex<wbr>ToMatch<wbr>Tags</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Regex<wbr>ToMatch<wbr>Tags<span class="tsd-signature-symbol">(</span>tags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L218">src/util/htmlToJson.ts:218</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates dynamic regex expression.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tags: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="getattribute" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Attribute</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -150,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L7">src/util/htmlToJson.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L7">src/util/htmlToJson.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,7 +250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L104">src/util/htmlToJson.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L104">src/util/htmlToJson.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L80">src/util/htmlToJson.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L80">src/util/htmlToJson.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L165">src/util/htmlToJson.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L165">src/util/htmlToJson.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -268,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L204">src/util/htmlToJson.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L221">src/util/htmlToJson.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L60">src/util/htmlToJson.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L60">src/util/htmlToJson.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L41">src/util/htmlToJson.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L41">src/util/htmlToJson.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -352,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L16">src/util/htmlToJson.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L16">src/util/htmlToJson.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +449,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L63">src/util/htmlToJson.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L63">src/util/htmlToJson.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L123">src/util/htmlToJson.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L123">src/util/htmlToJson.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L140">src/util/htmlToJson.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L140">src/util/htmlToJson.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,7 +533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L44">src/util/htmlToJson.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L44">src/util/htmlToJson.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,7 +561,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L54">src/util/htmlToJson.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L54">src/util/htmlToJson.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -520,7 +589,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L157">src/util/htmlToJson.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L157">src/util/htmlToJson.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f4d1d76/src/util/htmlToJson.ts#L66">src/util/htmlToJson.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/743259e/src/util/htmlToJson.ts#L66">src/util/htmlToJson.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,8 +658,17 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.htmltojson.html#allowedformattingtags" class="tsd-kind-icon">allowed<wbr>Formatting<wbr>Tags</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.htmltojson.html#tagsthatarenottobestripped" class="tsd-kind-icon">tags<wbr>That<wbr>Are<wbr>Not<wbr>ToBe<wbr>Stripped</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.htmltojson.html#finduniquetags" class="tsd-kind-icon">find<wbr>Unique<wbr>Tags</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="util.htmltojson.html#formattingnodetohtml" class="tsd-kind-icon">formatting<wbr>Node<wbr>ToHtml</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.htmltojson.html#generateregextomatchtags" class="tsd-kind-icon">generate<wbr>Regex<wbr>ToMatch<wbr>Tags</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.htmltojson.html#getattribute" class="tsd-kind-icon">get<wbr>Attribute</a>

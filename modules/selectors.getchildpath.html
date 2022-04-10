@@ -90,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Child<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((state: State, child: ThoughtId | ThoughtContext, simplePath: SimplePath, showContexts?: boolean): SimplePath &#x3D;&gt; {const simplePathHeadThought &#x3D; getThoughtById(state, head(simplePath))const otherSubthought &#x3D; (showContexts &amp;&amp; getParentThought(state, child)!.id? getAllChildrenAsThoughts(state, getContextForThought(state, child)!): []).find(child &#x3D;&gt; hashThought(child.value) &#x3D;&#x3D;&#x3D; hashThought(simplePathHeadThought.value))?.idconst path &#x3D; showContexts &amp;&amp; rankThoughtsFirstMatch(state, getContextForThought(state, child)!)const childPath &#x3D; (showContexts &amp;&amp; path? // rankThoughtsFirstMatch not accounted for by memoize resolverpath.concat(otherSubthought!): unroot(simplePath).concat(child as ThoughtId)) as SimplePathreturn childPath},resolve,)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/6aa9607/src/selectors/getChildPath.ts#L23">src/selectors/getChildPath.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/265e564/src/selectors/getChildPath.ts#L23">src/selectors/getChildPath.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -112,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6aa9607/src/selectors/getChildPath.ts#L11">src/selectors/getChildPath.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/265e564/src/selectors/getChildPath.ts#L11">src/selectors/getChildPath.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

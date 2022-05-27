@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>editThoughtAtFirstMatch | em</title>
+	<title>editThoughtByContext | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="test_helpers.html">test-helpers</a>
 				</li>
 				<li>
-					<a href="test_helpers.editthoughtatfirstmatch.html">editThoughtAtFirstMatch</a>
+					<a href="test_helpers.editthoughtbycontext.html">editThoughtByContext</a>
 				</li>
 			</ul>
-			<h1>Module editThoughtAtFirstMatch</h1>
+			<h1>Module editThoughtByContext</h1>
 		</div>
 	</div>
 </header>
@@ -70,13 +70,13 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="test_helpers.editthoughtatfirstmatch.html#editthoughtatfirstmatch" class="tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="test_helpers.editthoughtbycontext.html#editthoughtbycontext" class="tsd-kind-icon">edit<wbr>Thought<wbr>ByContext</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.editthoughtatfirstmatch.html#editthoughtatfirstmatchactioncreator" class="tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match<wbr>Action<wbr>Creator</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="test_helpers.editthoughtbycontext.html#editthoughtbycontextactioncreator" class="tsd-kind-icon">edit<wbr>Thought<wbr>ByContext<wbr>Action<wbr>Creator</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,17 +85,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="editthoughtatfirstmatch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> edit<wbr>Thought<wbr>AtFirst<wbr>Match</h3>
-					<div class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RightCurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curryRight((state: State, payload: Omit&lt;editThoughtPayload, &#x27;context&#x27; | &#x27;path&#x27;&gt; &amp; { at: string[] }) &#x3D;&gt; {const path &#x3D; contextToPath(state, payload.at)if (!path) throw new Error(&#x60;Ranked thoughts not found for context: ${payload.at}&#x60;)const context &#x3D; payload.at.length &gt; 1 ? parentOf(payload.at) : [HOME_TOKEN]return editThought(state, {...payload,context,path,})},)</span></div>
+					<a name="editthoughtbycontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> edit<wbr>Thought<wbr>ByContext</h3>
+					<div class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>ByContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RightCurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curryRight((state: State, payload: Omit&lt;editThoughtPayload, &#x27;context&#x27; | &#x27;path&#x27;&gt; &amp; { at: string[] }) &#x3D;&gt; {const path &#x3D; contextToPath(state, payload.at)if (!path) throw new Error(&#x60;Ranked thoughts not found for context: ${payload.at}&#x60;)const context &#x3D; payload.at.length &gt; 1 ? parentOf(payload.at) : [HOME_TOKEN]return editThought(state, {...payload,context,path,})},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f39b935/src/test-helpers/editThoughtAtFirstMatch.ts#L16">src/test-helpers/editThoughtAtFirstMatch.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d943dfc/src/test-helpers/editThoughtByContext.ts#L16">src/test-helpers/editThoughtByContext.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Edit thought at the given unranked path first matched.</p>
+							<p>Edit thought at the given Context.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
@@ -108,16 +108,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="editthoughtatfirstmatchactioncreator" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> edit<wbr>Thought<wbr>AtFirst<wbr>Match<wbr>Action<wbr>Creator</h3>
+					<a name="editthoughtbycontextactioncreator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> edit<wbr>Thought<wbr>ByContext<wbr>Action<wbr>Creator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match<wbr>Action<wbr>Creator<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/reducers.editthought.editthoughtpayload.html" class="tsd-signature-type">editThoughtPayload</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"context"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"path"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a></li>
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>ByContext<wbr>Action<wbr>Creator<span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/reducers.editthought.editthoughtpayload.html" class="tsd-signature-type">editThoughtPayload</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"context"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"path"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f39b935/src/test-helpers/editThoughtAtFirstMatch.ts#L36">src/test-helpers/editThoughtAtFirstMatch.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d943dfc/src/test-helpers/editThoughtByContext.ts#L36">src/test-helpers/editThoughtByContext.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,7 +144,7 @@
 						<a href="test_helpers.html">test-<wbr>helpers</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="test_helpers.editthoughtatfirstmatch.html">edit<wbr>Thought<wbr>AtFirst<wbr>Match</a>
+								<a href="test_helpers.editthoughtbycontext.html">edit<wbr>Thought<wbr>ByContext</a>
 							</li>
 						</ul>
 					</li>
@@ -153,10 +153,10 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="test_helpers.editthoughtatfirstmatch.html#editthoughtatfirstmatch" class="tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match</a>
+						<a href="test_helpers.editthoughtbycontext.html#editthoughtbycontext" class="tsd-kind-icon">edit<wbr>Thought<wbr>ByContext</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="test_helpers.editthoughtatfirstmatch.html#editthoughtatfirstmatchactioncreator" class="tsd-kind-icon">edit<wbr>Thought<wbr>AtFirst<wbr>Match<wbr>Action<wbr>Creator</a>
+						<a href="test_helpers.editthoughtbycontext.html#editthoughtbycontextactioncreator" class="tsd-kind-icon">edit<wbr>Thought<wbr>ByContext<wbr>Action<wbr>Creator</a>
 					</li>
 				</ul>
 			</nav>

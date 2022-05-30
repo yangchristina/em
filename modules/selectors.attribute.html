@@ -88,12 +88,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1cda975/src/selectors/attribute.ts#L6">src/selectors/attribute.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9819931/src/selectors/attribute.ts#L6">src/selectors/attribute.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the value of an attribute of the given context. O(children). Use attributeEquals for O(1) attribute equality check. Use a combination of hasChild and attribute to check if an attribute exists but has no children.</p>
+									<p>Returns the value of a visible child attribute of a thought. Use a combination of findDescendant and attribute to check if an attribute exists but has no children. O(1) as long as attributeName is a meta attribute and can take advantage of childrenMap.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>

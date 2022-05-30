@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>hasChild | em</title>
+	<title>createChildrenMap | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="selectors.html">selectors</a>
+					<a href="util.html">util</a>
 				</li>
 				<li>
-					<a href="selectors.haschild.html">hasChild</a>
+					<a href="util.createchildrenmap.html">createChildrenMap</a>
 				</li>
 			</ul>
-			<h1>Module hasChild</h1>
+			<h1>Module createChildrenMap</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.haschild.html#haschild" class="tsd-kind-icon">has<wbr>Child</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.createchildrenmap.html#createchildrenmap" class="tsd-kind-icon">create<wbr>Children<wbr>Map</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,21 +79,21 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="haschild" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> has<wbr>Child</h3>
+					<a name="createchildrenmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Children<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Child<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, thoughtId<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Children<wbr>Map<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, children<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1cda975/src/selectors/hasChild.ts#L5">src/selectors/hasChild.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9819931/src/util/createChildrenMap.ts#L6">src/util/createChildrenMap.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns true if the given context has a child with the given value. O(children).</p>
+									<p>Generates an object for O(1) lookup of a thought&#39;s children. Meta attributes are keyed by value and normal or missing thoughts are keyed by id.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -102,13 +102,15 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>thoughtId: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a></h5>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<h5>children: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -118,10 +120,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="selectors.html">selectors</a>
+						<a href="util.html">util</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="selectors.haschild.html">has<wbr>Child</a>
+								<a href="util.createchildrenmap.html">create<wbr>Children<wbr>Map</a>
 							</li>
 						</ul>
 					</li>
@@ -130,7 +132,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="selectors.haschild.html#haschild" class="tsd-kind-icon">has<wbr>Child</a>
+						<a href="util.createchildrenmap.html#createchildrenmap" class="tsd-kind-icon">create<wbr>Children<wbr>Map</a>
 					</li>
 				</ul>
 			</nav>

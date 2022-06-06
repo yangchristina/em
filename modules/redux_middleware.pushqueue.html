@@ -77,7 +77,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#flushdeletes" class="tsd-kind-icon">flush<wbr>Deletes</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#flushpendingmerges" class="tsd-kind-icon">flush<wbr>Pending<wbr>Merges</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#flushpushqueue" class="tsd-kind-icon">flush<wbr>Push<wbr>Queue</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#mergebatch" class="tsd-kind-icon">merge<wbr>Batch</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pushqueue.html#mergeconflictinglexemeindexupdates" class="tsd-kind-icon">merge<wbr>Conflicting<wbr>Lexeme<wbr>Index<wbr>Updates</a></li>
@@ -97,7 +96,7 @@
 					<div class="tsd-signature tsd-kind-icon">debounce<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L270">src/redux-middleware/pushQueue.ts:270</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L220">src/redux-middleware/pushQueue.ts:220</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,40 +113,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L151">src/redux-middleware/pushQueue.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L142">src/redux-middleware/pushQueue.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Pull all descendants of pending deletes and dispatch deleteThought to fully delete.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pushQueue: <a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="flushpendingmerges" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> flush<wbr>Pending<wbr>Merges</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">flush<wbr>Pending<wbr>Merges<span class="tsd-signature-symbol">(</span>pushQueue<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.pushbatch.pushbatch.html" class="tsd-signature-type">PushBatch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thunk.html" class="tsd-signature-type">Thunk</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L182">src/redux-middleware/pushQueue.ts:182</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>When a thought is moved to another context, duplicates are recursively merged. This function pulls children of pending merges and dispatches move to fully merge.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -170,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L220">src/redux-middleware/pushQueue.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L173">src/redux-middleware/pushQueue.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -192,7 +163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L20">src/redux-middleware/pushQueue.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L11">src/redux-middleware/pushQueue.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -223,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L50">src/redux-middleware/pushQueue.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L41">src/redux-middleware/pushQueue.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L92">src/redux-middleware/pushQueue.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L83">src/redux-middleware/pushQueue.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L142">src/redux-middleware/pushQueue.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L133">src/redux-middleware/pushQueue.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f46ab1a/src/redux-middleware/pushQueue.ts#L273">src/redux-middleware/pushQueue.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/c2a5d32/src/redux-middleware/pushQueue.ts#L223">src/redux-middleware/pushQueue.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,9 +377,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pushqueue.html#flushdeletes" class="tsd-kind-icon">flush<wbr>Deletes</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="redux_middleware.pushqueue.html#flushpendingmerges" class="tsd-kind-icon">flush<wbr>Pending<wbr>Merges</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pushqueue.html#flushpushqueue" class="tsd-kind-icon">flush<wbr>Push<wbr>Queue</a>

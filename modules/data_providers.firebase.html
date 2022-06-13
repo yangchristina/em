@@ -108,17 +108,17 @@
 					<div class="tsd-signature tsd-kind-icon">Firebase<wbr>Lexeme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.lexeme.lexeme.html" class="tsd-signature-type">Lexeme</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"contexts"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>contexts<span class="tsd-signature-symbol">?: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L35">src/data-providers/firebase.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L38">src/data-providers/firebase.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 					<a name="firebasethought" class="tsd-anchor"></a>
 					<h3>Firebase<wbr>Thought</h3>
-					<div class="tsd-signature tsd-kind-icon">Firebase<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"childrenMap"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>childrenMap<span class="tsd-signature-symbol">?: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Firebase<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thoughtwithchildren.thoughtwithchildren.html" class="tsd-signature-type">ThoughtWithChildren</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"children"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">?: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L36">src/data-providers/firebase.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L39">src/data-providers/firebase.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,13 +129,13 @@
 					<a name="getfirebaseprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Firebase<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Firebase<wbr>Provider<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, dispatch<span class="tsd-signature-symbol">: </span><a href="_types.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>clearAll<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemeById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemesByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtsByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexeme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexemeIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThought<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThoughtIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Firebase<wbr>Provider<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, dispatch<span class="tsd-signature-symbol">: </span><a href="_types.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>clearAll<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemeById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemesByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtWithChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtsByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexeme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexemeIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThought<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThoughtIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L57">src/data-providers/firebase.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L61">src/data-providers/firebase.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,7 +152,7 @@
 									<h5>dispatch: <a href="_types.dispatch.html" class="tsd-signature-type">Dispatch</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>clearAll<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemeById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemesByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtsByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexeme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexemeIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThought<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThoughtIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>clearAll<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemeById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getLexemesByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtWithChildren<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>getThoughtsByIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexeme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateLexemeIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThought<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>updateThoughtIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -166,7 +166,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L61">src/data-providers/firebase.ts:61</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L65">src/data-providers/firebase.ts:65</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -187,7 +187,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L66">src/data-providers/firebase.ts:66</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L70">src/data-providers/firebase.ts:70</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -214,7 +214,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L77">src/data-providers/firebase.ts:77</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L81">src/data-providers/firebase.ts:81</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -241,12 +241,12 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L88">src/data-providers/firebase.ts:88</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L92">src/data-providers/firebase.ts:92</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
 												<div class="lead">
-													<p>Gets a Thought by id.</p>
+													<p>Gets a Thought by id. O(1).</p>
 												</div>
 											</div>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -260,6 +260,33 @@
 									</ul>
 								</li>
 								<li class="tsd-parameter">
+									<h5>get<wbr>Thought<wbr>With<wbr>Children<span class="tsd-signature-symbol">: </span>function</h5>
+									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon">get<wbr>Thought<wbr>With<wbr>Children<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>thought<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<aside class="tsd-sources">
+												<ul>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L105">src/data-providers/firebase.ts:105</a></li>
+												</ul>
+											</aside>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Gets a Thought with its children. O(1).</p>
+												</div>
+											</div>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>id: <span class="tsd-signature-type">string</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>children<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>thought<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
 									<h5>get<wbr>Thoughts<wbr>ByIds<span class="tsd-signature-symbol">: </span>function</h5>
 									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
 										<li class="tsd-signature tsd-kind-icon">get<wbr>Thoughts<wbr>ByIds<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
@@ -268,12 +295,12 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L98">src/data-providers/firebase.ts:98</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L124">src/data-providers/firebase.ts:124</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
 												<div class="lead">
-													<p>Gets multiple PrentEntry objects by ids.</p>
+													<p>Gets multiple Thoughts by ids. O(n).</p>
 												</div>
 											</div>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +322,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L104">src/data-providers/firebase.ts:104</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L131">src/data-providers/firebase.ts:131</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -322,12 +349,12 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L125">src/data-providers/firebase.ts:125</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L163">src/data-providers/firebase.ts:163</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
 												<div class="lead">
-													<p>Updates a thought in the lexemeIndex.</p>
+													<p>Updates a Lexeme in the lexemeIndex.</p>
 												</div>
 											</div>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -352,7 +379,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L139">src/data-providers/firebase.ts:139</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L189">src/data-providers/firebase.ts:189</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -373,13 +400,13 @@
 								<li class="tsd-parameter">
 									<h5>update<wbr>Thought<span class="tsd-signature-symbol">: </span>function</h5>
 									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon">update<wbr>Thought<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parentEntry<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+										<li class="tsd-signature tsd-kind-icon">update<wbr>Thought<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, thoughtWithChildren<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.thoughtwithchildren.thoughtwithchildren.html" class="tsd-signature-type">ThoughtWithChildren</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L119">src/data-providers/firebase.ts:119</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L147">src/data-providers/firebase.ts:147</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -393,7 +420,7 @@
 													<h5>id: <span class="tsd-signature-type">string</span></h5>
 												</li>
 												<li>
-													<h5>parentEntry: <a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a></h5>
+													<h5>thoughtWithChildren: <a href="../interfaces/_types.thoughtwithchildren.thoughtwithchildren.html" class="tsd-signature-type">ThoughtWithChildren</a></h5>
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -403,13 +430,13 @@
 								<li class="tsd-parameter">
 									<h5>update<wbr>Thought<wbr>Index<span class="tsd-signature-symbol">: </span>function</h5>
 									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon">update<wbr>Thought<wbr>Index<span class="tsd-signature-symbol">(</span>thoughtIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+										<li class="tsd-signature tsd-kind-icon">update<wbr>Thought<wbr>Index<span class="tsd-signature-symbol">(</span>thoughtIndex<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thoughtwithchildren.thoughtwithchildren.html" class="tsd-signature-type">ThoughtWithChildren</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L131">src/data-providers/firebase.ts:131</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L170">src/data-providers/firebase.ts:170</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -420,7 +447,7 @@
 											<h4 class="tsd-parameters-title">Parameters</h4>
 											<ul class="tsd-parameters">
 												<li>
-													<h5>thoughtIndex: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">&gt;</span></h5>
+													<h5>thoughtIndex: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.thoughtwithchildren.thoughtwithchildren.html" class="tsd-signature-type">ThoughtWithChildren</a><span class="tsd-signature-symbol">&gt;</span></h5>
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -441,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L39">src/data-providers/firebase.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L42">src/data-providers/firebase.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,7 +496,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L182">src/data-providers/firebase.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L233">src/data-providers/firebase.ts:233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L208">src/data-providers/firebase.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L259">src/data-providers/firebase.ts:259</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -572,7 +599,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L47">src/data-providers/firebase.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L50">src/data-providers/firebase.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -600,12 +627,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de99065/src/data-providers/firebase.ts#L152">src/data-providers/firebase.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/9e49616/src/data-providers/firebase.ts#L202">src/data-providers/firebase.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a subscription handler that converts a Parent snapshot to a ThoughtUpdate and invokes a callback.</p>
+									<p>Creates a subscription handler that converts a Thought snapshot to a ThoughtUpdate and invokes a callback.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>

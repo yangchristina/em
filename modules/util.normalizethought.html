@@ -80,7 +80,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.normalizethought.html#singularize" class="tsd-kind-icon">singularize</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.normalizethought.html#stripemojifromtext" class="tsd-kind-icon">strip<wbr>Emoji<wbr>From<wbr>Text</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.normalizethought.html#striptags" class="tsd-kind-icon">strip<wbr>Tags</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.normalizethought.html#trim" class="tsd-kind-icon">trim</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="util.normalizethought.html#trimthought" class="tsd-kind-icon">trim<wbr>Thought</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,10 +91,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="normalizethought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> normalize<wbr>Thought</h3>
-					<div class="tsd-signature tsd-kind-icon">normalize<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize(_.flow([// placed before stripEmojiWithText because stripEmojiWithText partially removes angle bracketsstripTags,lower,trim,stripEmojiFromText,singularize,]),)</span></div>
+					<div class="tsd-signature tsd-kind-icon">normalize<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize(_.flow([// placed before stripEmojiWithText because stripEmojiWithText partially removes angle bracketsstripTags,lower,trimThought,stripEmojiFromText,singularize,]),)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L36">src/util/normalizeThought.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L47">src/util/normalizeThought.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L26">src/util/normalizeThought.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L37">src/util/normalizeThought.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -150,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L23">src/util/normalizeThought.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L34">src/util/normalizeThought.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L10">src/util/normalizeThought.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L21">src/util/normalizeThought.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -207,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L16">src/util/normalizeThought.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L27">src/util/normalizeThought.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,21 +226,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="trim" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> trim</h3>
+					<a name="trimthought" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> trim<wbr>Thought</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">trim<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>Thought<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/48ee8a9/src/util/normalizeThought.ts#L7">src/util/normalizeThought.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e83f127/src/util/normalizeThought.ts#L11">src/util/normalizeThought.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Trims a string.</p>
+									<p>Trims value for a thought (removes non-word character).
+									Preserves metaprogramming attribute character <code>=</code> from trimming.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -286,7 +287,7 @@
 						<a href="util.normalizethought.html#striptags" class="tsd-kind-icon">strip<wbr>Tags</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="util.normalizethought.html#trim" class="tsd-kind-icon">trim</a>
+						<a href="util.normalizethought.html#trimthought" class="tsd-kind-icon">trim<wbr>Thought</a>
 					</li>
 				</ul>
 			</nav>

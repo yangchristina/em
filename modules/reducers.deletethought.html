@@ -78,7 +78,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.deletethought.html#deletethought" class="tsd-kind-icon">delete<wbr>Thought</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="reducers.deletethought.html#filterpendingdescendants" class="tsd-kind-icon">filter<wbr>Pending<wbr>Descendants</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,13 +89,13 @@
 					<a name="deletethought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> delete<wbr>Thought</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>pathParent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>thoughtId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Thought<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>orphaned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>pathParent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>thoughtId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f9a49b6/src/reducers/deleteThought.ts#L61">src/reducers/deleteThought.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/00a7402/src/reducers/deleteThought.ts#L45">src/reducers/deleteThought.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -110,8 +109,11 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>pathParent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>thoughtId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>orphaned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>pathParent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>thoughtId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>orphaned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
 										<li class="tsd-parameter">
 											<h5>path<wbr>Parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h5>
 										</li>
@@ -122,37 +124,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="filterpendingdescendants" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> filter<wbr>Pending<wbr>Descendants</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">filter<wbr>Pending<wbr>Descendants<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, thoughtIds<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f9a49b6/src/reducers/deleteThought.ts#L42">src/reducers/deleteThought.ts:42</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a list of all pending descendants of the given thoughts (inclusive).</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
-								</li>
-								<li>
-									<h5>thoughtIds: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,9 +152,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="reducers.deletethought.html#deletethought" class="tsd-kind-icon">delete<wbr>Thought</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="reducers.deletethought.html#filterpendingdescendants" class="tsd-kind-icon">filter<wbr>Pending<wbr>Descendants</a>
 					</li>
 				</ul>
 			</nav>

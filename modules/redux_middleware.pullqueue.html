@@ -78,6 +78,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pullqueue.html#appendvisiblepaths" class="tsd-kind-icon">append<wbr>Visible<wbr>Paths</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pullqueue.html#expandedwithancestors" class="tsd-kind-icon">expanded<wbr>With<wbr>Ancestors</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="redux_middleware.pullqueue.html#initialpullqueue" class="tsd-kind-icon">initial<wbr>Pull<wbr>Queue</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="redux_middleware.pullqueue.html#pullqueuemiddleware" class="tsd-kind-icon">pull<wbr>Queue<wbr>Middleware</a></li>
 							</ul>
@@ -93,7 +94,7 @@
 					<div class="tsd-signature tsd-kind-icon">flush<wbr>Pull<wbr>Queue<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">500</span><span class="tsd-signature-symbol"> = 500</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/de4607f/src/redux-middleware/pullQueue.ts#L22">src/redux-middleware/pullQueue.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L22">src/redux-middleware/pullQueue.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -108,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">update<wbr>Pull<wbr>Queue<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10</span><span class="tsd-signature-symbol"> = 10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/de4607f/src/redux-middleware/pullQueue.ts#L19">src/redux-middleware/pullQueue.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L19">src/redux-middleware/pullQueue.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,7 +131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de4607f/src/redux-middleware/pullQueue.ts#L31">src/redux-middleware/pullQueue.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L47">src/redux-middleware/pullQueue.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,6 +156,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="expandedwithancestors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> expanded<wbr>With<wbr>Ancestors</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">expanded<wbr>With<wbr>Ancestors<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, expanded<span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.path.html" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.path.html" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L31">src/redux-middleware/pullQueue.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates a map of all visible paths, including the cursor, all its ancestors, and the expanded paths. Keyed by ThoughtId.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>expanded: <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.path.html" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types.indextype.html#index" class="tsd-signature-type">Index</a><span class="tsd-signature-symbol">&lt;</span><a href="_types.path.html" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="initialpullqueue" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> initial<wbr>Pull<wbr>Queue</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -164,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de4607f/src/redux-middleware/pullQueue.ts#L25">src/redux-middleware/pullQueue.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L25">src/redux-middleware/pullQueue.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/de4607f/src/redux-middleware/pullQueue.ts#L60">src/redux-middleware/pullQueue.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fb1e5e7/src/redux-middleware/pullQueue.ts#L84">src/redux-middleware/pullQueue.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,6 +286,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pullqueue.html#appendvisiblepaths" class="tsd-kind-icon">append<wbr>Visible<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="redux_middleware.pullqueue.html#expandedwithancestors" class="tsd-kind-icon">expanded<wbr>With<wbr>Ancestors</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="redux_middleware.pullqueue.html#initialpullqueue" class="tsd-kind-icon">initial<wbr>Pull<wbr>Queue</a>

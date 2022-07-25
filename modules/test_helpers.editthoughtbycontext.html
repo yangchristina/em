@@ -90,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">edit<wbr>Thought<wbr>ByContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RightCurriedFunction2</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>at<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = _.curryRight((state: State, payload: Omit&lt;editThoughtPayload, &#x27;context&#x27; | &#x27;path&#x27;&gt; &amp; { at: string[] }) &#x3D;&gt; {const path &#x3D; contextToPath(state, payload.at)if (!path) throw new Error(&#x60;Ranked thoughts not found for context: ${payload.at}&#x60;)return editThought(state, {...payload,path,})},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1cbcfcf/src/test-helpers/editThoughtByContext.ts#L14">src/test-helpers/editThoughtByContext.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/950a5b2/src/test-helpers/editThoughtByContext.ts#L14">src/test-helpers/editThoughtByContext.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1cbcfcf/src/test-helpers/editThoughtByContext.ts#L31">src/test-helpers/editThoughtByContext.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/950a5b2/src/test-helpers/editThoughtByContext.ts#L31">src/test-helpers/editThoughtByContext.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

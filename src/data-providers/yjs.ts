@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import { useCallback, useEffect, useState } from 'react'
 import { shallowEqual } from 'react-redux'
-import { IndexeddbPersistence } from 'y-indexeddb'
+// import { IndexeddbPersistence } from 'y-indexeddb'
 import { WebsocketProvider } from 'y-websocket-auth'
 import * as Y from 'yjs'
 import Index from '../@types/IndexType'
@@ -66,10 +66,10 @@ new WebsocketProvider(websocketUrl, `${tsid}/permissions`, ypermissionsDoc, {
 })
 const yPermissions = ypermissionsDoc.getMap<Index<Share>>('permissions')
 
-const indexeddbProvider = new IndexeddbPersistence(tsid, ydoc)
-indexeddbProvider.whenSynced.then(() => {
-  // console.info('loaded data from indexed db', yThoughtIndex.size)
-})
+// const indexeddbProvider = new IndexeddbPersistence(tsid, ydoc)
+// indexeddbProvider.whenSynced.then(() => {
+// console.info('loaded data from indexed db', yThoughtIndex.size)
+// })
 
 const websocketProvider: WebsocketProviderType = new WebsocketProvider(websocketUrl, tsid, ydoc, {
   auth: accessToken,

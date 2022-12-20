@@ -21,7 +21,7 @@ const PERMISSIONS_DOCID = 'permissions'
  *   }
  */
 const ydoc = new Y.Doc()
-if (process.env.YPERMISSIONS) {
+if (process.env.YPERMISSIONS && !Math) {
   const LeveldbPersistence = require('y-leveldb').LeveldbPersistence
   // do not use process.env.YPERSISTENCE or it will overwrite the thoughtspace leveldb
   const ldb = new LeveldbPersistence(process.env.YPERMISSIONS)

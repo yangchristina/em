@@ -49,6 +49,7 @@ if (process.env.YPERMISSIONS && !Math) {
 /** Authenticates the access token. */
 export const authenticate = (accessToken: string, { name, params }: { name: string; params: any }) => {
   const tsid = name.endsWith('/permissions') ? name.split('/permissions')[0] : name
+  console.log('authenticate', { name, tsid })
   const permissionsDocName = `${tsid}/permissions`
   const permissionsDoc: Y.Doc = getYDoc(permissionsDocName)
   const yPermissionsServer = ydoc.getMap<Share>(tsid)
@@ -56,7 +57,7 @@ export const authenticate = (accessToken: string, { name, params }: { name: stri
 
   // if the document has no owner, automatically assign the current user as owner
   if (yPermissionsServer.size === 0) {
-    console.info(`assigning owner ${accessToken} to new thoughtspace ${tsid}`)
+    console.info(`assigning owner ${accessToken} to new thoughtspace ${tsid}`, { name })
     share = { accessed: new Date().toISOString(), created: new Date().toISOString(), name: 'Owner', role: 'owner' }
     yPermissionsServer.set(accessToken, share)
   }

@@ -35,6 +35,7 @@ const port = process.env.REACT_APP_WEBSOCKET_PORT || 8080
 const protocol = host === 'localhost' ? 'ws' : 'wss'
 // public host must end with '/' or the websocket connection will not open
 const websocketUrl = `${protocol}://${host}${host === 'localhost' || host.endsWith('/') ? '' : '/'}:${port}`
+console.info(websocketUrl)
 
 const ydoc = new Y.Doc()
 const ydocLocal = new Y.Doc()
@@ -65,6 +66,9 @@ new WebsocketProvider(websocketUrl, `${tsid}/permissions`, ypermissionsDoc, {
   auth: accessToken,
 })
 const yPermissions = ypermissionsDoc.getMap<Index<Share>>('permissions')
+yPermissions.observe(() => {
+  console.info('permissions update', yPermissions.toJSON())
+})
 
 // const indexeddbProvider = new IndexeddbPersistence(tsid, ydoc)
 // indexeddbProvider.whenSynced.then(() => {
@@ -75,7 +79,8 @@ const websocketProvider: WebsocketProviderType = new WebsocketProvider(websocket
   auth: accessToken,
 })
 websocketProvider.on('status', (event: { status: 'connecting' | 'connected' | 'disconnected' }) => {
-  // console.info('websocket', event.status)
+  console.info('websocket', event.status)
+  console.info(yPermissions.toJSON())
 })
 
 const yThoughtIndex = ydoc.getMap<ThoughtWithChildren>('thoughtIndex')
@@ -264,7 +269,8 @@ const db: DataProvider = {
 export const shareServer: WebsocketServerRPC = {
   add: ({ name, role }: Pick<Share, 'name' | 'role'>) => {
     const accessToken = createId()
-    websocketProvider.send({ type: 'share/add', docid: tsid, accessToken, name: name || '', role })
+    console.info({ type: 'share/add', docid: tsid, accessToken, name, role })
+    websocketProvider.send({ type: 'share/add', docid: tsid, accessToken, name, role })
     store.dispatch(alert(`Added ${name ? `"${name}"` : 'device'}`, { clearDelay: 2000 }))
     return accessToken
   },

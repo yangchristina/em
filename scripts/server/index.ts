@@ -1,12 +1,22 @@
 import * as Y from 'yjs'
-import Routes from '../../src/@types/Routes'
-import Share from '../../src/@types/Share'
+
+// import Routes from '../../src/@types/Routes'
+// import Share from '../../src/@types/Share'
 
 const { getYDoc, createServer } = require('y-websocket-auth/server')
 
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 8080
 const PERMISSIONS_DOCID = 'permissions'
+
+/** An access token for sharing a thoughtspace. */
+interface Share {
+  // ISOString
+  accessed: string
+  created: string
+  name?: string
+  role: 'owner'
+}
 
 /**
  * All thoughtspace permissions. Mirrors Websocket documents at DOCID/permissions. Must be loaded into memory so that permissions are available for authentication.
@@ -38,15 +48,15 @@ if (process.env.YPERMISSIONS && !Math) {
 
 /** Authenticates the access token. */
 export const authenticate = (accessToken: string, { name, params }: { name: string; params: any }) => {
-  const docName = name.endsWith('/permissions') ? name.split('/permissions')[0] : name
-  const permissionsDocName = `${docName}/permissions`
+  const tsid = name.endsWith('/permissions') ? name.split('/permissions')[0] : name
+  const permissionsDocName = `${tsid}/permissions`
   const permissionsDoc: Y.Doc = getYDoc(permissionsDocName)
-  const yPermissionsServer = ydoc.getMap<Share>(docName)
+  const yPermissionsServer = ydoc.getMap<Share>(tsid)
   let share = yPermissionsServer.get(accessToken)
 
   // if the document has no owner, automatically assign the current user as owner
   if (yPermissionsServer.size === 0) {
-    console.info('assigning owner')
+    console.info(`assigning owner ${accessToken} to new thoughtspace ${tsid}`)
     share = { accessed: new Date().toISOString(), created: new Date().toISOString(), name: 'Owner', role: 'owner' }
     yPermissionsServer.set(accessToken, share)
   }
@@ -68,29 +78,40 @@ export const authenticate = (accessToken: string, { name, params }: { name: stri
 
 const routes: { [key: string]: (...props: any) => any } = {
   'share/add': ({
+    auth,
     accessToken,
     docid,
     name,
     role,
   }: {
+    auth: string
     accessToken: string
     docid: string
     name?: string
     role: 'owner'
   }) => {
-    const share = { accessed: new Date().toISOString(), created: new Date().toISOString(), name, role }
+    const shareNew = { accessed: new Date().toISOString(), created: new Date().toISOString(), name, role }
     const permissionsDocName = `${docid}/permissions`
     const permissionsDoc: Y.Doc = getYDoc(permissionsDocName)
     const yPermissionsServer = ydoc.getMap<Share>(docid)
     const yPermissionsClient = permissionsDoc.getMap<Share>(PERMISSIONS_DOCID)
-    yPermissionsServer.set(accessToken, share)
-    yPermissionsClient.set(accessToken, share)
+    const share = yPermissionsServer.get(auth)
+    if (!share) {
+      console.error('Error: Permissions no longer exists', { docid, accessToken })
+      console.error({ server: yPermissionsServer.toJSON(), client: yPermissionsClient.toJSON() })
+      return {
+        error: `Thoughtspace no longer exists: ${accessToken}`,
+      }
+    }
+    yPermissionsServer.set(accessToken, shareNew)
+    yPermissionsClient.set(accessToken, shareNew)
   },
   'share/delete': ({ accessToken, docid }) => {
     const permissionsDocName = `${docid}/permissions`
     const permissionsDoc: Y.Doc = getYDoc(permissionsDocName)
     const yPermissionsServer = ydoc.getMap<Share>(docid)
     const yPermissionsClient = permissionsDoc.getMap<Share>(PERMISSIONS_DOCID)
+    console.error({ server: yPermissionsServer.toJSON(), client: yPermissionsClient.toJSON() })
     yPermissionsServer.delete(accessToken)
     yPermissionsClient.delete(accessToken)
   },
@@ -101,7 +122,8 @@ const routes: { [key: string]: (...props: any) => any } = {
     const yPermissionsClient = permissionsDoc.getMap<Share>(PERMISSIONS_DOCID)
     const share = yPermissionsServer.get(accessToken)
     if (!share) {
-      console.error('Error: Thoughtspace no longer exists', { docid, accessToken })
+      console.error('Error: Permissions no longer exists', { docid, accessToken })
+      console.error({ server: yPermissionsServer.toJSON(), client: yPermissionsClient.toJSON() })
       return {
         error: `Thoughtspace no longer exists: ${accessToken}`,
       }

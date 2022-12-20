@@ -88,18 +88,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/6784829/src/selectors/splitChain.ts#L15">src/selectors/splitChain.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/98dba87/src/selectors/splitChain.ts#L9">src/selectors/splitChain.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Splits a path into a contextChain based on contextViews.</p>
+									<p>Splits a Path into a context chain that contains each of its SimplePaths. For eample, if the Path crosses two context views A and B, the context chain will have length SimplePaths: [ROOT, ...] -&gt; [A, ...] -&gt; [B, ...].</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>(shown without ranks): splitChain([&#39;A&#39;, &#39;B&#39;, &#39;A&#39;], { B: true }) === [[&#39;A&#39;, &#39;B&#39;], [&#39;A&#39;]]</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">

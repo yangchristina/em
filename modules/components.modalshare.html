@@ -97,7 +97,7 @@
 					<div class="tsd-signature tsd-kind-icon">Editable<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>onChange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="components.contenteditable.html#contenteditableevent" class="tsd-signature-type">ContentEditableEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.memo(({ onChange, value }: { onChange: (e: ContentEditableEvent) &#x3D;&gt; void; value: string }) &#x3D;&gt; {const colors &#x3D; useSelector(themeColors)const fontSize &#x3D; useSelector((state: State) &#x3D;&gt; state.fontSize)const ref &#x3D; useRef&lt;HTMLDivElement&gt;(null)return (&lt;div style&#x3D;{{ position: &#x27;relative&#x27; }}&gt;&lt;ContentEditableinnerRef&#x3D;{ref}html&#x3D;{value}onChange&#x3D;{onChange}placeholder&#x3D;&#x27;Untitled&#x27;style&#x3D;{{ display: &#x27;inline&#x27;, fontSize: fontSize * 1.25, marginBottom: &#x27;0.5em&#x27; }}/&gt;&lt;aonClick&#x3D;{() &#x3D;&gt; {selection.set(ref.current, { end: true })}}style&#x3D;{{display: &#x27;inline-block&#x27;,marginLeft: &#x27;1em&#x27;,position: &#x27;absolute&#x27;,top: 4,verticalAlign: &#x27;bottom&#x27;,}}&gt;&lt;PencilIcon fill&#x3D;{colors.gray} size&#x3D;{25} /&gt;&lt;/a&gt;&lt;/div&gt;)},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L254">src/components/ModalShare.tsx:254</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L254">src/components/ModalShare.tsx:254</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -112,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">Modal<wbr>Share<wbr>Memo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.memo(ModalShare)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L437">src/components/ModalShare.tsx:437</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L437">src/components/ModalShare.tsx:437</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Share<wbr>Detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>accessToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>isLastDevice<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>onBack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>share<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ShareType</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.memo(({accessToken,// provides a warning about removing the last deviceisLastDevice,onBack,share,}: {accessToken: stringisLastDevice?: booleanonBack: () &#x3D;&gt; voidshare: ShareType}) &#x3D;&gt; {const dispatch &#x3D; useDispatch()const colors &#x3D; useSelector(themeColors)// limits sharing and tells the user that they should create a new device shareconst isCurrent &#x3D; accessToken &#x3D;&#x3D;&#x3D; accessTokenCurrentconst url &#x3D; &#x60;${window.location.origin}/~/?share&#x3D;${tsid}&amp;auth&#x3D;${accessToken}&#x60;/** Copy the share link to the clipboard. */const copyShareUrl &#x3D; () &#x3D;&gt; {navigator.clipboard.writeText(url)dispatch(alert(&#x27;Share URL copied to clipboard&#x27;, { clearDelay: 2000 }))}const onChangeName &#x3D; useCallback(_.debounce((e: ContentEditableEvent) &#x3D;&gt; {shareServer.update(accessToken, { ...share, name: e.target.value.trim() })}, 500),[],)return (&lt;div&gt;&lt;div style&#x3D;{{ marginBottom: &#x27;0.5em&#x27; }}&gt;&lt;EditableName onChange&#x3D;{onChangeName} value&#x3D;{share?.name || &#x27;Untitled&#x27;} /&gt;&lt;/div&gt;{!isCurrent ? (&lt;QRCodeSVG value&#x3D;{url} style&#x3D;{{ width: &#x27;100%&#x27;, height: &#x27;100%&#x27; }} /&gt;) : (&lt;divstyle&#x3D;{{border: &#x27;solid 1px&#x27;,borderColor: colors.fg,display: &#x27;flex&#x27;,alignItems: &#x27;center&#x27;,justifyContent: &#x27;center&#x27;,}}&gt;&lt;divstyle&#x3D;{{padding: &#x27;20px&#x27;,width: &#x27;100%&#x27;,}}&gt;This is the current device. It is recommended that you create a separate device when sharing thisthoughtspace in order to control access.&lt;/div&gt;{/* response spacer square */}&lt;divstyle&#x3D;{{width: 0,height: 0,paddingBottom: &#x27;100%&#x27;,}}&gt;&lt;/div&gt;&lt;/div&gt;)}&lt;div style&#x3D;{{ position: &#x27;relative&#x27; }}&gt;&lt;span&gt;&lt;inputtype&#x3D;{isCurrent ? &#x27;password&#x27; : &#x27;text&#x27;}value&#x3D;{url}readOnly&#x3D;{true}style&#x3D;{{color: isCurrent ? colors.gray : undefined,margin: &#x27;10px&#x27;,padding: &#x27;0.75em 3em 0.75em 1em&#x27;,minWidth: 0,width: &#x27;75%&#x27;,}}/&gt;&lt;/span&gt;&lt;spanonClick&#x3D;{!isCurrent ? copyShareUrl : undefined}style&#x3D;{{opacity: isCurrent ? 0.5 : undefined,position: &#x27;absolute&#x27;,top: &#x27;0.75em&#x27;,right: &#x27;1.25em&#x27;,cursor: &#x27;pointer&#x27;,}}&gt;{isTouch ? &lt;ShareIcon size&#x3D;{22} /&gt; : &lt;CopyClipboard size&#x3D;{22} /&gt;}&lt;/span&gt;&lt;/div&gt;&lt;p style&#x3D;{{ color: colors.gray }}&gt;Created: {new Date(share.created).toLocaleString()}&lt;br /&gt;Last Accessed: {new Date(share.accessed).toLocaleString()}&lt;/p&gt;{onBack &amp;&amp; (&lt;aonClick&#x3D;{onBack}className&#x3D;{classNames({button: true,&#x27;action-button&#x27;: true,})}style&#x3D;{{color: colors.bg,fontSize: 18,lineHeight: 2,marginBottom: &#x27;1em&#x27;,}}&gt;Back&lt;/a&gt;)}&lt;div style&#x3D;{{ marginTop: &#x27;4em&#x27; }}&gt;&lt;p style&#x3D;{{ color: colors.gray, marginTop: &#x27;0.5em&#x27; }}&gt;{isLastDevice? &#x27;This is the last device with access to this thoughtspace. If you clear the thoughtspace, all thoughts will be permanently deleted.&#x27;: isCurrent? &#x27;When removed, you will lose access to the thoughtspace on this device.&#x27;: &#x60;When removed, the link and QR code will no longer work, though the device may retain a cache of thoughts thatwere saved for offline use.&#x60;}&lt;/p&gt;&lt;aonClick&#x3D;{() &#x3D;&gt; {shareServer.delete(accessToken, share)}}style&#x3D;{{ color: colors.red }}&gt;{isLastDevice ? &#x27;Delete all thoughts&#x27; : &#x27;Remove device&#x27;}&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;)},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L289">src/components/ModalShare.tsx:289</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L289">src/components/ModalShare.tsx:289</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">Share<wbr>Row<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>accessToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>isCurrent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>share<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ShareType</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.memo(({accessToken,isCurrent,role,share,}: {accessToken: stringisCurrent?: booleanshare: ShareTyperole: string}) &#x3D;&gt; {return (&lt;divstyle&#x3D;{{display: &#x27;flex&#x27;,flexDirection: &#x27;row&#x27;,alignSelf: &#x27;start&#x27;,margin: &#x27;1% auto&#x27;,alignItems: &#x27;center&#x27;,}}&gt;&lt;div style&#x3D;{{ display: &#x27;inline-flex&#x27; }}&gt;&lt;span style&#x3D;{{ padding: &#x27;0.75em 1em 0.75em 0&#x27; }}&gt;&lt;span style&#x3D;{{ display: &#x27;inline-block&#x27;, fontWeight: &#x27;bold&#x27;, marginRight: &#x27;1em&#x27;, minWidth: &#x27;8em&#x27; }}&gt;{share?.name || &#x27;Untitled&#x27;}&lt;/span&gt;&lt;Role role&#x3D;{role} /&gt;&lt;/span&gt;{&#x27; &#x27;}&lt;spanstyle&#x3D;{{textAlign: &#x27;left&#x27;,fontStyle: &#x27;italic&#x27;,marginRight: &#x27;1em&#x27;,margin: &#x27;0 10px&#x27;,padding: &#x27;0.75em 0&#x27;,}}&gt;{isCurrent ? &#x27;this device&#x27; : &lt;a&gt;view&lt;/a&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;)},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L132">src/components/ModalShare.tsx:132</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L132">src/components/ModalShare.tsx:132</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L180">src/components/ModalShare.tsx:180</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L180">src/components/ModalShare.tsx:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L30">src/components/ModalShare.tsx:30</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L30">src/components/ModalShare.tsx:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -258,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L129">src/components/ModalShare.tsx:129</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L129">src/components/ModalShare.tsx:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -291,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L64">src/components/ModalShare.tsx:64</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L64">src/components/ModalShare.tsx:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f691511/src/components/ModalShare.tsx#L22">src/components/ModalShare.tsx:22</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/62973d9/src/components/ModalShare.tsx#L22">src/components/ModalShare.tsx:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

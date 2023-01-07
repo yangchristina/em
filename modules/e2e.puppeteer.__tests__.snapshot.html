@@ -79,6 +79,7 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#click" class="tsd-kind-icon">click</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#paste" class="tsd-kind-icon">paste</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#press" class="tsd-kind-icon">press</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#remove" class="tsd-kind-icon">remove</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#screenshot" class="tsd-kind-icon">screenshot</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#scroll" class="tsd-kind-icon">scroll</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#tomatchimagesnapshot" class="tsd-kind-icon">to<wbr>Match<wbr>Image<wbr>Snapshot</a></li>
@@ -88,6 +89,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#removehud" class="tsd-kind-icon">removeHUD</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.__tests__.snapshot.html#testsuite" class="tsd-kind-icon">test<wbr>Suite</a></li>
 							</ul>
 						</section>
@@ -102,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -133,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">paste<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="e2e_ios_helpers.html#pasteoverload" class="tsd-signature-type">pasteOverload</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +145,38 @@
 					<div class="tsd-signature tsd-kind-icon">press<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
+					<div class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -174,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">screenshot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -205,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -236,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Match<wbr>Image<wbr>Snapshot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>pass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = configureToMatchImageSnapshot({customDiffConfig: {// per-pixel failure threshold (percent)// puppeteer anti-aliasing (?) commonly creates small differences in text and svg rendering at different font sizes, so increase the thresholdthreshold: 0.1,},// Full picture failure threshold (pixels)// 4 pixels definitely has false positives.// 14 px definitely has false negatives.// Hopefully 8 is the sweet spot.failureThreshold: 8,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L13">src/e2e/puppeteer/__tests__/snapshot.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L13">src/e2e/puppeteer/__tests__/snapshot.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -282,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><a href="test_helpers.partialwithref.html#tail" class="tsd-signature-type">Tail</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L37">src/e2e/puppeteer/__tests__/snapshot.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -311,6 +344,28 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="removehud" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> removeHUD</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">removeHUD<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L40">src/e2e/puppeteer/__tests__/snapshot.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes the huds-up-display (header, footer, etc) so that only the thoughts are shown.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="testsuite" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> test<wbr>Suite</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
@@ -320,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8895915/src/e2e/puppeteer/__tests__/snapshot.ts#L40">src/e2e/puppeteer/__tests__/snapshot.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/dc6e1b9/src/e2e/puppeteer/__tests__/snapshot.ts#L48">src/e2e/puppeteer/__tests__/snapshot.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,9 +420,6 @@
 												<a href="e2e.puppeteer.__tests__.editcontext.html">edit<wbr>Context</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
-												<a href="e2e.puppeteer.__tests__.focuszoom.html">focus<wbr>Zoom</a>
-											</li>
-											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.__tests__.newthought.html">new<wbr>Thought</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -408,6 +460,9 @@
 						<a href="e2e.puppeteer.__tests__.snapshot.html#press" class="tsd-kind-icon">press</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="e2e.puppeteer.__tests__.snapshot.html#remove" class="tsd-kind-icon">remove</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="e2e.puppeteer.__tests__.snapshot.html#screenshot" class="tsd-kind-icon">screenshot</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
@@ -418,6 +473,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="e2e.puppeteer.__tests__.snapshot.html#type" class="tsd-kind-icon">type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="e2e.puppeteer.__tests__.snapshot.html#removehud" class="tsd-kind-icon">removeHUD</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="e2e.puppeteer.__tests__.snapshot.html#testsuite" class="tsd-kind-icon">test<wbr>Suite</a>

@@ -91,7 +91,7 @@
 					<div class="tsd-signature tsd-kind-icon">autoscroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">startOrUpdate</span><span class="tsd-signature-symbol"> = (() &#x3D;&gt; {/** Cubic easing function. */const ease &#x3D; (n: number) &#x3D;&gt; Math.pow(n, 3)// if true, the window will continue to be scrolled at the current rate without user interactionlet autoscrolling &#x3D; false// scroll speed (-1 to 1)let rate &#x3D; 1// cache the autoscroll container on start for performance// if the Sidebar is open on touch start, this is set to the .sidebar elementlet scrollContainer: Window | HTMLElement &#x3D; window/** Scroll vertically in the direction given by rate until stop is called. Defaults to scrolling the window, or you can pass an element to scroll. */const scroll &#x3D; () &#x3D;&gt; {const el &#x3D; scrollContainer || window// if scrollContainer is undefined or window, use the document scrollTopconst scrollTop &#x3D; (scrollContainer as HTMLElement).scrollTop ?? document.documentElement.scrollTopconst scrollTopNew &#x3D; Math.max(0, scrollTop + rate)// if we have hit the end, stop autoscrolling// i.e. if the next increment would not change scrollTopif (scrollTopNew &#x3D;&#x3D;&#x3D; scrollTop) {autoscrolling &#x3D; falsereturn}el.scrollTo(0, scrollTopNew)window.requestAnimationFrame(() &#x3D;&gt; {if (autoscrolling) {scroll()}})}/** Starts the autoscroll or, if already scrolling, updates the scroll rate (-1 to 1). */const startOrUpdate &#x3D; (rateNew?: number) &#x3D;&gt; {// update the scroll raterate &#x3D; ease(rateNew ?? 1)// if we are already autoscrolling, do nothingif (autoscrolling) return// otherwise kick off the autoscrollautoscrolling &#x3D; truescrollContainer &#x3D; (document.querySelector(&#x27;.sidebar&#x27;) as HTMLElement | null) || windowscroll()}/** Stops scrolling. */startOrUpdate.stop &#x3D; () &#x3D;&gt; {autoscrolling &#x3D; false}return startOrUpdate})()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7737bba/src/util/initEvents.ts#L33">src/util/initEvents.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7222716/src/util/initEvents.ts#L33">src/util/initEvents.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -113,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7737bba/src/util/initEvents.ts#L92">src/util/initEvents.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7222716/src/util/initEvents.ts#L92">src/util/initEvents.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,7 +152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7737bba/src/util/initEvents.ts#L246">src/util/initEvents.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7222716/src/util/initEvents.ts#L246">src/util/initEvents.ts:246</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

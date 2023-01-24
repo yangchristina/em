@@ -69,6 +69,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#clientid" class="tsd-kind-icon">client<wbr>Id</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#isandroid" class="tsd-kind-icon">is<wbr>Android</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#isios" class="tsd-kind-icon">isIOS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#ismac" class="tsd-kind-icon">is<wbr>Mac</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#istouch" class="tsd-kind-icon">is<wbr>Touch</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_browser_.html#isiphone" class="tsd-kind-icon">isi<wbr>Phone</a></li>
@@ -91,7 +92,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = uuid()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L24">src/browser.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L29">src/browser.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -107,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Android<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof navigator !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; navigator.platform &#x3D;&#x3D;&#x3D; &#x27;Linux armv7l&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L9">src/browser.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L14">src/browser.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,12 +118,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="isios" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> isIOS</h3>
+					<div class="tsd-signature tsd-kind-icon">isIOS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = Capacitor.getPlatform() &#x3D;&#x3D;&#x3D; &#x27;ios&#x27;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L6">src/browser.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="ismac" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Mac</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Mac<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof navigator !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; navigator.platform &#x3D;&#x3D;&#x3D; &#x27;MacIntel&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L12">src/browser.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L17">src/browser.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,15 +145,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="istouch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Touch</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Touch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof window !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; window.matchMedia?.(&#x27;(pointer: coarse)&#x27;).matches</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Touch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof window !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp;(window.matchMedia?.(&#x27;(pointer: coarse)&#x27;).matches || Capacitor.getPlatform() &#x3D;&#x3D;&#x3D; &#x27;android&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L6">src/browser.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L9">src/browser.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Returns true if the user&#39;s device is touch screen.</p>
+							<p>Returns true if the user&#39;s device is touch screen. The use of matchMedia(&#39;pointer: coarse&#39;) did not work for Android webviews, so checking if it is Android Webview using capacitor.</p>
 						</div>
 					</div>
 				</section>
@@ -152,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">isi<wbr>Phone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof navigator !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp; navigator.platform &#x3D;&#x3D;&#x3D; &#x27;iPhone&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L15">src/browser.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L20">src/browser.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/718e34b/src/browser.ts#L18">src/browser.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e3cd124/src/browser.ts#L23">src/browser.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,6 +214,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_browser_.html#isandroid" class="tsd-kind-icon">is<wbr>Android</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_browser_.html#isios" class="tsd-kind-icon">isIOS</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_browser_.html#ismac" class="tsd-kind-icon">is<wbr>Mac</a>

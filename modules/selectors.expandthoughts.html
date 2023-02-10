@@ -70,13 +70,19 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#childvalue" class="tsd-kind-icon">child<wbr>Value</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#childrenpinned" class="tsd-kind-icon">children<wbr>Pinned</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="selectors.expandthoughts.html#expandthoughts" class="tsd-kind-icon">expand<wbr>Thoughts</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#expandthoughtsrecursive" class="tsd-kind-icon">expand<wbr>Thoughts<wbr>Recursive</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#istable" class="tsd-kind-icon">is<wbr>Table</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#istablecolumn1" class="tsd-kind-icon">is<wbr>Table<wbr>Column1</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#pinchildren" class="tsd-kind-icon">pin<wbr>Children</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#pinned" class="tsd-kind-icon">pinned</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#publishpinchildren" class="tsd-kind-icon">publish<wbr>Pin<wbr>Children</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported"><a href="selectors.expandthoughts.html#pinstatemap" class="tsd-kind-icon">pin<wbr>State<wbr>Map</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,21 +91,21 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="childvalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> child<wbr>Value</h3>
+					<a name="childrenpinned" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> children<wbr>Pinned</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">child<wbr>Value<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, child<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><a href="_types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a>, showContexts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">children<wbr>Pinned<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, id<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L34">src/selectors/expandThoughts.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L41">src/selectors/expandThoughts.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get the value of the Child | ThoughtContext.</p>
+									<p>Returns true if a thought&#39;s children are pinned with =children/=pin/true, false if =children/=pin/false, and null if not pinned.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -108,13 +114,10 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>child: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><a href="_types.thoughtcontext.html" class="tsd-signature-type">ThoughtContext</a></h5>
-								</li>
-								<li>
-									<h5>showContexts: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>id: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -129,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L58">src/selectors/expandThoughts.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L61">src/selectors/expandThoughts.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -162,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L59">src/selectors/expandThoughts.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L62">src/selectors/expandThoughts.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,12 +216,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L94">src/selectors/expandThoughts.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L97">src/selectors/expandThoughts.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Recursively generate expansion map based by checking if the children of the current path should expand based on the given expansion path.</p>
+									<p>Recursively generate expansion map from the given path. Always expands the given path, then calculates expansion of descendants.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L38">src/selectors/expandThoughts.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L47">src/selectors/expandThoughts.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L47">src/selectors/expandThoughts.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L50">src/selectors/expandThoughts.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,21 +317,21 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="pinchildren" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> pin<wbr>Children</h3>
+					<a name="pinned" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> pinned</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">pin<wbr>Children<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, id<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">pinned<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, id<span class="tsd-signature-symbol">: </span><a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L41">src/selectors/expandThoughts.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L35">src/selectors/expandThoughts.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the value of =children/=pin.</p>
+									<p>Returns true if a thought is pinned with =pin/true, false if =pin/false, and null if not pinned.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -337,10 +340,10 @@
 									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
 								</li>
 								<li>
-									<h5>id: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a></h5>
+									<h5>id: <a href="_types.thoughtid.html" class="tsd-signature-type">ThoughtId</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -348,13 +351,13 @@
 					<a name="publishpinchildren" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> publish<wbr>Pin<wbr>Children</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">publish<wbr>Pin<wbr>Children<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></li>
+						<li class="tsd-signature tsd-kind-icon">publish<wbr>Pin<wbr>Children<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><a href="_types.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b1dbd77/src/selectors/expandThoughts.ts#L53">src/selectors/expandThoughts.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L56">src/selectors/expandThoughts.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,9 +375,42 @@
 									<h5>context: <a href="_types.context.html" class="tsd-signature-type">Context</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_types.brand.brand.html" class="tsd-signature-type">Brand</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">"ThoughtId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+					<a name="pinstatemap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> pin<wbr>State<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>State<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L32">src/selectors/expandThoughts.ts:32</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="pinstatemap.false" class="tsd-anchor"></a>
+						<h3>false</h3>
+						<div class="tsd-signature tsd-kind-icon">false<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L32">src/selectors/expandThoughts.ts:32</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="pinstatemap.true" class="tsd-anchor"></a>
+						<h3>true</h3>
+						<div class="tsd-signature tsd-kind-icon">true<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/f21dcd7/src/selectors/expandThoughts.ts#L32">src/selectors/expandThoughts.ts:32</a></li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -394,7 +430,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="selectors.expandthoughts.html#childvalue" class="tsd-kind-icon">child<wbr>Value</a>
+						<a href="selectors.expandthoughts.html#childrenpinned" class="tsd-kind-icon">children<wbr>Pinned</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="selectors.expandthoughts.html#expandthoughts" class="tsd-kind-icon">expand<wbr>Thoughts</a>
@@ -409,10 +445,13 @@
 						<a href="selectors.expandthoughts.html#istablecolumn1" class="tsd-kind-icon">is<wbr>Table<wbr>Column1</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="selectors.expandthoughts.html#pinchildren" class="tsd-kind-icon">pin<wbr>Children</a>
+						<a href="selectors.expandthoughts.html#pinned" class="tsd-kind-icon">pinned</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.expandthoughts.html#publishpinchildren" class="tsd-kind-icon">publish<wbr>Pin<wbr>Children</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+						<a href="selectors.expandthoughts.html#pinstatemap" class="tsd-kind-icon">pin<wbr>State<wbr>Map</a>
 					</li>
 				</ul>
 			</nav>

@@ -99,6 +99,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#styleinjector" class="tsd-kind-icon">Style<wbr>Injector</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#mapstatetoprops" class="tsd-kind-icon">map<wbr>State<wbr>ToProps</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.appcomponent.html#usedisablelongpresstoselect" class="tsd-kind-icon">use<wbr>Disable<wbr>Long<wbr>Press<wbr>ToSelect</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">Props<span class="tsd-signature-symbol">:</span> <a href="../interfaces/components.appcomponent.stateprops.html" class="tsd-signature-type">StateProps</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L138">src/components/AppComponent.tsx:138</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L149">src/components/AppComponent.tsx:149</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>_result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.lazy(() &#x3D;&gt; import(&#x27;./Content&#x27;))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L49">src/components/AppComponent.tsx:49</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L41">src/components/AppComponent.tsx:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">DISABLE_<wbr>SPLIT_<wbr>PANE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L47">src/components/AppComponent.tsx:47</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L39">src/components/AppComponent.tsx:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">Global<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NamedExoticComponent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>styles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = React.memo(({ styles }: { styles: [string, React.CSSProperties][] }) &#x3D;&gt; {const [globalStyle, setGlobalStyle] &#x3D; useState&lt;Index&lt;string&gt;&gt;({})const appendGlobalStyle &#x3D; useCallback(i &#x3D;&gt; (css: string) &#x3D;&gt; setGlobalStyle(globalStyle &#x3D;&gt; ({ ...globalStyle, [i]: css })),[],)return (&lt;&gt;{styles.map(([selector, style], i) &#x3D;&gt; (&lt;StyleInjector key&#x3D;{i} css&#x3D;{appendGlobalStyle(i)} selector&#x3D;{selector} style&#x3D;{style} /&gt;))}&lt;style&gt;{Object.values(globalStyle).join(&#x27;&#x27;)}&lt;/style&gt;&lt;/&gt;)})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L103">src/components/AppComponent.tsx:103</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L95">src/components/AppComponent.tsx:95</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +168,7 @@
 
 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L52">src/components/AppComponent.tsx:52</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L44">src/components/AppComponent.tsx:44</a></li>
         </ul>
 </aside>
 
@@ -183,7 +184,7 @@
 
 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L52">src/components/AppComponent.tsx:52</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L44">src/components/AppComponent.tsx:44</a></li>
         </ul>
 </aside>
 
@@ -199,7 +200,7 @@
 
 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L52">src/components/AppComponent.tsx:52</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L44">src/components/AppComponent.tsx:44</a></li>
         </ul>
 </aside>
 
@@ -215,7 +216,7 @@
 
 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L51">src/components/AppComponent.tsx:51</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L43">src/components/AppComponent.tsx:43</a></li>
         </ul>
 </aside>
 
@@ -238,7 +239,7 @@
         <li class="tsd-description">
                 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L163">src/components/AppComponent.tsx:163</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L174">src/components/AppComponent.tsx:174</a></li>
         </ul>
 </aside>
         <div class="tsd-comment tsd-typography">
@@ -278,7 +279,7 @@
         <li class="tsd-description">
                 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L146">src/components/AppComponent.tsx:146</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L157">src/components/AppComponent.tsx:157</a></li>
         </ul>
 </aside>
         <div class="tsd-comment tsd-typography">
@@ -326,7 +327,7 @@
         <li class="tsd-description">
                 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L82">src/components/AppComponent.tsx:82</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L74">src/components/AppComponent.tsx:74</a></li>
         </ul>
 </aside>
         <div class="tsd-comment tsd-typography">
@@ -412,7 +413,7 @@
         <li class="tsd-description">
                 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L121">src/components/AppComponent.tsx:121</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L132">src/components/AppComponent.tsx:132</a></li>
         </ul>
 </aside>
 
@@ -446,7 +447,7 @@
         <li class="tsd-description">
                 <aside class="tsd-sources">
         <ul>
-                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/9a8f187/src/components/AppComponent.tsx#L141">src/components/AppComponent.tsx:141</a></li>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L152">src/components/AppComponent.tsx:152</a></li>
         </ul>
 </aside>
         <div class="tsd-comment tsd-typography">
@@ -466,19 +467,51 @@
     
 
 </section>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+    <a name="usedisablelongpresstoselect" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagConst">Const</span> use<wbr>Disable<wbr>Long<wbr>Press<wbr>ToSelect</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+        <li class="tsd-signature tsd-kind-icon">use<wbr>Disable<wbr>Long<wbr>Press<wbr>ToSelect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/components/AppComponent.tsx#L113">src/components/AppComponent.tsx:113</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Disables long-press-to-select by clearing any selections that appear during long press.</p>
+
+                </div>
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
     </section>
 
         </div>
         <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
             <nav class="tsd-navigation primary">
                 <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="current tsd-kind-module tsd-is-not-exported">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="current tsd-kind-module tsd-is-not-exported">
                 <a href="components.html">components</a>
                         <ul>
                                                                                                                                                                             <li class="current tsd-kind-module tsd-parent-kind-module">
                 <a href="components.appcomponent.html">App<wbr>Component</a>
             </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
             </li>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </ul>
             </nav>
@@ -526,6 +559,9 @@
 </li>
                         <li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
     <a href="components.appcomponent.html#shouldcancelgesture" class="tsd-kind-icon">should<wbr>Cancel<wbr>Gesture</a>
+</li>
+                        <li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+    <a href="components.appcomponent.html#usedisablelongpresstoselect" class="tsd-kind-icon">use<wbr>Disable<wbr>Long<wbr>Press<wbr>ToSelect</a>
 </li>
                 </ul>
             </nav>

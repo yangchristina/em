@@ -81,10 +81,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="hashthought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> hash<wbr>Thought</h3>
-					<div class="tsd-signature tsd-kind-icon">hash<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.thoughthash.html" class="tsd-signature-type">ThoughtHash</a><span class="tsd-signature-symbol"> = _.memoize((value: string) &#x3D;&gt;_.flow([normalizeThought, ...(globals.debugIds ? [] : [murmurHash3.x64.hash128])])(value),)</span></div>
+					<div class="tsd-signature tsd-kind-icon">hash<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.thoughthash.html" class="tsd-signature-type">ThoughtHash</a><span class="tsd-signature-symbol"> = globals.debugIds? (value: string) &#x3D;&gt; value as ThoughtHash: _.memoize((value: string) &#x3D;&gt; murmurHash3.x64.hash128(normalizeThought(value)) as ThoughtHash)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/util/hashThought.ts#L20">src/util/hashThought.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/util/hashThought.ts#L20">src/util/hashThought.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -96,7 +96,7 @@
 							<li>ignore punctuation &amp; whitespace (when there is other text)</li>
 							<li>ignore emojis (when there is other text)</li>
 							<li>singularize</li>
-							<li>murmurhash to prevent large keys (Firebase limitation)</li>
+							<li>murmurhash</li>
 						</ul>
 						<p>Stored keys MUST match the current hashing algorithm.
 						Use schemaVersion to manage migrations.</p>
@@ -161,11 +161,10 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 		</div>
 	</div>

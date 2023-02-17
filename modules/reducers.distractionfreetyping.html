@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>sessionManager | em</title>
+	<title>distractionFreeTyping | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="redux_middleware.html">redux-middleware</a>
+					<a href="reducers.html">reducers</a>
 				</li>
 				<li>
-					<a href="redux_middleware.sessionmanager.html">sessionManager</a>
+					<a href="reducers.distractionfreetyping.html">distractionFreeTyping</a>
 				</li>
 			</ul>
-			<h1>Module sessionManager</h1>
+			<h1>Module distractionFreeTyping</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="redux_middleware.sessionmanager.html#sessionmanagermiddleware" class="tsd-kind-icon">session<wbr>Manager<wbr>Middleware</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="reducers.distractionfreetyping.html#distractionfreetyping" class="tsd-kind-icon">distraction<wbr>Free<wbr>Typing</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,35 +79,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="sessionmanagermiddleware" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> session<wbr>Manager<wbr>Middleware</h3>
+					<a name="distractionfreetyping" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> distraction<wbr>Free<wbr>Typing</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">session<wbr>Manager<wbr>Middleware<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">distraction<wbr>Free<wbr>Typing<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>distractionFreeTyping<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/03f2571/src/redux-middleware/sessionManager.ts#L6">src/redux-middleware/sessionManager.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/reducers/distractionFreeTyping.ts#L5">src/reducers/distractionFreeTyping.ts:5</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Runs a throttled session keepalive on every action.</p>
+									<p>Hides the toolbar and nav bar to allow for distraction-free typing on desktop.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>get<wbr>State<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span></h5>
+											<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>distractionFreeTyping<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>distraction<wbr>Free<wbr>Typing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -117,25 +125,10 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="redux_middleware.html">redux-<wbr>middleware</a>
+						<a href="reducers.html">reducers</a>
 						<ul>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.multi.html">multi</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.pullqueue.html">pull<wbr>Queue</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.pushqueue.html">push<wbr>Queue</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.scrollcursorintoview.html">scroll<wbr>Cursor<wbr>Into<wbr>View</a>
-							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.sessionmanager.html">session<wbr>Manager</a>
-							</li>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="redux_middleware.updateurlhistory.html">update<wbr>Url<wbr>History</a>
+								<a href="reducers.distractionfreetyping.html">distraction<wbr>Free<wbr>Typing</a>
 							</li>
 						</ul>
 					</li>
@@ -144,7 +137,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="redux_middleware.sessionmanager.html#sessionmanagermiddleware" class="tsd-kind-icon">session<wbr>Manager<wbr>Middleware</a>
+						<a href="reducers.distractionfreetyping.html#distractionfreetyping" class="tsd-kind-icon">distraction<wbr>Free<wbr>Typing</a>
 					</li>
 				</ul>
 			</nav>
@@ -164,11 +157,10 @@
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 		</div>
 	</div>

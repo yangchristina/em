@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Favorite<wbr>Return<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="components.favorites.html#dragcollect" class="tsd-signature-type">dragCollect</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="components.quickdropicon.html#dropcollect" class="tsd-signature-type">dropCollect</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>disableDragAndDrop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>simplePath<span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L156">src/components/Favorites.tsx:156</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L156">src/components/Favorites.tsx:156</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Favorite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ComponentClass</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>DecoratedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = DragAndDropThought(({disableDragAndDrop,dragSource,dropTarget,hideContext,isDragging,isHovering,simplePath,}: DragAndDropFavoriteReturnType &amp; { hideContext?: boolean }) &#x3D;&gt; {const colors &#x3D; useSelector(themeColors)const dragHoldResult &#x3D; useDragHold({ isDragging, simplePath, sourceZone: DragThoughtZone.Favorites })return dropTarget(dragSource(// Set overflow:auto so the drop target fully wraps its contents.// Otherwise the context-breadcrumbs margin-top will leak out and create a dead zone where the favorite cannot be dropped.&lt;div {...dragHoldResult.props} style&#x3D;{{ overflow: &#x27;auto&#x27; }}&gt;{!disableDragAndDrop &amp;&amp; isHovering &amp;&amp; (&lt;spanclassName&#x3D;{classNames({&#x27;drop-hover&#x27;: true,pressed: !disableDragAndDrop &amp;&amp; dragHoldResult.isPressed,})}style&#x3D;{{backgroundColor: colors.highlight,marginLeft: 0,marginTop: &#x27;-0.4em&#x27;,width: &#x27;calc(100% - 4em)&#x27;,}}/&gt;)}&lt;ThoughtLinkhideContext&#x3D;{hideContext}path&#x3D;{simplePath}styleLink&#x3D;{{...(!disableDragAndDrop &amp;&amp;(isDragging || dragHoldResult.isPressed? {color: colors.highlight,fontWeight: &#x27;bold&#x27;,}: undefined)),}}/&gt;&lt;/div&gt;,),)},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L165">src/components/Favorites.tsx:165</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L165">src/components/Favorites.tsx:165</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drop<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ComponentClass</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>DecoratedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = DropTarget(&#x27;thought&#x27;,{ drop },dropCollect,)(({ dropTarget, isHovering }: ReturnType&lt;typeof dropCollect&gt;) &#x3D;&gt; {if (!isHovering) return nullreturn dropTarget(&lt;div style&#x3D;{{ height: &#x27;4em&#x27; }}&gt;&lt;spanclassName&#x3D;&#x27;drop-hover&#x27;style&#x3D;{{marginLeft: 0,marginTop: 0,width: &#x27;calc(100% - 4em)&#x27;,}}/&gt;&lt;/div&gt;,)})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L216">src/components/Favorites.tsx:216</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L216">src/components/Favorites.tsx:216</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L162">src/components/Favorites.tsx:162</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L162">src/components/Favorites.tsx:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -178,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L295">src/components/Favorites.tsx:295</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L295">src/components/Favorites.tsx:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L237">src/components/Favorites.tsx:237</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L237">src/components/Favorites.tsx:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L41">src/components/Favorites.tsx:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L41">src/components/Favorites.tsx:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L68">src/components/Favorites.tsx:68</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L68">src/components/Favorites.tsx:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -343,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L144">src/components/Favorites.tsx:144</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L144">src/components/Favorites.tsx:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L72">src/components/Favorites.tsx:72</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L72">src/components/Favorites.tsx:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,7 +442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L151">src/components/Favorites.tsx:151</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L151">src/components/Favorites.tsx:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -502,7 +502,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/2ac3b90/src/components/Favorites.tsx#L55">src/components/Favorites.tsx:55</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/b93f4d8/src/components/Favorites.tsx#L55">src/components/Favorites.tsx:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>contextToPath | em</title>
+	<title>suppressFocus | em</title>
 	<meta name="description" content="Documentation for em">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,13 +51,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="selectors.html">selectors</a>
+					<a href="stores.html">stores</a>
 				</li>
 				<li>
-					<a href="selectors.contexttopath.html">contextToPath</a>
+					<a href="stores.suppressfocus.html">suppressFocus</a>
 				</li>
 			</ul>
-			<h1>Module contextToPath</h1>
+			<h1>Module suppressFocus</h1>
 		</div>
 	</div>
 </header>
@@ -68,46 +68,30 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="selectors.contexttopath.html#contexttopath" class="tsd-kind-icon">context<wbr>ToPath</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="stores.suppressfocus.html#suppressfocus" class="tsd-kind-icon">suppress<wbr>Focus</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="contexttopath" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> context<wbr>ToPath</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">context<wbr>ToPath<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/936b16a/src/selectors/contextToPath.ts#L17">src/selectors/contextToPath.ts:17</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>DEPRECATED: Converts a Context to a Path. This is a lossy function! If there is a duplicate thought in the same context, it takes the first. Works with cyclic Paths. Should be converted to a test-helper only.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
-								</li>
-								<li>
-									<h5>context: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
-						</li>
-					</ul>
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="suppressfocus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> suppress<wbr>Focus</h3>
+					<div class="tsd-signature tsd-kind-icon">suppress<wbr>Focus<span class="tsd-signature-symbol">:</span> <a href="../interfaces/stores.ministore.ministore.html" class="tsd-signature-type">Ministore</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ministore(false)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/936b16a/src/stores/suppressFocus.ts#L4">src/stores/suppressFocus.ts:4</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A store that is used to suppress the Editable focus handler while selecting text for execCommand.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -115,10 +99,28 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="selectors.html">selectors</a>
+						<a href="stores.html">stores</a>
 						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.app.html">app</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.editingvalue.html">editing<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.ministore.html">ministore</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.offlinestatusstore.html">offline<wbr>Status<wbr>Store</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.push.html">push</a>
+							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
-								<a href="selectors.contexttopath.html">context<wbr>ToPath</a>
+								<a href="stores.suppressfocus.html">suppress<wbr>Focus</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.viewport.html">viewport</a>
 							</li>
 						</ul>
 					</li>
@@ -126,8 +128,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="selectors.contexttopath.html#contexttopath" class="tsd-kind-icon">context<wbr>ToPath</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="stores.suppressfocus.html#suppressfocus" class="tsd-kind-icon">suppress<wbr>Focus</a>
 					</li>
 				</ul>
 			</nav>

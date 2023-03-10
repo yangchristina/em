@@ -85,12 +85,14 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.multigesture.html#panresponder" class="tsd-kind-icon">Pan<wbr>Responder</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.multigesture.html#scroll_zone_width" class="tsd-kind-icon">SCROLL_<wbr>ZONE_<wbr>WIDTH</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="components.multigesture.html#view" class="tsd-kind-icon">View</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.multigesture.html#scrollzone" class="tsd-kind-icon">Scroll<wbr>Zone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.multigesture.html#gesture" class="tsd-kind-icon">gesture</a></li>
 							</ul>
 						</section>
@@ -111,7 +113,17 @@
 					<div class="tsd-signature tsd-kind-icon">Pan<wbr>Responder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L12">src/components/MultiGesture.tsx:12</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L15">src/components/MultiGesture.tsx:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="scroll_zone_width" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SCROLL_<wbr>ZONE_<wbr>WIDTH</h3>
+					<div class="tsd-signature tsd-kind-icon">SCROLL_<wbr>ZONE_<wbr>WIDTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L63">src/components/MultiGesture.tsx:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,13 +133,46 @@
 					<div class="tsd-signature tsd-kind-icon">View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L12">src/components/MultiGesture.tsx:12</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L15">src/components/MultiGesture.tsx:15</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="scrollzone" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Scroll<wbr>Zone</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">Scroll<wbr>Zone<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>leftHanded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L92">src/components/MultiGesture.tsx:92</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>An overlay for the scroll zone.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-symbol">{ </span>leftHanded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>left<wbr>Handed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="gesture" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> gesture</h3>
@@ -138,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L67">src/components/MultiGesture.tsx:67</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L74">src/components/MultiGesture.tsx:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -171,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">dir<wbr>ToRad<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L59">src/components/MultiGesture.tsx:59</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L66">src/components/MultiGesture.tsx:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +230,7 @@
 						<div class="tsd-signature tsd-kind-icon">NE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -Math.PI / 4</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L61">src/components/MultiGesture.tsx:61</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L68">src/components/MultiGesture.tsx:68</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -195,7 +240,7 @@
 						<div class="tsd-signature tsd-kind-icon">NW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -Math.PI * (3 / 4)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L60">src/components/MultiGesture.tsx:60</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L67">src/components/MultiGesture.tsx:67</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -205,7 +250,7 @@
 						<div class="tsd-signature tsd-kind-icon">SE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Math.PI / 4</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L62">src/components/MultiGesture.tsx:62</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L69">src/components/MultiGesture.tsx:69</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -215,7 +260,7 @@
 						<div class="tsd-signature tsd-kind-icon">SW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Math.PI * (3 / 4)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/65a9874/src/components/MultiGesture.tsx#L63">src/components/MultiGesture.tsx:63</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/e88c7e4/src/components/MultiGesture.tsx#L70">src/components/MultiGesture.tsx:70</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -253,7 +298,13 @@
 						<a href="components.multigesture.html#panresponder" class="tsd-kind-icon">Pan<wbr>Responder</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.multigesture.html#scroll_zone_width" class="tsd-kind-icon">SCROLL_<wbr>ZONE_<wbr>WIDTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.multigesture.html#view" class="tsd-kind-icon">View</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="components.multigesture.html#scrollzone" class="tsd-kind-icon">Scroll<wbr>Zone</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.multigesture.html#gesture" class="tsd-kind-icon">gesture</a>

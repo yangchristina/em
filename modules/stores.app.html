@@ -85,17 +85,17 @@
 					<div class="tsd-signature tsd-kind-icon">compose<wbr>Enhancers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">compose</span><span class="tsd-signature-symbol"> = composeWithDevTools({ trace: true })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1f8d4bf/src/stores/app.ts#L18">src/stores/app.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/stores/app.ts#L19">src/stores/app.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="store" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> store</h3>
-					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = createStore(appReducer,composeEnhancers(applyMiddleware(multi, thunk, pushQueue, pullQueue, updateUrlHistory),undoRedoEnhancer,cursorChangedEnhancer,// must go at the end to ensure it clears the pushQueue before other enhancersclearPushQueueEnhancer,),)</span></div>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = createStore(appReducer,composeEnhancers(applyMiddleware(multi, thunk, pushQueue, pullQueue, updateUrlHistory),storageCache,undoRedoEnhancer,cursorChangedEnhancer,// must go at the end to ensure it clears the pushQueue before other enhancersclearPushQueueEnhancer,),)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1f8d4bf/src/stores/app.ts#L24">src/stores/app.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/stores/app.ts#L25">src/stores/app.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,6 +121,9 @@
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.push.html">push</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.storagemodel.html">storage<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.suppressfocus.html">suppress<wbr>Focus</a>

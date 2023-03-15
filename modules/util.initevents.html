@@ -70,6 +70,11 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#toolbar_autoscroll_size" class="tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SIZE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#toolbar_autoscroll_speed" class="tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SPEED</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#window_autoscroll_down_size" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>DOWN_<wbr>SIZE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#window_autoscroll_speed" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>SPEED</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#window_autoscroll_up_size" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>UP_<wbr>SIZE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.initevents.html#autoscroll" class="tsd-kind-icon">autoscroll</a></li>
 							</ul>
 						</section>
@@ -86,18 +91,79 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="autoscroll" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> autoscroll</h3>
-					<div class="tsd-signature tsd-kind-icon">autoscroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">startOrUpdate</span><span class="tsd-signature-symbol"> = (() &#x3D;&gt; {/** Cubic easing function. */const ease &#x3D; (n: number) &#x3D;&gt; Math.pow(n, 3)// if true, the window will continue to be scrolled at the current rate without user interactionlet autoscrolling &#x3D; false// scroll speed (-1 to 1)let rate &#x3D; 1// cache the autoscroll container on start for performance// if the Sidebar is open on touch start, this is set to the .sidebar elementlet scrollContainer: Window | HTMLElement &#x3D; window/** Scroll vertically in the direction given by rate until stop is called. Defaults to scrolling the window, or you can pass an element to scroll. */const scroll &#x3D; () &#x3D;&gt; {const el &#x3D; scrollContainer || window// if scrollContainer is undefined or window, use the document scrollTopconst scrollTop &#x3D; (scrollContainer as HTMLElement).scrollTop ?? document.documentElement.scrollTopconst scrollTopNew &#x3D; Math.max(0, scrollTop + rate)// if we have hit the end, stop autoscrolling// i.e. if the next increment would not change scrollTopif (scrollTopNew &#x3D;&#x3D;&#x3D; scrollTop) {autoscrolling &#x3D; falsereturn}el.scrollTo(0, scrollTopNew)window.requestAnimationFrame(() &#x3D;&gt; {if (autoscrolling) {scroll()}})}/** Starts the autoscroll or, if already scrolling, updates the scroll rate (-1 to 1). */const startOrUpdate &#x3D; (rateNew?: number) &#x3D;&gt; {// update the scroll raterate &#x3D; ease(rateNew ?? 1)// if we are already autoscrolling, do nothingif (autoscrolling) return// otherwise kick off the autoscrollautoscrolling &#x3D; truescrollContainer &#x3D; (document.querySelector(&#x27;.sidebar&#x27;) as HTMLElement | null) || windowscroll()}/** Stops scrolling. */startOrUpdate.stop &#x3D; () &#x3D;&gt; {autoscrolling &#x3D; false}return startOrUpdate})()</span></div>
+					<a name="toolbar_autoscroll_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> TOOLBAR_<wbr>AUTOSCROLL_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">50</span><span class="tsd-signature-symbol"> = 50</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/util/initEvents.ts#L31">src/util/initEvents.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L31">src/util/initEvents.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="toolbar_autoscroll_speed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> TOOLBAR_<wbr>AUTOSCROLL_<wbr>SPEED</h3>
+					<div class="tsd-signature tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SPEED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1.25</span><span class="tsd-signature-symbol"> = 1.25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L36">src/util/initEvents.ts:36</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="window_autoscroll_down_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> WINDOW_<wbr>AUTOSCROLL_<wbr>DOWN_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>DOWN_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L33">src/util/initEvents.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="window_autoscroll_speed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> WINDOW_<wbr>AUTOSCROLL_<wbr>SPEED</h3>
+					<div class="tsd-signature tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>SPEED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L37">src/util/initEvents.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="window_autoscroll_up_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> WINDOW_<wbr>AUTOSCROLL_<wbr>UP_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>UP_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">120</span><span class="tsd-signature-symbol"> = 120</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L32">src/util/initEvents.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="autoscroll" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> autoscroll</h3>
+					<div class="tsd-signature tsd-kind-icon">autoscroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">start</span><span class="tsd-signature-symbol">; </span>stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">stop</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = (() &#x3D;&gt; {/** Cubic easing function. */const ease &#x3D; (n: number) &#x3D;&gt; Math.pow(n, 3)// if true, the window or scroll container will continue to be scrolled at the current rate without user interactionlet autoscrolling &#x3D; true// scroll speed (-1 to 1)const rate &#x3D; { x: 0, y: 0 }// cache the autoscroll container on start for performance// if the Sidebar is open on touch start, this is set to the .sidebar elementlet scrollContainer: Window | HTMLElement &#x3D; window/** Scroll vertically in the direction given by rate until stop is called. Defaults to scrolling the window, or you can pass an element to scroll. */const scroll &#x3D; () &#x3D;&gt; {const el &#x3D; scrollContainer || window// if scrollContainer is undefined or window, use the document scrollTopconst scrollLeft &#x3D; (scrollContainer as HTMLElement).scrollLeft ?? document.documentElement.scrollLeftconst scrollLeftNew &#x3D; Math.max(0, scrollLeft + rate.x)const scrollTop &#x3D; (scrollContainer as HTMLElement).scrollTop ?? document.documentElement.scrollTopconst scrollTopNew &#x3D; Math.max(0, scrollTop + rate.y)// if we have hit the end, stop autoscrolling// i.e. if the next increment would not change scrollTopif (scrollLeftNew &#x3D;&#x3D;&#x3D; scrollLeft &amp;&amp; scrollTopNew &#x3D;&#x3D;&#x3D; scrollTop) {autoscrolling &#x3D; falsereturn}el.scrollTo(scrollLeftNew, scrollTopNew)window.requestAnimationFrame(() &#x3D;&gt; {if (autoscrolling) {scroll()}})}/** Starts the autoscroll or, if already scrolling, updates the scroll rate (-1 to 1). */const start &#x3D; ({ x, y }: { x?: number; y?: number }) &#x3D;&gt; {// update the scroll rateif (x !&#x3D; null) {rate.x &#x3D; ease(x ?? 1)}if (y !&#x3D; null) {rate.y &#x3D; ease(y ?? 1)}// if already scrolling, just adjust the scroll rate and bailif (autoscrolling) return// otherwise set the scroll container and kick off the autoscrollscrollContainer &#x3D;(document.querySelector(&#x27;.toolbar&#x27;) as HTMLElement | null) ||(document.querySelector(&#x27;.sidebar&#x27;) as HTMLElement | null) ||windowautoscrolling &#x3D; truescroll()}/** Stops scrolling. */const stop &#x3D; () &#x3D;&gt; {autoscrolling &#x3D; false}return { start, stop }})()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L40">src/util/initEvents.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>An autoscroll function that will continue scrolling smoothly in a given direction until autoscroll.stop is called. Takes a number of pixels to scroll each iteration.</p>
 						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">start</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>stop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">stop</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -113,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/util/initEvents.ts#L90">src/util/initEvents.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L109">src/util/initEvents.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/util/initEvents.ts#L235">src/util/initEvents.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/util/initEvents.ts#L272">src/util/initEvents.ts:272</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,6 +253,21 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.initevents.html#toolbar_autoscroll_size" class="tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SIZE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.initevents.html#toolbar_autoscroll_speed" class="tsd-kind-icon">TOOLBAR_<wbr>AUTOSCROLL_<wbr>SPEED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.initevents.html#window_autoscroll_down_size" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>DOWN_<wbr>SIZE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.initevents.html#window_autoscroll_speed" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>SPEED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.initevents.html#window_autoscroll_up_size" class="tsd-kind-icon">WINDOW_<wbr>AUTOSCROLL_<wbr>UP_<wbr>SIZE</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.initevents.html#autoscroll" class="tsd-kind-icon">autoscroll</a>
 					</li>

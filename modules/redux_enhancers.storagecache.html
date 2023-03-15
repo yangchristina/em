@@ -108,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">Selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L10">src/redux-enhancers/storageCache.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L11">src/redux-enhancers/storageCache.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -139,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">Storage<wbr>Cache<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">NonNullable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"storageCache"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L8">src/redux-enhancers/storageCache.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L9">src/redux-enhancers/storageCache.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">STORAGE_<wbr>WRITE_<wbr>THROTTLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L13">src/redux-enhancers/storageCache.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L14">src/redux-enhancers/storageCache.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +162,7 @@
 					<div class="tsd-signature tsd-kind-icon">initial<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"storageCache"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = keyValueBy(decoders, (key, decode) &#x3D;&gt; ({[key]: decode(storage.getItem(buildKey(key))),}))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L44">src/redux-enhancers/storageCache.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L48">src/redux-enhancers/storageCache.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -172,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">throttled<wbr>Setters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = keyValueBy(selectors, key &#x3D;&gt; ({[key]: _.throttle((value: string | number | boolean | null | undefined) &#x3D;&gt; {const storageKey &#x3D; buildKey(key)if (value !&#x3D; null) {storage.setItem(storageKey, value.toString())} else {storage.removeItem(storageKey)}},STORAGE_WRITE_THROTTLE,{ leading: false },),}))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L50">src/redux-enhancers/storageCache.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L54">src/redux-enhancers/storageCache.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -197,7 +197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L16">src/redux-enhancers/storageCache.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L17">src/redux-enhancers/storageCache.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L66">src/redux-enhancers/storageCache.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L70">src/redux-enhancers/storageCache.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">decoders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L20">src/redux-enhancers/storageCache.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L21">src/redux-enhancers/storageCache.ts:21</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -265,7 +265,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L21">src/redux-enhancers/storageCache.ts:21</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L22">src/redux-enhancers/storageCache.ts:22</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,7 +288,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L22">src/redux-enhancers/storageCache.ts:22</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L23">src/redux-enhancers/storageCache.ts:23</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -311,7 +311,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L23">src/redux-enhancers/storageCache.ts:23</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L24">src/redux-enhancers/storageCache.ts:24</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -324,6 +324,29 @@
 							</li>
 						</ul>
 					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="decoders.usertoolbar" class="tsd-anchor"></a>
+						<h3>user<wbr>Toolbar</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<li class="tsd-signature tsd-kind-icon">user<wbr>Toolbar<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L25">src/redux-enhancers/storageCache.ts:25</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>s: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							</li>
+						</ul>
+					</section>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
 					<a name="parsers" class="tsd-anchor"></a>
@@ -331,7 +354,7 @@
 					<div class="tsd-signature tsd-kind-icon">parsers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L28">src/redux-enhancers/storageCache.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L30">src/redux-enhancers/storageCache.ts:30</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -344,7 +367,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L29">src/redux-enhancers/storageCache.ts:29</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L31">src/redux-enhancers/storageCache.ts:31</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -367,7 +390,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L30">src/redux-enhancers/storageCache.ts:30</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L32">src/redux-enhancers/storageCache.ts:32</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -390,7 +413,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L31">src/redux-enhancers/storageCache.ts:31</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L33">src/redux-enhancers/storageCache.ts:33</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -403,6 +426,29 @@
 							</li>
 						</ul>
 					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="parsers.usertoolbar-1" class="tsd-anchor"></a>
+						<h3>user<wbr>Toolbar</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<li class="tsd-signature tsd-kind-icon">user<wbr>Toolbar<span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L34">src/redux-enhancers/storageCache.ts:34</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>s: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							</li>
+						</ul>
+					</section>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
 					<a name="selectors" class="tsd-anchor"></a>
@@ -410,7 +456,7 @@
 					<div class="tsd-signature tsd-kind-icon">selectors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L36">src/redux-enhancers/storageCache.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L39">src/redux-enhancers/storageCache.ts:39</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -423,7 +469,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L37">src/redux-enhancers/storageCache.ts:37</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L40">src/redux-enhancers/storageCache.ts:40</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -446,7 +492,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L38">src/redux-enhancers/storageCache.ts:38</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L41">src/redux-enhancers/storageCache.ts:41</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -469,7 +515,30 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1068753/src/redux-enhancers/storageCache.ts#L39">src/redux-enhancers/storageCache.ts:39</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L42">src/redux-enhancers/storageCache.ts:42</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>state: <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="selectors.usertoolbar-2" class="tsd-anchor"></a>
+						<h3>user<wbr>Toolbar</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<li class="tsd-signature tsd-kind-icon">user<wbr>Toolbar<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/d06b701/src/redux-enhancers/storageCache.ts#L43">src/redux-enhancers/storageCache.ts:43</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>

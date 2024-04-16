@@ -67,18 +67,6 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="shortcuts.togglesort.html#sortpreferences" class="tsd-kind-icon">sort<wbr>Preferences</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="shortcuts.togglesort.html#decidenextsortpreference" class="tsd-kind-icon">decide<wbr>Next<wbr>Sort<wbr>Preference</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
@@ -86,53 +74,6 @@
 							</ul>
 						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="sortpreferences" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> sort<wbr>Preferences</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;None&#x27;, &#x27;Alphabetical&#x27;]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L17">src/shortcuts/toggleSort.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="decidenextsortpreference" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decide<wbr>Next<wbr>Sort<wbr>Preference</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">decide<wbr>Next<wbr>Sort<wbr>Preference<span class="tsd-signature-symbol">(</span>currentSortPreference<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.sortpreference.sortpreference.html" class="tsd-signature-type">SortPreference</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.sortpreference.sortpreference.html" class="tsd-signature-type">SortPreference</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L24">src/shortcuts/toggleSort.ts:24</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Decide next sort preference.
-										None → Alphabetical
-										Alphabetical/Asc → Alphabetical/Desc
-									Alphabetical/Desc → None.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>currentSortPreference: <a href="../interfaces/_types.sortpreference.sortpreference.html" class="tsd-signature-type">SortPreference</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.sortpreference.sortpreference.html" class="tsd-signature-type">SortPreference</a></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -143,16 +84,16 @@
 					<div class="tsd-signature tsd-kind-icon">toggle<wbr>Sort<wbr>Shortcut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L40">src/shortcuts/toggleSort.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L11">src/shortcuts/toggleSort.ts:11</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="togglesortshortcut.description" class="tsd-anchor"></a>
 						<h3>description</h3>
-						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Sort the current context alphabetically.&quot;</span></div>
+						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Change the sorting option for the current context. Rotates through manual, alphabetical, and reverse alphabetical.&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L43">src/shortcuts/toggleSort.ts:43</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L14">src/shortcuts/toggleSort.ts:14</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -162,17 +103,17 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"toggleSort"</span><span class="tsd-signature-symbol"> = &quot;toggleSort&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L41">src/shortcuts/toggleSort.ts:41</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L12">src/shortcuts/toggleSort.ts:12</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="togglesortshortcut.label" class="tsd-anchor"></a>
 						<h3>label</h3>
-						<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Toggle Sort&quot;</span></div>
+						<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Sort&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L42">src/shortcuts/toggleSort.ts:42</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L13">src/shortcuts/toggleSort.ts:13</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -182,21 +123,56 @@
 						<div class="tsd-signature tsd-kind-icon">svg<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types.icon.icon.html" class="tsd-signature-type">Icon</a><span class="tsd-signature-symbol"> = Icon</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L45">src/shortcuts/toggleSort.ts:45</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L17">src/shortcuts/toggleSort.ts:17</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
-						<a name="togglesortshortcut.exec" class="tsd-anchor"></a>
-						<h3>exec</h3>
+						<a name="togglesortshortcut.error" class="tsd-anchor"></a>
+						<h3>error</h3>
 						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
-							<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.dispatch.dispatch.html" class="tsd-signature-type">Dispatch</a>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TouchEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GestureResponderEvent</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Ranks do not match sort condition"</span></li>
 						</ul>
 						<ul class="tsd-descriptions">
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L46">src/shortcuts/toggleSort.ts:46</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L48">src/shortcuts/toggleSort.ts:48</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>getState: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-signature">
+												<ul class="tsd-signatures tsd-kind-type-literal">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Ranks do not match sort condition"</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="togglesortshortcut.exec" class="tsd-anchor"></a>
+						<h3>exec</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>dispatch<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types.dispatch.dispatch.html" class="tsd-signature-type">Dispatch</a>, getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TouchEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GestureResponderEvent</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"commandPalette"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L18">src/shortcuts/toggleSort.ts:18</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -223,10 +199,10 @@
 										<h5>e: <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TouchEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">GestureResponderEvent</span></h5>
 									</li>
 									<li>
-										<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span><span class="tsd-signature-symbol"> }</span></h5>
+										<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"commandPalette"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span><span class="tsd-signature-symbol"> }</span></h5>
 										<ul class="tsd-parameters">
 											<li class="tsd-parameter">
-												<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span></h5>
+												<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"commandPalette"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"gesture"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"toolbar"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"keyboard"</span></h5>
 											</li>
 										</ul>
 									</li>
@@ -245,7 +221,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L119">src/shortcuts/toggleSort.ts:119</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L38">src/shortcuts/toggleSort.ts:38</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -276,7 +252,7 @@
 						<div class="tsd-signature tsd-kind-icon">keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L44">src/shortcuts/toggleSort.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L16">src/shortcuts/toggleSort.ts:16</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -285,7 +261,7 @@
 							<div class="tsd-signature tsd-kind-icon">alt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L44">src/shortcuts/toggleSort.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L16">src/shortcuts/toggleSort.ts:16</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -295,7 +271,7 @@
 							<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L44">src/shortcuts/toggleSort.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L16">src/shortcuts/toggleSort.ts:16</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -305,7 +281,7 @@
 							<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/shortcuts/toggleSort.ts#L44">src/shortcuts/toggleSort.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/shortcuts/toggleSort.ts#L16">src/shortcuts/toggleSort.ts:16</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -328,12 +304,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="shortcuts.togglesort.html#sortpreferences" class="tsd-kind-icon">sort<wbr>Preferences</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="shortcuts.togglesort.html#decidenextsortpreference" class="tsd-kind-icon">decide<wbr>Next<wbr>Sort<wbr>Preference</a>
-					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
 						<a href="shortcuts.togglesort.html#togglesortshortcut" class="tsd-kind-icon">toggle<wbr>Sort<wbr>Shortcut</a>
 					</li>

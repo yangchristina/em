@@ -82,8 +82,10 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#caretposition" class="tsd-kind-icon">caret<wbr>Position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#idbsynced" class="tsd-kind-icon">idb<wbr>Synced</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#preventinline" class="tsd-kind-icon">prevent<wbr>Inline</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#preventsetcursor" class="tsd-kind-icon">prevent<wbr>Set<wbr>Cursor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#rawdestvalue" class="tsd-kind-icon">raw<wbr>Dest<wbr>Value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="reducers.importtext.importtextpayload.html#replaceend" class="tsd-kind-icon">replace<wbr>End</a></li>
@@ -104,9 +106,24 @@
 					<div class="tsd-signature tsd-kind-icon">caret<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L63">src/reducers/importText.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L37">src/reducers/importText.ts:37</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="idbsynced" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> idb<wbr>Synced</h3>
+					<div class="tsd-signature tsd-kind-icon">idb<wbr>Synced<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L40">src/reducers/importText.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Callback for when the updates have been synced with IDB.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="lastupdated" class="tsd-anchor"></a>
@@ -114,9 +131,14 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Updated<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.timestamp.html" class="tsd-signature-type">Timestamp</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L41">src/reducers/importText.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L45">src/reducers/importText.ts:45</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the lastUpdated timestamp on the imported thoughts. Default: now.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="path" class="tsd-anchor"></a>
@@ -124,9 +146,24 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="../modules/_types.path.html" class="tsd-signature-type">Path</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L38">src/reducers/importText.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L42">src/reducers/importText.ts:42</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="preventinline" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prevent<wbr>Inline</h3>
+					<div class="tsd-signature tsd-kind-icon">prevent<wbr>Inline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L48">src/reducers/importText.ts:48</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prevents pasting a single line of text into the destination thought, and always pastes as a child.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="preventsetcursor" class="tsd-anchor"></a>
@@ -134,9 +171,14 @@
 					<div class="tsd-signature tsd-kind-icon">prevent<wbr>Set<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L44">src/reducers/importText.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L51">src/reducers/importText.ts:51</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prevents the default behavior of setting the cursor to the last thought at the first level.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="rawdestvalue" class="tsd-anchor"></a>
@@ -144,9 +186,14 @@
 					<div class="tsd-signature tsd-kind-icon">raw<wbr>Dest<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L47">src/reducers/importText.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L54">src/reducers/importText.ts:54</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When pasting after whitespace, e.g. Pasting &quot;b&quot; after &quot;a &quot;, the normal destValue has already been trimmed, which would result in &quot;ab&quot;. We need to pass the untrimmed.destination value in so that it can be trimmed after concatenation.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="replaceend" class="tsd-anchor"></a>
@@ -154,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">replace<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L50">src/reducers/importText.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L57">src/reducers/importText.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">replace<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L53">src/reducers/importText.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L60">src/reducers/importText.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">skip<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L55">src/reducers/importText.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L62">src/reducers/importText.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,9 +231,14 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L58">src/reducers/importText.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L65">src/reducers/importText.ts:65</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Text or HTML that will be inserted below the thought (if multiline) or inside the thought (singl line only).</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="updatedby" class="tsd-anchor"></a>
@@ -194,9 +246,14 @@
 					<div class="tsd-signature tsd-kind-icon">updated<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/reducers/importText.ts#L61">src/reducers/importText.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/reducers/importText.ts#L68">src/reducers/importText.ts:68</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A user session id to associate with the update. Defaults to the current session.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -224,10 +281,16 @@
 								<a href="reducers.importtext.importtextpayload.html#caretposition" class="tsd-kind-icon">caret<wbr>Position</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="reducers.importtext.importtextpayload.html#idbsynced" class="tsd-kind-icon">idb<wbr>Synced</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="reducers.importtext.importtextpayload.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="reducers.importtext.importtextpayload.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="reducers.importtext.importtextpayload.html#preventinline" class="tsd-kind-icon">prevent<wbr>Inline</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="reducers.importtext.importtextpayload.html#preventsetcursor" class="tsd-kind-icon">prevent<wbr>Set<wbr>Cursor</a>
@@ -255,7 +318,7 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/reducers.importtext.html#regexplistitem" class="tsd-kind-icon">regexp<wbr>List<wbr>Item</a>
+						<a href="../modules/reducers.importtext.html#regex_list_item" class="tsd-kind-icon">REGEX_<wbr>LIST_<wbr>ITEM</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/reducers.importtext.html#importtext" class="tsd-kind-icon">import<wbr>Text</a>

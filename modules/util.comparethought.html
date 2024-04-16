@@ -72,15 +72,15 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#current_year" class="tsd-kind-icon">CURRENT_<wbr>YEAR</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#ignored_prefixes" class="tsd-kind-icon">IGNORED_<wbr>PREFIXES</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regex_ignored_prefixes" class="tsd-kind-icon">REGEX_<wbr>IGNORED_<wbr>PREFIXES</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regex_punctuation" class="tsd-kind-icon">REGEX_<wbr>PUNCTUATION</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regex_short_date_with_dash" class="tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>DASH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regex_short_date_with_slash" class="tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>SLASH</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#starts_with_emoji_regex" class="tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#comparereadabletext" class="tsd-kind-icon">compare<wbr>Readable<wbr>Text</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.comparethought.html#comparereasonable" class="tsd-kind-icon">compare<wbr>Reasonable</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="util.comparethought.html#comparethoughtdescending" class="tsd-kind-icon">compare<wbr>Thought<wbr>Descending</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#normalizecharacters" class="tsd-kind-icon">normalize<wbr>Characters</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexignoredprefixes" class="tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexpunctuation" class="tsd-kind-icon">regex<wbr>Punctuation</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexshortdatewithdash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="util.comparethought.html#regexshortdatewithslash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -118,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">CURRENT_<wbr>YEAR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = new Date().getFullYear()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L11">src/util/compareThought.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L11">src/util/compareThought.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +128,47 @@
 					<div class="tsd-signature tsd-kind-icon">IGNORED_<wbr>PREFIXES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;the &#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L10">src/util/compareThought.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L10">src/util/compareThought.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regex_ignored_prefixes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> REGEX_<wbr>IGNORED_<wbr>PREFIXES</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>IGNORED_<wbr>PREFIXES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^(${IGNORED_PREFIXES.join(&#x27;|&#x27;)})(.*)&#x60;, &#x27;gmi&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L16">src/util/compareThought.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regex_punctuation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> REGEX_<wbr>PUNCTUATION</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>PUNCTUATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^[!@#$%^&amp;*()\-_&#x3D;+[\]{};:&#x27;&quot;&lt;&gt;.,?\\/].*/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L13">src/util/compareThought.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regex_short_date_with_dash" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>DASH</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>DASH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}-\d{1,2}/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L14">src/util/compareThought.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="regex_short_date_with_slash" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>SLASH</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>SLASH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}\/\d{1,2}/</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L15">src/util/compareThought.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^${EMOJI_REGEX.source}&#x60;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L9">src/util/compareThought.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L9">src/util/compareThought.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">compare<wbr>Readable<wbr>Text<span class="tsd-signature-symbol">:</span> <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareNumberAndOther,compareNumbers,compareDateAndOther,compareDateStrings,compareLowercase,])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L146">src/util/compareThought.ts:146</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L146">src/util/compareThought.ts:146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">compare<wbr>Reasonable<span class="tsd-signature-symbol">:</span> <a href="_types.comparatorfunction.html" class="tsd-signature-type">ComparatorFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = makeOrderedComparator&lt;string&gt;([compareEmpty,comparePunctuationAndOther,compareStringsWithMetaAttributes,compareStringsWithEmoji,(a, b) &#x3D;&gt; compareReadableText(normalizeCharacters(a), normalizeCharacters(b)),])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L161">src/util/compareThought.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L161">src/util/compareThought.ts:161</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">compare<wbr>Thought<wbr>Descending<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.comparatorvalue.html" class="tsd-signature-type">ComparatorValue</a><span class="tsd-signature-symbol"> = reverse(compareThought)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L180">src/util/compareThought.ts:180</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L180">src/util/compareThought.ts:180</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">normalize<wbr>Characters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R3</span><span class="tsd-signature-symbol"> = _.flow(removeEmojisAndSpaces, removeIgnoredPrefixes, removeDiacritics)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L44">src/util/compareThought.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L44">src/util/compareThought.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -258,46 +298,6 @@
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexignoredprefixes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Ignored<wbr>Prefixes</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x60;^(${IGNORED_PREFIXES.join(&#x27;|&#x27;)})(.*)&#x60;, &#x27;gmi&#x27;)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L16">src/util/compareThought.ts:16</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexpunctuation" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Punctuation</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Punctuation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^[!@#$%^&amp;*()\-_&#x3D;+[\]{};:&#x27;&quot;&lt;&gt;.,?\\/].*/</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L13">src/util/compareThought.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexshortdatewithdash" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}-\d{1,2}/</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L14">src/util/compareThought.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="regexshortdatewithslash" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash</h3>
-					<div class="tsd-signature tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\d{1,2}\/\d{1,2}/</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L15">src/util/compareThought.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -311,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L67">src/util/compareThought.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L67">src/util/compareThought.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L122">src/util/compareThought.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L122">src/util/compareThought.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,7 +379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L118">src/util/compareThought.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L118">src/util/compareThought.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L84">src/util/compareThought.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L84">src/util/compareThought.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -441,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L108">src/util/compareThought.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L108">src/util/compareThought.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,7 +472,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L91">src/util/compareThought.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L91">src/util/compareThought.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -503,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L98">src/util/compareThought.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L98">src/util/compareThought.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L111">src/util/compareThought.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L111">src/util/compareThought.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,7 +574,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L70">src/util/compareThought.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L70">src/util/compareThought.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -605,7 +605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L77">src/util/compareThought.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L77">src/util/compareThought.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -636,7 +636,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L176">src/util/compareThought.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L176">src/util/compareThought.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -667,7 +667,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L59">src/util/compareThought.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L59">src/util/compareThought.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +695,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L129">src/util/compareThought.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L129">src/util/compareThought.ts:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L47">src/util/compareThought.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L47">src/util/compareThought.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -757,7 +757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L22">src/util/compareThought.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L22">src/util/compareThought.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -785,7 +785,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L38">src/util/compareThought.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L38">src/util/compareThought.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,7 +813,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L41">src/util/compareThought.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L41">src/util/compareThought.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -841,7 +841,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L170">src/util/compareThought.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L170">src/util/compareThought.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -875,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/compareThought.ts#L62">src/util/compareThought.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/compareThought.ts#L62">src/util/compareThought.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -917,6 +917,18 @@
 						<a href="util.comparethought.html#ignored_prefixes" class="tsd-kind-icon">IGNORED_<wbr>PREFIXES</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#regex_ignored_prefixes" class="tsd-kind-icon">REGEX_<wbr>IGNORED_<wbr>PREFIXES</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#regex_punctuation" class="tsd-kind-icon">REGEX_<wbr>PUNCTUATION</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#regex_short_date_with_dash" class="tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>DASH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="util.comparethought.html#regex_short_date_with_slash" class="tsd-kind-icon">REGEX_<wbr>SHORT_<wbr>DATE_<wbr>WITH_<wbr>SLASH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#starts_with_emoji_regex" class="tsd-kind-icon">STARTS_<wbr>WITH_<wbr>EMOJI_<wbr>REGEX</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
@@ -930,18 +942,6 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="util.comparethought.html#normalizecharacters" class="tsd-kind-icon">normalize<wbr>Characters</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.comparethought.html#regexignoredprefixes" class="tsd-kind-icon">regex<wbr>Ignored<wbr>Prefixes</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.comparethought.html#regexpunctuation" class="tsd-kind-icon">regex<wbr>Punctuation</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.comparethought.html#regexshortdatewithdash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Dash</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="util.comparethought.html#regexshortdatewithslash" class="tsd-kind-icon">regex<wbr>Short<wbr>Date<wbr>With<wbr>Slash</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="util.comparethought.html#compare" class="tsd-kind-icon">compare</a>

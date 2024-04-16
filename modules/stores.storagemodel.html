@@ -81,10 +81,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="storagemodel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> storage<wbr>Model</h3>
-					<div class="tsd-signature tsd-kind-icon">storage<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">get</span><span class="tsd-signature-symbol">; </span>remove<span class="tsd-signature-symbol">: </span><a href="e2e.puppeteer.helpers.remove.html#remove" class="tsd-signature-type">remove</a><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = storage.model({fontSize: {default: 18,decode: (s: string | null) &#x3D;&gt; (s ? +s : undefined),},})</span></div>
+					<div class="tsd-signature tsd-kind-icon">storage<wbr>Model<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">get</span><span class="tsd-signature-symbol">; </span>remove<span class="tsd-signature-symbol">: </span><a href="e2e.puppeteer.helpers.remove.html#remove" class="tsd-signature-type">remove</a><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = storage.model({cursor: {default: { path: null, offset: null },decode: (s: string | null) &#x3D;&gt; (s ? JSON.parse(s) : null),encode: (value: { path: Path | null; offset: number | null }) &#x3D;&gt; JSON.stringify(value),},fontSize: {default: 18,decode: (s: string | null) &#x3D;&gt; (s ? +s : undefined),},// recent commands executed from the command paletterecentCommands: {default: [] as ShortcutId[],},})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/stores/storageModel.ts#L4">src/stores/storageModel.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/stores/storageModel.ts#L5">src/stores/storageModel.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -111,10 +111,19 @@
 						<a href="stores.html">stores</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.alert.html">alert</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.app.html">app</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.distractionfreetyping.html">distraction<wbr>Free<wbr>Typing</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.editingvalue.html">editing<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.gesture.html">gesture</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.ministore.html">ministore</a>
@@ -123,13 +132,16 @@
 								<a href="stores.offlinestatusstore.html">offline<wbr>Status<wbr>Store</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="stores.push.html">push</a>
+								<a href="stores.react_ministore.html">react-<wbr>ministore</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.storagemodel.html">storage<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.suppressfocus.html">suppress<wbr>Focus</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="stores.syncstatus.html">sync<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="stores.viewport.html">viewport</a>

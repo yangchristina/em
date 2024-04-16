@@ -67,6 +67,18 @@
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/util.storage.modelspec.html" class="tsd-kind-icon">Model<wbr>Spec</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="util.storage.html#modelvalue" class="tsd-kind-icon">Model<wbr>Value</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -86,6 +98,30 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+					<a name="modelvalue" class="tsd-anchor"></a>
+					<h3>Model<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Model<wbr>Value&lt;M&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">M</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">ModelSpec</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">infer </span> U<span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L32">src/util/storage.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Extracts the value type from ModelSpec.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>M</h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
@@ -98,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L2">src/util/storage.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L2">src/util/storage.ts:2</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -121,7 +157,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L10">src/util/storage.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L10">src/util/storage.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -140,7 +176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L11">src/util/storage.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L11">src/util/storage.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -165,13 +201,13 @@
 					<a name="model" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> model</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">model&lt;K, V, OptionalDefault&gt;<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">OptionalDefault</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>decode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>encode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">get</span><span class="tsd-signature-symbol">; </span>remove<span class="tsd-signature-symbol">: </span><a href="e2e.puppeteer.helpers.remove.html#remove" class="tsd-signature-type">remove</a><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">model&lt;T&gt;<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">get</span><span class="tsd-signature-symbol">; </span>remove<span class="tsd-signature-symbol">: </span><a href="e2e.puppeteer.helpers.remove.html#remove" class="tsd-signature-type">remove</a><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L23">src/util/storage.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L35">src/util/storage.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -182,19 +218,13 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
-								</li>
-								<li>
-									<h4>V<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h4>
-								</li>
-								<li>
-									<h4>OptionalDefault<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>default<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>schema: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">OptionalDefault</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>decode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>encode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>schema: <span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>get<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">get</span><span class="tsd-signature-symbol">; </span>remove<span class="tsd-signature-symbol">: </span><a href="e2e.puppeteer.helpers.remove.html#remove" class="tsd-signature-type">remove</a><span class="tsd-signature-symbol">; </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -222,7 +252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L5">src/util/storage.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L5">src/util/storage.ts:5</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,7 +280,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L8">src/util/storage.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L8">src/util/storage.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,7 +310,7 @@
 					<div class="tsd-signature tsd-kind-icon">storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L63">src/util/storage.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L64">src/util/storage.ts:64</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -289,7 +319,7 @@
 						<div class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">:</span> <a href="util.storage.html#clear" class="tsd-signature-type">clear</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L64">src/util/storage.ts:64</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L65">src/util/storage.ts:65</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -299,7 +329,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="util.storage.html#getitem" class="tsd-signature-type">getItem</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L65">src/util/storage.ts:65</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L66">src/util/storage.ts:66</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -309,7 +339,7 @@
 						<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <a href="util.storage.html#model" class="tsd-signature-type">model</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L66">src/util/storage.ts:66</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L67">src/util/storage.ts:67</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -319,7 +349,7 @@
 						<div class="tsd-signature tsd-kind-icon">remove<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="util.storage.html#removeitem" class="tsd-signature-type">removeItem</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L67">src/util/storage.ts:67</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L68">src/util/storage.ts:68</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -329,7 +359,7 @@
 						<div class="tsd-signature tsd-kind-icon">set<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="util.storage.html#setitem" class="tsd-signature-type">setItem</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/util/storage.ts#L68">src/util/storage.ts:68</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/util/storage.ts#L69">src/util/storage.ts:69</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -351,6 +381,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/util.storage.modelspec.html" class="tsd-kind-icon">Model<wbr>Spec</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="util.storage.html#modelvalue" class="tsd-kind-icon">Model<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="util.storage.html#clear" class="tsd-kind-icon">clear</a>
 					</li>
@@ -385,6 +421,7 @@
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

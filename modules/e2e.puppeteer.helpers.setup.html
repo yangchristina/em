@@ -83,7 +83,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="e2e.puppeteer.helpers.setup.html#setup" class="tsd-kind-icon">setup</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="e2e.puppeteer.helpers.setup.html#skiptutorialscreen" class="tsd-kind-icon">skip<wbr>Tutorial<wbr>Screen</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,18 +94,18 @@
 					<a name="setup" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> setup</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>emulatedDevice<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Device</span><span class="tsd-signature-symbol">; </span>puppeteerBrowser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">; </span>skipTutorial<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Page</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>emulatedDevice<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Device</span><span class="tsd-signature-symbol">; </span>puppeteerBrowser<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol">; </span>skipTutorial<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/util.cancellable.cancellablepromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Page</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/e2e/puppeteer/helpers/setup.ts#L26">src/e2e/puppeteer/helpers/setup.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/e2e/puppeteer/helpers/setup.ts#L14">src/e2e/puppeteer/helpers/setup.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a new incognito context and page.</p>
+									<p>Opens em in a new incognito window in Puppeteer.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -129,35 +128,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Page</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="skiptutorialscreen" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> skip<wbr>Tutorial<wbr>Screen</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">skip<wbr>Tutorial<wbr>Screen<span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Page</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/e2e/puppeteer/helpers/setup.ts#L16">src/e2e/puppeteer/helpers/setup.ts:16</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Skip tutorial screen.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>page: <span class="tsd-signature-type">Page</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/util.cancellable.cancellablepromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Page</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,9 +204,6 @@
 												<a href="e2e.puppeteer.helpers.type.html">type</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
-												<a href="e2e.puppeteer.helpers.waitforalert.html">wait<wbr>For<wbr>Alert</a>
-											</li>
-											<li class=" tsd-kind-module tsd-parent-kind-module">
 												<a href="e2e.puppeteer.helpers.waitforcontexthaschildwithvalue.html">wait<wbr>For<wbr>Context<wbr>Has<wbr>Child<wbr>With<wbr>Value</a>
 											</li>
 											<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -268,9 +236,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="e2e.puppeteer.helpers.setup.html#setup" class="tsd-kind-icon">setup</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="e2e.puppeteer.helpers.setup.html#skiptutorialscreen" class="tsd-kind-icon">skip<wbr>Tutorial<wbr>Screen</a>
 					</li>
 				</ul>
 			</nav>

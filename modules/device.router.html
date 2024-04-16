@@ -88,20 +88,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="baseurl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> base<wbr>Url</h3>
-					<div class="tsd-signature tsd-kind-icon">base<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = window.location.origin</span></div>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = typeof window !&#x3D;&#x3D; &#x27;undefined&#x27; ? window.location.origin : &#x27;&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/device/router.ts#L1">src/device/router.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/device/router.ts#L1">src/device/router.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="islocalnetwork" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Local<wbr>Network</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Local<wbr>Network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = Boolean(window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;localhost&#x27; ||window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;bs-local.com&#x27; || // required for browserstack// [::1] is the IPv6 localhost address.window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;[::1]&#x27; ||// 127.0.0.1/8 is considered localhost for IPv4.window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/) ||// 193.0.0.1/8 is considered localhost for IPv4.window.location.hostname.startsWith(&#x27;127.168.1.&#x27;),)</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Local<wbr>Network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = typeof window !&#x3D;&#x3D; &#x27;undefined&#x27; &amp;&amp;Boolean(window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;localhost&#x27; ||window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;bs-local.com&#x27; || // required for browserstack// [::1] is the IPv6 localhost address.window.location.hostname &#x3D;&#x3D;&#x3D; &#x27;[::1]&#x27; ||// 127.0.0.1/8 is considered localhost for IPv4.window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/) ||// 193.0.0.1/8 is considered localhost for IPv4.window.location.hostname.startsWith(&#x27;127.168.1.&#x27;),)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/device/router.ts#L7">src/device/router.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/device/router.ts#L7">src/device/router.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -123,7 +123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/device/router.ts#L4">src/device/router.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/device/router.ts#L4">src/device/router.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -156,6 +156,9 @@
 								<a href="device.copy.html">copy</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.disablescroll.html">disable<wbr>Scroll</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="device.download.html">download</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -163,6 +166,9 @@
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="device.gettextcontentfromhtml.html">get<wbr>Text<wbr>Content<wbr>FromHTML</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.preventautoscroll.html">prevent<wbr>Autoscroll</a>
 							</li>
 							<li class="current tsd-kind-module tsd-parent-kind-module">
 								<a href="device.router.html">router</a>

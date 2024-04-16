@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="action_creators.alert.options.html" class="tsd-signature-type">Options</a>
+						<a href="reducers.alert.options.html" class="tsd-signature-type">Options</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">OptionsInternal</span>
@@ -86,6 +86,8 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="selectors.getdescendantthoughtids.optionsinternal.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="selectors.getdescendantthoughtids.optionsinternal.html#filterandtraverse" class="tsd-kind-icon">filter<wbr>And<wbr>Traverse</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="selectors.getdescendantthoughtids.optionsinternal.html#filterfunction" class="tsd-kind-icon">filter<wbr>Function</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="selectors.getdescendantthoughtids.optionsinternal.html#ordered" class="tsd-kind-icon">ordered</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="selectors.getdescendantthoughtids.optionsinternal.html#recur" class="tsd-kind-icon">recur</a></li>
@@ -96,6 +98,32 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="exclude" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/selectors/getDescendantThoughtIds.ts#L21">src/selectors/getDescendantThoughtIds.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="filterandtraverse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> filter<wbr>And<wbr>Traverse</h3>
+					<div class="tsd-signature tsd-kind-icon">filter<wbr>And<wbr>Traverse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>thought<span class="tsd-signature-symbol">: </span><a href="_types.thought.thought.html" class="tsd-signature-type">Thought</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="selectors.getdescendantthoughtids.options.html">Options</a>.<a href="selectors.getdescendantthoughtids.options.html#filterandtraverse">filterAndTraverse</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/selectors/getDescendantThoughtIds.ts#L14">src/selectors/getDescendantThoughtIds.ts:14</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Filters out thoughts that fail the predicate, but continues to traverse their descendants.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="filterfunction" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> filter<wbr>Function</h3>
@@ -103,9 +131,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="selectors.getdescendantthoughtids.options.html">Options</a>.<a href="selectors.getdescendantthoughtids.options.html#filterfunction">filterFunction</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/selectors/getDescendantThoughtIds.ts#L11">src/selectors/getDescendantThoughtIds.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/selectors/getDescendantThoughtIds.ts#L12">src/selectors/getDescendantThoughtIds.ts:12</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Filters out thoughts and does not traverse their descendants.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="ordered" class="tsd-anchor"></a>
@@ -114,7 +147,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="selectors.getdescendantthoughtids.options.html">Options</a>.<a href="selectors.getdescendantthoughtids.options.html#ordered">ordered</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/selectors/getDescendantThoughtIds.ts#L13">src/selectors/getDescendantThoughtIds.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/selectors/getDescendantThoughtIds.ts#L16">src/selectors/getDescendantThoughtIds.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">recur<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/selectors/getDescendantThoughtIds.ts#L18">src/selectors/getDescendantThoughtIds.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/selectors/getDescendantThoughtIds.ts#L22">src/selectors/getDescendantThoughtIds.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,6 +186,12 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="selectors.getdescendantthoughtids.optionsinternal.html" class="tsd-kind-icon">Options<wbr>Internal</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="selectors.getdescendantthoughtids.optionsinternal.html#exclude" class="tsd-kind-icon">exclude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="selectors.getdescendantthoughtids.optionsinternal.html#filterandtraverse" class="tsd-kind-icon">filter<wbr>And<wbr>Traverse</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="selectors.getdescendantthoughtids.optionsinternal.html#filterfunction" class="tsd-kind-icon">filter<wbr>Function</a>
 							</li>

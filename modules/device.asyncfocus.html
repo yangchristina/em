@@ -90,7 +90,7 @@
 					<div class="tsd-signature tsd-kind-icon">async<wbr>Focus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> = AsyncFocus()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/device/asyncFocus.ts#L42">src/device/asyncFocus.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/device/asyncFocus.ts#L42">src/device/asyncFocus.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -116,13 +116,13 @@
 					<a name="asyncfocus-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Async<wbr>Focus</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Async<wbr>Focus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Async<wbr>Focus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/device/asyncFocus.ts#L11">src/device/asyncFocus.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/device/asyncFocus.ts#L11">src/device/asyncFocus.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,19 +132,7 @@
 								<p>If there is no active selection, Mobile Safari will only allow programmatic selection within a click or touch event handler. Otherwise trying to focus or set the selection does nothing. To be able to set the selection in an asynchronous callback, you have to first set the selection to an arbitrary element in the initial click or touch handler. Then setting the selection will work.</p>
 								<p>See: <a href="https://stackoverflow.com/a/45703019/480608">https://stackoverflow.com/a/45703019/480608</a>.</p>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-									</ul>
-									<ul class="tsd-descriptions">
-										<li class="tsd-description">
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">noop</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -163,6 +151,9 @@
 								<a href="device.copy.html">copy</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.disablescroll.html">disable<wbr>Scroll</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="device.download.html">download</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
@@ -170,6 +161,9 @@
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="device.gettextcontentfromhtml.html">get<wbr>Text<wbr>Content<wbr>FromHTML</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-module">
+								<a href="device.preventautoscroll.html">prevent<wbr>Autoscroll</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-module">
 								<a href="device.router.html">router</a>

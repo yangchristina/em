@@ -83,7 +83,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="components.favorites.html#draganddropthought" class="tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Thought</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.favorites.html#draganddropthought" class="tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Thought</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="components.favorites.html#favorites" class="tsd-kind-icon">Favorites</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.favorites.html#favoritesoptions" class="tsd-kind-icon">Favorites<wbr>Options</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="components.favorites.html#begindrag" class="tsd-kind-icon">begin<wbr>Drag</a></li>
@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Favorite<wbr>Return<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="components.shortcutrow.html#dragcollect" class="tsd-signature-type">dragCollect</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><a href="components.draganddroptoolbarbutton.html#dropcollect" class="tsd-signature-type">dropCollect</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>disableDragAndDrop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>simplePath<span class="tsd-signature-symbol">: </span><a href="_types.simplepath.html" class="tsd-signature-type">SimplePath</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L157">src/components/Favorites.tsx:157</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L157">src/components/Favorites.tsx:157</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Favorite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ComponentClass</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>DecoratedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = DragAndDropThought(({disableDragAndDrop,dragSource,dropTarget,hideContext,isDragging,isHovering,simplePath,}: DragAndDropFavoriteReturnType &amp; { hideContext?: boolean }) &#x3D;&gt; {const colors &#x3D; useSelector(themeColors)const dragHoldResult &#x3D; useDragHold({ isDragging, simplePath, sourceZone: DragThoughtZone.Favorites })return dropTarget(dragSource(// Set overflow:auto so the drop target fully wraps its contents.// Otherwise the context-breadcrumbs margin-top will leak out and create a dead zone where the favorite cannot be dropped.&lt;div {...dragHoldResult.props} style&#x3D;{{ overflow: &#x27;auto&#x27; }}&gt;{!disableDragAndDrop &amp;&amp; isHovering &amp;&amp; (&lt;spanclassName&#x3D;{classNames({&#x27;drop-hover&#x27;: true,pressed: !disableDragAndDrop &amp;&amp; dragHoldResult.isPressed,})}style&#x3D;{{backgroundColor: colors.highlight,marginLeft: 0,marginTop: &#x27;-0.4em&#x27;,width: &#x27;calc(100% - 4em)&#x27;,}}/&gt;)}&lt;ThoughtLinkhideContext&#x3D;{hideContext}path&#x3D;{simplePath}styleLink&#x3D;{{...(!disableDragAndDrop &amp;&amp;(isDragging || dragHoldResult.isPressed? {color: colors.highlight,fontWeight: &#x27;bold&#x27;,}: undefined)),}}/&gt;&lt;/div&gt;,),)},)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L166">src/components/Favorites.tsx:166</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L166">src/components/Favorites.tsx:166</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">Drop<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ComponentClass</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>DecoratedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = DropTarget(&#x27;thought&#x27;,{ drop },dropCollect,)(({ dropTarget, isHovering }: ReturnType&lt;typeof dropCollect&gt;) &#x3D;&gt; {if (!isHovering) return nullreturn dropTarget(&lt;div style&#x3D;{{ height: &#x27;4em&#x27; }}&gt;&lt;spanclassName&#x3D;&#x27;drop-hover&#x27;style&#x3D;{{marginLeft: 0,marginTop: 0,width: &#x27;calc(100% - 4em)&#x27;,}}/&gt;&lt;/div&gt;,)})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L217">src/components/Favorites.tsx:217</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L217">src/components/Favorites.tsx:217</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,17 +140,17 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="draganddropthought" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Drag<wbr>And<wbr>Drop<wbr>Thought</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Thought<span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FC</span><span class="tsd-signature-symbol">&lt;</span><a href="components.favorites.html#draganddropfavoritereturntype" class="tsd-signature-type">DragAndDropFavoriteReturnType</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>hideContext<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ComponentClass</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>DecoratedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L163">src/components/Favorites.tsx:163</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L163">src/components/Favorites.tsx:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -178,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L296">src/components/Favorites.tsx:296</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L296">src/components/Favorites.tsx:296</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L238">src/components/Favorites.tsx:238</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L238">src/components/Favorites.tsx:238</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L42">src/components/Favorites.tsx:42</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L42">src/components/Favorites.tsx:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L69">src/components/Favorites.tsx:69</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L69">src/components/Favorites.tsx:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,13 +337,13 @@
 					<a name="dragcollect" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> drag<wbr>Collect</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">drag<wbr>Collect<span class="tsd-signature-symbol">(</span>connect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragSourceConnector</span>, monitor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragSourceMonitor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dragPreview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NOOP</span><span class="tsd-signature-symbol">; </span>dragSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isDragging<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">drag<wbr>Collect<span class="tsd-signature-symbol">(</span>connect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragSourceConnector</span>, monitor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragSourceMonitor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dragPreview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>dragSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isDragging<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L145">src/components/Favorites.tsx:145</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L145">src/components/Favorites.tsx:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,17 +360,17 @@
 									<h5>monitor: <span class="tsd-signature-type">DragSourceMonitor</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>dragPreview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NOOP</span><span class="tsd-signature-symbol">; </span>dragSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isDragging<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>dragPreview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span><span class="tsd-signature-symbol">; </span>dragSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isDragging<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5>drag<wbr>Preview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NOOP</span></h5>
+									<h5>drag<wbr>Preview<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">noop</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>drag<wbr>Source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<h5>drag<wbr>Source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -380,7 +380,7 @@
 															<h5>elementOrNode: <span class="tsd-signature-type">ConnectableElement</span></h5>
 														</li>
 														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a></h5>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
@@ -406,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L73">src/components/Favorites.tsx:73</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L73">src/components/Favorites.tsx:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,13 +436,13 @@
 					<a name="dropcollect" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> drop<wbr>Collect</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">drop<wbr>Collect<span class="tsd-signature-symbol">(</span>connect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DropTargetConnector</span>, monitor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DropTargetMonitor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dropTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isHovering<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Collect<span class="tsd-signature-symbol">(</span>connect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DropTargetConnector</span>, monitor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DropTargetMonitor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dropTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isHovering<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L152">src/components/Favorites.tsx:152</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L152">src/components/Favorites.tsx:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,14 +459,14 @@
 									<h5>monitor: <span class="tsd-signature-type">DropTargetMonitor</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>dropTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isHovering<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>dropTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>isHovering<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5>drop<wbr>Target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<h5>drop<wbr>Target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>elementOrNode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ConnectableElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -476,7 +476,7 @@
 															<h5>elementOrNode: <span class="tsd-signature-type">ConnectableElement</span></h5>
 														</li>
 														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/action_creators.alert.options.html" class="tsd-signature-type">Options</a></h5>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/reducers.alert.options.html" class="tsd-signature-type">Options</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
@@ -502,7 +502,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/7769597/src/components/Favorites.tsx#L56">src/components/Favorites.tsx:56</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/fc4403f/src/components/Favorites.tsx#L56">src/components/Favorites.tsx:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -540,7 +540,7 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.favorites.html#dropend" class="tsd-kind-icon">Drop<wbr>End</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="components.favorites.html#draganddropthought" class="tsd-kind-icon">Drag<wbr>And<wbr>Drop<wbr>Thought</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">

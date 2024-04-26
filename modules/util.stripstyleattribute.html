@@ -101,7 +101,7 @@
 					<div class="tsd-signature tsd-kind-icon">allowed<wbr>Style<wbr>Properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>property<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>test<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>property<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>test<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>property<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{property: &#x27;color&#x27;,enabled: false,test: (styleProperty: StyleProperty, styleProperties: StyleProperty[]) &#x3D;&gt; {const background &#x3D; styleProperties.find(property &#x3D;&gt; property.name.startsWith(&#x27;background&#x27;))return !((isColorBlack(styleProperty.value) || isColorWhite(styleProperty.value)) &amp;&amp; !background)},},{property: &#x27;font&#x27;,test: (styleProperty: StyleProperty, styleProperties: StyleProperty[]) &#x3D;&gt; {if (styleProperty.value &#x3D;&#x3D;&#x3D; &#x27;normal&#x27; || +styleProperty.value &lt;&#x3D; 400) {return false}return [&#x27;font-style&#x27;, &#x27;font-weight&#x27;].includes(styleProperty.name)},},{property: &#x27;background&#x27;,enabled: false,test: (styleProperty: StyleProperty, styleProperties: StyleProperty[]) &#x3D;&gt; {const color &#x3D; styleProperties.find(property &#x3D;&gt; property.name &#x3D;&#x3D;&#x3D; &#x27;color&#x27;)return !(isColorWhite(styleProperty.value) &amp;&amp; !color)},},{property: &#x27;text&#x27;,test: (styleProperty: StyleProperty, styleProperties: StyleProperty[]) &#x3D;&gt; {if (styleProperty.value &#x3D;&#x3D;&#x3D; &#x27;none&#x27;) {return false}return [&#x27;text-decoration&#x27;].includes(styleProperty.name)},},{ property: &#x27;border&#x27;, enabled: false },{ property: &#x27;padding&#x27;, enabled: false },{ property: &#x27;word&#x27;, enabled: false },{ property: &#x27;box-shadow&#x27;, enabled: false },{ property: &#x27;color&#x27;, enabled: false },{ property: &#x27;opacity&#x27;, enabled: false },{ property: &#x27;white-space&#x27;, enabled: false },]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L15">src/util/stripStyleAttribute.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L15">src/util/stripStyleAttribute.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">black<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;#000000&#x27;, &#x27;#000&#x27;, &#x27;rgb(0,0,0)&#x27;, &#x27;rgba(0,0,0,1)&#x27;, &#x27;black&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L6">src/util/stripStyleAttribute.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L6">src/util/stripStyleAttribute.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">white<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;#ffffff&#x27;, &#x27;#fff&#x27;, &#x27;rgb(255,255,255)&#x27;, &#x27;rgba(255,255,255,1)&#x27;, &#x27;white&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L7">src/util/stripStyleAttribute.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L7">src/util/stripStyleAttribute.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L10">src/util/stripStyleAttribute.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L10">src/util/stripStyleAttribute.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L13">src/util/stripStyleAttribute.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L13">src/util/stripStyleAttribute.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L60">src/util/stripStyleAttribute.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L60">src/util/stripStyleAttribute.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -222,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/8e8ae6a/src/util/stripStyleAttribute.ts#L75">src/util/stripStyleAttribute.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/5998b6a/src/util/stripStyleAttribute.ts#L75">src/util/stripStyleAttribute.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

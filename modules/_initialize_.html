@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Test<wbr>Helpers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="_initialize_.html#windowem-1.testhelpers-2" class="tsd-signature-type">testHelpers</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L288">src/initialize.ts:288</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L288">src/initialize.ts:288</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -115,7 +115,7 @@
 					<div class="tsd-signature tsd-kind-icon">Window<wbr>Em<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="_initialize_.html#windowem-1" class="tsd-signature-type">windowEm</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L289">src/initialize.ts:289</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L289">src/initialize.ts:289</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">UPDATE_<wbr>THOUGHTS_<wbr>THROTTLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> = 100</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L46">src/initialize.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L46">src/initialize.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -143,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">update<wbr>Thoughts<wbr>Throttled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>cancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>flush<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">; </span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = throttleConcat&lt;PushBatch, void&gt;((batches: PushBatch[]) &#x3D;&gt; {const merged &#x3D; batches.reduce(mergeBatch, {thoughtIndexUpdates: {},lexemeIndexUpdates: {},lexemeIndexUpdatesOld: {},})// dispatch on next tick, since the leading edge is synchronous and can be triggered during a reducersetTimeout(() &#x3D;&gt; {store.dispatch(updateThoughtsActionCreator({ ...merged, local: false, remote: false, repairCursor: true }))})}, UPDATE_THOUGHTS_THROTTLE)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L70">src/initialize.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L70">src/initialize.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L84">src/initialize.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L84">src/initialize.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L51">src/initialize.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L51">src/initialize.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -209,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L205">src/initialize.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L205">src/initialize.ts:205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L199">src/initialize.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L199">src/initialize.ts:199</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">test<wbr>Helpers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L210">src/initialize.ts:210</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L210">src/initialize.ts:210</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -330,7 +330,7 @@
 						<div class="tsd-signature tsd-kind-icon">_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LoDashStatic</span><span class="tsd-signature-symbol"> = _</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L215">src/initialize.ts:215</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L215">src/initialize.ts:215</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -340,7 +340,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol"> = store.getState</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L214">src/initialize.ts:214</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L214">src/initialize.ts:214</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -350,7 +350,7 @@
 						<div class="tsd-signature tsd-kind-icon">import<wbr>ToContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withDispatch(importToContext)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L212">src/initialize.ts:212</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L212">src/initialize.ts:212</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -360,7 +360,7 @@
 						<div class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">set</span><span class="tsd-signature-symbol"> = selection.set</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L211">src/initialize.ts:211</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L211">src/initialize.ts:211</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -374,7 +374,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L213">src/initialize.ts:213</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L213">src/initialize.ts:213</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -394,7 +394,7 @@
 					<div class="tsd-signature tsd-kind-icon">window<wbr>Em<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L219">src/initialize.ts:219</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L219">src/initialize.ts:219</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -403,7 +403,7 @@
 						<div class="tsd-signature tsd-kind-icon">context<wbr>ToThought<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, thoughts: Context) &#x3D;&gt; contextToThoughtId(state, thoughts))</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L220">src/initialize.ts:220</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L220">src/initialize.ts:220</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -413,7 +413,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>AsThoughts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, context: Context) &#x3D;&gt;getAllChildrenAsThoughts(state, contextToThoughtId(state, context) || null),)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L230">src/initialize.ts:230</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L230">src/initialize.ts:230</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -423,7 +423,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>ByContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, context: Context) &#x3D;&gt;getAllChildren(state, contextToThoughtId(state, context) || null),)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L227">src/initialize.ts:227</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L227">src/initialize.ts:227</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -433,7 +433,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Children<wbr>Ranked<wbr>ByContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, context: Context) &#x3D;&gt;getChildrenRanked(state, contextToThoughtId(state, context) || null),)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L233">src/initialize.ts:233</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L233">src/initialize.ts:233</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -443,7 +443,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Contexts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState(getContexts)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L221">src/initialize.ts:221</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L221">src/initialize.ts:221</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -453,7 +453,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Lexeme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState(getLexeme)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L222">src/initialize.ts:222</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L222">src/initialize.ts:222</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -463,7 +463,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Lexeme<wbr>Contexts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, value: string) &#x3D;&gt; {const contexts &#x3D; getLexeme(state, value)?.contexts || []return contexts.map(id &#x3D;&gt; thoughtToContext(state, getThoughtById(state, id)?.parentId))})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L223">src/initialize.ts:223</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L223">src/initialize.ts:223</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -473,7 +473,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Thought<wbr>ByContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState((state: State, context: Context) &#x3D;&gt; {const id &#x3D; contextToThoughtId(state, context)return id ? getThoughtById(state, id) : undefined})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L237">src/initialize.ts:237</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L237">src/initialize.ts:237</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -483,7 +483,7 @@
 						<div class="tsd-signature tsd-kind-icon">get<wbr>Thought<wbr>ById<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState(getThoughtById)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L236">src/initialize.ts:236</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L236">src/initialize.ts:236</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -493,7 +493,7 @@
 						<div class="tsd-signature tsd-kind-icon">hash<wbr>Thought<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types.thoughthash.html" class="tsd-signature-type">ThoughtHash</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L241">src/initialize.ts:241</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L241">src/initialize.ts:241</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -524,7 +524,7 @@
 						<div class="tsd-signature tsd-kind-icon">moize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moize</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L242">src/initialize.ts:242</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L242">src/initialize.ts:242</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -534,7 +534,7 @@
 						<div class="tsd-signature tsd-kind-icon">offline<wbr>Status<wbr>Store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>useEffect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useChangeEffect</span><span class="tsd-signature-symbol">; </span>useSelector<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useSelector</span><span class="tsd-signature-symbol">; </span>useState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L266">src/initialize.ts:266</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L266">src/initialize.ts:266</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -570,7 +570,7 @@
 						<div class="tsd-signature tsd-kind-icon">pretty<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="test_helpers.prettypath.html#prettypath" class="tsd-signature-type">prettyPath</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L264">src/initialize.ts:264</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L264">src/initialize.ts:264</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -580,7 +580,7 @@
 						<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L265">src/initialize.ts:265</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L265">src/initialize.ts:265</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -590,7 +590,7 @@
 						<div class="tsd-signature tsd-kind-icon">sync<wbr>Status<wbr>Store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>useEffect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useChangeEffect</span><span class="tsd-signature-symbol">; </span>useSelector<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">useSelector</span><span class="tsd-signature-symbol">; </span>useState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L267">src/initialize.ts:267</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L267">src/initialize.ts:267</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -626,7 +626,7 @@
 						<div class="tsd-signature tsd-kind-icon">test<wbr>Helpers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>_<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LoDashStatic</span><span class="tsd-signature-symbol">; </span>getState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">getState</span><span class="tsd-signature-symbol">; </span>importToContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">; </span>setSelection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">set</span><span class="tsd-signature-symbol">; </span>getLexemeFromIndexedDB<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L269">src/initialize.ts:269</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L269">src/initialize.ts:269</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -653,7 +653,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L213">src/initialize.ts:213</a></li>
+													<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L213">src/initialize.ts:213</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -675,7 +675,7 @@
 						<div class="tsd-signature tsd-kind-icon">thought<wbr>ToContext<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = withState(thoughtToContext)</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L270">src/initialize.ts:270</a></li>
+								<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L270">src/initialize.ts:270</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -689,7 +689,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/cybersemics/em/blob/1e1b93a/src/initialize.ts#L245">src/initialize.ts:245</a></li>
+										<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/initialize.ts#L245">src/initialize.ts:245</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-type-parameters-title">Type parameters</h4>

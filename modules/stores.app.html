@@ -86,7 +86,7 @@
 					<div class="tsd-signature tsd-kind-icon">compose<wbr>Enhancers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">flowRight</span><span class="tsd-signature-symbol"> = composeWithDevTools({ trace: true })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/stores/app.ts#L22">src/stores/app.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/387f04a/src/stores/app.ts#L22">src/stores/app.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -96,7 +96,7 @@
 					<div class="tsd-signature tsd-kind-icon">middleware<wbr>Enhancer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StoreEnhancerStoreCreator</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">StoreEnhancerStoreCreator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Ext</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">StateExt</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = applyMiddleware(// prevent accidentally passing a reducer to the dispatch function (dev and test only)// (must go before the thunk middleware so that it can throw an error before the thunk middleware tries to execute it)...(process.env.NODE_ENV &#x3D;&#x3D;&#x3D; &#x27;development&#x27; || process.env.NODE_ENV &#x3D;&#x3D;&#x3D; &#x27;test&#x27; ? [doNotDispatchReducer] : []),multi,thunk,pullQueue,scrollCursorIntoView,updateUrlHistory,freeThoughts,)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/stores/app.ts#L28">src/stores/app.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/387f04a/src/stores/app.ts#L28">src/stores/app.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -127,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types.state.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Action</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = createStore(appReducer,composeEnhancers(middlewareEnhancer,storageCache,undoRedoEnhancer,cursorChanged,// must go at the end to ensure it clears the pushQueue before other enhancerspushQueue,),)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cybersemics/em/blob/31a5c1e/src/stores/app.ts#L40">src/stores/app.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/cybersemics/em/blob/387f04a/src/stores/app.ts#L40">src/stores/app.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>

@@ -74,10 +74,14 @@ const Toolbar: FC<ToolbarProps> = ({ customize, onSelect, selected }) => {
     [updateArrows],
   )
 
-  const onTapDown = useCallback((id: string) => {
-    setPressTime(Date.now())
-    setPressingToolbarId(id)
-  }, [])
+  const onTapDown = useCallback(
+    (id: string) => {
+      setPressTime(Date.now())
+      setPressingToolbarId(id)
+      onSelect?.(shortcutById(id))
+    },
+    [onSelect],
+  )
 
   /**********************************************************************
    * Effects

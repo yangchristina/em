@@ -5,7 +5,6 @@ import Thunk from '../../@types/Thunk'
 import { editThoughtActionCreator as editThought } from '../../actions/editThought'
 import { importTextActionCreator as importText } from '../../actions/importText'
 import { newThoughtActionCreator as newThought } from '../../actions/newThought'
-import { setFirstSubthoughtActionCreator as setFirstSubthought } from '../../actions/setFirstSubthought'
 import { toggleAttributeActionCreator as toggleAttribute } from '../../actions/toggleAttribute'
 import { toggleSortActionCreator } from '../../actions/toggleSort'
 import { EM_TOKEN, HOME_PATH, HOME_TOKEN } from '../../constants'
@@ -19,6 +18,8 @@ import { createTestStore } from '../../test-helpers/createTestStore'
 import { deleteThoughtAtFirstMatchActionCreator } from '../../test-helpers/deleteThoughtAtFirstMatch'
 import executeShortcut from '../../test-helpers/executeShortcut'
 import { findThoughtByText } from '../../test-helpers/queries'
+import { getSubthoughtsByContext } from '../../test-helpers/queries/getSubthoughtsByContext'
+import { getThoughtByContext } from '../../test-helpers/queries/getThoughtByContext'
 import { setCursorFirstMatchActionCreator as setCursor } from '../../test-helpers/setCursorFirstMatch'
 import toggleSortShortcut from '../toggleSort'
 
@@ -330,129 +331,106 @@ describe('store', () => {
   })
 })
 
-// TODO: toggleSort DOM tests broke with LayoutTree since the DOM hierarchy changed.
-describe.skip('DOM', () => {
-  beforeEach(async () => {
-    await createTestApp()
-  })
+describe('DOM', () => {
+  beforeEach(createTestApp)
   afterEach(cleanupTestApp)
 
   describe('local', () => {
     it('home: Asc', async () => {
       store.dispatch([
-        newThought({ value: 'c' }),
-        newThought({ value: 'a' }),
-        newThought({ value: 'b' }),
-        setCursor(null),
-
-        toggleAttribute({
-          path: HOME_PATH,
-          values: ['=sort', 'Alphabetical'],
+        importText({
+          text: `
+            - c
+            - a
+            - b
+          `,
         }),
+        setCursor(null),
       ])
 
-      const thought = await findThoughtByText('c')
-      expect(thought).toBeTruthy()
+      executeShortcut(toggleSortShortcut, { store })
 
-      const thoughts = await screen.findAllByPlaceholderText('Add a thought')
+      const thoughtC = getThoughtByContext(['c'])
+      expect(thoughtC).toBeTruthy()
+
+      const thoughts = screen.getAllByTestId(/thought/)
 
       expect(thoughts.map((child: HTMLElement) => child.textContent)).toMatchObject(['a', 'b', 'c'])
     })
 
     it('subthoughts: Asc', async () => {
       store.dispatch([
-        newThought({ value: 'a' }),
-        newThought({ value: '3', insertNewSubthought: true }),
-        newThought({ value: '1' }),
-        newThought({ value: '2' }),
+        importText({
+          text: `
+            - a
+              - 3
+              - 1
+              - 2
+          `,
+        }),
         setCursor(['a']),
-
-        (dispatch, getState) =>
-          dispatch(
-            toggleAttribute({
-              path: contextToPath(getState(), ['a']),
-              values: ['=sort', 'Alphabetical'],
-            }),
-          ),
       ])
 
-      const thought = await findThoughtByText('a')
+      executeShortcut(toggleSortShortcut, { store })
+
+      const thought = getThoughtByContext(['a'])
       expect(thought).toBeTruthy()
 
-      const thoughtChildrenWrapper = thought!.closest('li')?.lastElementChild as HTMLElement
-      const thoughtChildren = await findAllByPlaceholderText(thoughtChildrenWrapper, 'Add a thought')
+      const subthoughtsOfA = getSubthoughtsByContext(['a'])
 
-      expect(thoughtChildren.map((child: HTMLElement) => child.textContent)).toMatchObject(['1', '2', '3'])
+      expect(subthoughtsOfA.map((child: HTMLElement) => child.textContent)).toMatchObject(['1', '2', '3'])
     })
 
     it('home: Desc', async () => {
       store.dispatch([
-        newThought({ value: 'c' }),
-        newThought({ value: 'a' }),
-        newThought({ value: 'b' }),
+        importText({
+          text: `
+            - =sort
+              - Alphabetical
+            -c
+            -a
+            -b`,
+        }),
+
         setCursor(null),
       ])
 
-      store.dispatch([
-        toggleAttribute({
-          path: HOME_PATH,
-          values: ['=sort', 'Alphabetical'],
-        }),
-        (dispatch, getState) =>
-          dispatch(
-            setFirstSubthought({
-              path: contextToPath(getState(), ['=sort', 'Alphabetical'])!,
-              value: 'Desc',
-            }),
-          ),
-      ])
+      executeShortcut(toggleSortShortcut, { store })
 
-      const thought = await findThoughtByText('c')
+      const thought = getThoughtByContext(['c'])
       expect(thought).toBeTruthy()
 
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
 
       expect(thoughts.map((child: HTMLElement) => child.textContent)).toMatchObject(['c', 'b', 'a'])
     })
 
     it('subthoughts: Desc', async () => {
       store.dispatch([
-        newThought({ value: 'a' }),
-        newThought({ value: '3', insertNewSubthought: true }),
-        newThought({ value: '1' }),
-        newThought({ value: '2' }),
+        importText({
+          text: `
+            - a
+              - 3
+              - 1
+              - 2
+          `,
+        }),
         setCursor(['a']),
       ])
 
-      store.dispatch([
-        (dispatch, getState) =>
-          dispatch(
-            toggleAttribute({
-              path: contextToPath(getState(), ['a']),
-              values: ['=sort', 'Alphabetical'],
-            }),
-          ),
-        (dispatch, getState) =>
-          dispatch(
-            setFirstSubthought({
-              path: contextToPath(getState(), ['a', '=sort', 'Alphabetical'])!,
-              value: 'Desc',
-            }),
-          ),
-      ])
+      executeShortcut(toggleSortShortcut, { store })
+      executeShortcut(toggleSortShortcut, { store })
 
-      const thought = await findThoughtByText('a')
-      expect(thought).toBeTruthy()
+      const thoughtA = getThoughtByContext(['a'])
+      expect(thoughtA).toBeTruthy()
 
-      const thoughtChildrenWrapper = thought!.closest('li')?.lastElementChild as HTMLElement
-      const thoughtChildren = await findAllByPlaceholderText(thoughtChildrenWrapper, 'Add a thought')
+      const subthoughtsOfA = getSubthoughtsByContext(['a'])
 
-      expect(thoughtChildren.map((child: HTMLElement) => child.textContent)).toMatchObject(['3', '2', '1'])
+      expect(subthoughtsOfA.map((child: HTMLElement) => child.textContent)).toMatchObject(['3', '2', '1'])
     })
   })
 
-  describe('global', () => {
+  describe.skip('global', () => {
     it('home: Asc', async () => {
       store.dispatch([
         newThought({ value: 'c' }),
@@ -564,9 +542,7 @@ describe.skip('DOM', () => {
         newThought({ value: '' }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -592,9 +568,8 @@ describe.skip('DOM', () => {
         newThought({ value: '' }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -620,9 +595,8 @@ describe.skip('DOM', () => {
         newThought({ value: '' }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -648,9 +622,8 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertBefore: true }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -676,9 +649,8 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertBefore: true }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -704,9 +676,8 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertBefore: true }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -738,9 +709,8 @@ describe.skip('DOM', () => {
         newThought({ value: '' }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -766,19 +736,16 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertNewSubthought: true }),
       ])
 
-      const thought = await findThoughtByText('a')
+      const thoughts = screen.getAllByTestId(/thought/)
 
-      const thoughtChildrenWrapper = thought!.closest('li')?.lastElementChild as HTMLElement
-      const thoughtChildren = await findAllByPlaceholderText(thoughtChildrenWrapper, 'Add a thought')
-      const childrenString = thoughtChildren
+      const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
         .join('')
       expect(childrenString).toMatch('_')
     })
 
-    // TODO
-    it.skip('multiple contiguous empty thoughts', async () => {
+    it('multiple contiguous empty thoughts', async () => {
       store.dispatch([
         importText({
           text: `
@@ -797,9 +764,8 @@ describe.skip('DOM', () => {
         newThought({ value: '' }),
       ])
 
-      const thought = await findThoughtByText('a')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -825,9 +791,8 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertNewSubthought: true }),
       ])
 
-      const thought = await findThoughtByText('d')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -853,9 +818,8 @@ describe.skip('DOM', () => {
         newThought({ value: '', insertNewSubthought: true, insertBefore: true }),
       ])
 
-      const thought = await findThoughtByText('d')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')
@@ -888,9 +852,8 @@ describe.skip('DOM', () => {
           ),
       ])
 
-      const thought = await findThoughtByText('b')
-      const thoughtsWrapper = thought!.closest('ul') as HTMLElement
-      const thoughts = await findAllByPlaceholderText(thoughtsWrapper, 'Add a thought')
+      const thoughts = screen.getAllByTestId(/thought/)
+
       const childrenString = thoughts
         .map((child: HTMLElement) => child.textContent)
         .map(value => value || '_')

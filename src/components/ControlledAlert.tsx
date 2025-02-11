@@ -9,10 +9,11 @@ const ControlledAlert: FC<
   {
     renderedIcon?: ReactNode
     value: ReactNode | null
+    testId?: string
     /* Specify a key to force the component to re-render and thus recalculate useSwipeToDismissProps when the alert changes. Otherwise the alert gets stuck off screen in the dismiss state. */
     transitionKey: string | number
   } & Pick<ComponentProps<typeof PopupBase>, 'onClose' | 'showXOnHover'>
-> = ({ renderedIcon, onClose, value, transitionKey, ...props }) => {
+> = ({ testId, renderedIcon, onClose, value, transitionKey, ...props }) => {
   const popupRef = useRef<HTMLDivElement>(null)
   const [isDismissed, setDismiss] = useState(false)
 
@@ -26,11 +27,18 @@ const ControlledAlert: FC<
   // if dismissed, set timeout to 0 to remove alert component immediately. Otherwise it will block toolbar interactions until the timeout completes.
   return (
     <TransitionGroup
-      data-testid='alert'
+      data-testid={testId}
       childFactory={(child: React.ReactElement) => (!isDismissed ? child : React.cloneElement(child, { timeout: 0 }))}
     >
       {value ? (
-        <FadeTransition duration='slow' nodeRef={popupRef} onEntering={() => setDismiss(false)}>
+        <FadeTransition
+          duration='slow'
+          nodeRef={popupRef}
+          onEntering={() => setDismiss(false)}
+          childFactory={(child: React.ReactElement) =>
+            !isDismissed ? child : React.cloneElement(child, { timeout: 0 })
+          }
+        >
           {/* Specify a key to force the component to re-render and thus recalculate useSwipeToDismissProps when the alert changes. Otherwise the alert gets stuck off screen in the dismiss state. */}
           <PopupBase
             anchorFromBottom
@@ -50,7 +58,6 @@ const ControlledAlert: FC<
             ref={popupRef}
             key={transitionKey}
             circledCloseButton
-            // showXOnHover
             onClose={handleClose}
             calculatedHeight={popupRef.current?.getBoundingClientRect().height || 50}
             swipeDownToDismiss
